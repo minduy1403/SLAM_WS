@@ -1,0 +1,2 @@
+Invoking command in '/home/jetson/SLAM_WS/build/rplidar_ros': /usr/bin/cmake /home/jetson/SLAM_WS/src/rplidar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jetson/SLAM_WS/install/rplidar_ros
+Invoked command in '/home/jetson/SLAM_WS/build/rplidar_ros' returned '1': /usr/bin/cmake /home/jetson/SLAM_WS/src/rplidar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jetson/SLAM_WS/install/rplidar_ros
