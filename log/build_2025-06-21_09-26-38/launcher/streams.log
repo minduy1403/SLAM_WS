@@ -1,0 +1,24 @@
+[3.006s] Invoking command in '/home/jetson/SLAM_WS/src/launcher': PYTHONPATH=/home/jetson/SLAM_WS/build/launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/launcher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launcher build --build-base /home/jetson/SLAM_WS/build/launcher/build install --record /home/jetson/SLAM_WS/build/launcher/install.log --single-version-externally-managed install_data
+[4.189s] running egg_info
+[4.191s] writing ../../build/launcher/launcher.egg-info/PKG-INFO
+[4.193s] writing dependency_links to ../../build/launcher/launcher.egg-info/dependency_links.txt
+[4.193s] writing requirements to ../../build/launcher/launcher.egg-info/requires.txt
+[4.194s] writing top-level names to ../../build/launcher/launcher.egg-info/top_level.txt
+[4.206s] reading manifest file '../../build/launcher/launcher.egg-info/SOURCES.txt'
+[4.209s] writing manifest file '../../build/launcher/launcher.egg-info/SOURCES.txt'
+[4.210s] running build
+[4.210s] running build_py
+[4.211s] running install
+[4.214s] running install_lib
+[4.219s] running install_data
+[4.220s] copying launcher/manual_launch.launch.py -> /home/jetson/SLAM_WS/install/launcher/share/launcher/launcher
+[4.220s] creating /home/jetson/SLAM_WS/install/launcher/share/ament_index
+[4.221s] creating /home/jetson/SLAM_WS/install/launcher/share/ament_index/resource_index
+[4.221s] creating /home/jetson/SLAM_WS/install/launcher/share/ament_index/resource_index/packages
+[4.222s] copying resource/launcher -> /home/jetson/SLAM_WS/install/launcher/share/ament_index/resource_index/packages
+[4.222s] copying package.xml -> /home/jetson/SLAM_WS/install/launcher/share/launcher
+[4.222s] running install_egg_info
+[4.229s] Copying ../../build/launcher/launcher.egg-info to /home/jetson/SLAM_WS/install/launcher/lib/python3.8/site-packages/launcher-0.0.0-py3.8.egg-info
+[4.232s] running install_scripts
+[4.302s] writing list of installed files to '/home/jetson/SLAM_WS/build/launcher/install.log'
+[4.401s] Invoked command in '/home/jetson/SLAM_WS/src/launcher' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/launcher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launcher build --build-base /home/jetson/SLAM_WS/build/launcher/build install --record /home/jetson/SLAM_WS/build/launcher/install.log --single-version-externally-managed install_data

@@ -1,0 +1,8 @@
+running egg_info
+creating ../../build/kinematics/inverse_kinematic.egg-info
+writing ../../build/kinematics/inverse_kinematic.egg-info/PKG-INFO
+writing dependency_links to ../../build/kinematics/inverse_kinematic.egg-info/dependency_links.txt
+writing entry points to ../../build/kinematics/inverse_kinematic.egg-info/entry_points.txt
+writing requirements to ../../build/kinematics/inverse_kinematic.egg-info/requires.txt
+writing top-level names to ../../build/kinematics/inverse_kinematic.egg-info/top_level.txt
+writing manifest file '../../build/kinematics/inverse_kinematic.egg-info/SOURCES.txt'

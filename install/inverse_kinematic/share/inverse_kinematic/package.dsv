@@ -1,0 +1,6 @@
+source;share/inverse_kinematic/hook/pythonpath.ps1
+source;share/inverse_kinematic/hook/pythonpath.dsv
+source;share/inverse_kinematic/hook/pythonpath.sh
+source;share/inverse_kinematic/hook/ament_prefix_path.ps1
+source;share/inverse_kinematic/hook/ament_prefix_path.dsv
+source;share/inverse_kinematic/hook/ament_prefix_path.sh

@@ -1,0 +1,301 @@
+[0.952s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.952s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9398eb80>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9398eb80>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f93879220>)
+[1.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.918s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetson/SLAM_WS'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.919s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.006s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.006s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.006s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.006s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.007s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.007s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.007s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.008s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.008s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.009s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.009s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.010s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.010s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.010s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.011s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.011s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.014s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.014s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.014s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['ignore', 'ignore_ament_install']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'ignore'
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'ignore_ament_install'
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['colcon_pkg']
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'colcon_pkg'
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['colcon_meta']
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'colcon_meta'
+[2.018s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['ros']
+[2.018s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'ros'
+[2.028s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kinematics' with type 'ros.ament_python' and name 'kinematics'
+[2.029s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[2.030s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[2.030s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[2.030s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extensions ['ignore', 'ignore_ament_install']
+[2.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extension 'ignore'
+[2.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extension 'ignore_ament_install'
+[2.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extensions ['colcon_pkg']
+[2.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extension 'colcon_pkg'
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extensions ['colcon_meta']
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extension 'colcon_meta'
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extensions ['ros']
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_bot) by extension 'ros'
+[2.035s] DEBUG:colcon.colcon_core.package_identification:Package 'src/omni_bot' with type 'ros.ament_python' and name 'omni_bot'
+[2.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[2.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[2.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[2.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[2.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[2.040s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[2.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extensions ['ignore', 'ignore_ament_install']
+[2.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extension 'ignore'
+[2.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extension 'ignore_ament_install'
+[2.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extensions ['colcon_pkg']
+[2.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extension 'colcon_pkg'
+[2.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extensions ['colcon_meta']
+[2.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extension 'colcon_meta'
+[2.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extensions ['ros']
+[2.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_omni) by extension 'ros'
+[2.045s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop_omni' with type 'ros.ament_python' and name 'teleop_omni'
+[2.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.046s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.141s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/jetson/SLAM_WS/install
+[2.148s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 256 installed packages in /opt/ros/foxy
+[2.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.460s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_args' from command line to 'None'
+[2.460s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_target' from command line to 'None'
+[2.460s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.460s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[2.460s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[2.461s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[2.461s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[2.461s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[2.461s] Level 5:colcon.colcon_core.verb:set package 'kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.461s] DEBUG:colcon.colcon_core.verb:Building package 'kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/SLAM_WS/build/kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/SLAM_WS/install/kinematics', 'merge_install': False, 'path': '/home/jetson/SLAM_WS/src/kinematics', 'symlink_install': False, 'test_result_base': None}
+[2.463s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'cmake_args' from command line to 'None'
+[2.463s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'cmake_target' from command line to 'None'
+[2.463s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.463s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'cmake_clean_first' from command line to 'False'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'cmake_force_configure' from command line to 'False'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'ament_cmake_args' from command line to 'None'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'omni_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.464s] DEBUG:colcon.colcon_core.verb:Building package 'omni_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/SLAM_WS/build/omni_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/SLAM_WS/install/omni_bot', 'merge_install': False, 'path': '/home/jetson/SLAM_WS/src/omni_bot', 'symlink_install': False, 'test_result_base': None}
+[2.466s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[2.466s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[2.466s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.467s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[2.467s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[2.467s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[2.467s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[2.467s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[2.467s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.467s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/SLAM_WS/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/SLAM_WS/install/rplidar_ros', 'merge_install': False, 'path': '/home/jetson/SLAM_WS/src/rplidar_ros', 'symlink_install': False, 'test_result_base': None}
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'cmake_args' from command line to 'None'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'cmake_target' from command line to 'None'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'cmake_clean_cache' from command line to 'False'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'cmake_clean_first' from command line to 'False'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'cmake_force_configure' from command line to 'False'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'ament_cmake_args' from command line to 'None'
+[2.471s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'catkin_cmake_args' from command line to 'None'
+[2.471s] Level 5:colcon.colcon_core.verb:set package 'teleop_omni' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.471s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_omni' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/SLAM_WS/build/teleop_omni', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/SLAM_WS/install/teleop_omni', 'merge_install': False, 'path': '/home/jetson/SLAM_WS/src/teleop_omni', 'symlink_install': False, 'test_result_base': None}
+[2.472s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.476s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.477s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/SLAM_WS/src/kinematics' with build type 'ament_python'
+[2.478s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinematics', 'ament_prefix_path')
+[2.486s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/hook/ament_prefix_path.ps1'
+[2.489s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/hook/ament_prefix_path.dsv'
+[2.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/hook/ament_prefix_path.sh'
+[2.495s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.495s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.515s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/SLAM_WS/src/omni_bot' with build type 'ament_python'
+[2.516s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_bot', 'ament_prefix_path')
+[2.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/hook/ament_prefix_path.ps1'
+[2.521s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/hook/ament_prefix_path.dsv'
+[2.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/hook/ament_prefix_path.sh'
+[2.525s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.526s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.545s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetson/SLAM_WS/src/rplidar_ros' with build type 'ament_cmake'
+[2.546s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetson/SLAM_WS/src/rplidar_ros'
+[2.548s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.548s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.569s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/SLAM_WS/src/teleop_omni' with build type 'ament_python'
+[2.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_omni', 'ament_prefix_path')
+[2.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/hook/ament_prefix_path.ps1'
+[2.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/hook/ament_prefix_path.dsv'
+[2.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/hook/ament_prefix_path.sh'
+[2.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.580s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.883s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/SLAM_WS/src/kinematics'
+[3.885s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.885s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.182s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/SLAM_WS/src/omni_bot'
+[5.184s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.184s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/SLAM_WS/build/rplidar_ros': CMAKE_PREFIX_PATH=/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/inverse_kinematic:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/jetson/SLAM_WS/build/rplidar_ros -- -j4 -l4
+[6.549s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/SLAM_WS/src/teleop_omni'
+[6.551s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.551s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/SLAM_WS/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/inverse_kinematic:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/jetson/SLAM_WS/build/rplidar_ros -- -j4 -l4
+[6.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/SLAM_WS/build/rplidar_ros': CMAKE_PREFIX_PATH=/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/inverse_kinematic:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/jetson/SLAM_WS/build/rplidar_ros
+[6.717s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[6.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/SLAM_WS/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/inverse_kinematic:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/jetson/SLAM_WS/build/rplidar_ros
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros' for CMake module files
+[6.740s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros' for CMake config files
+[6.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[6.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[6.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[6.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[6.759s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/lib'
+[6.760s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/bin'
+[6.760s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[6.762s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/lib/python3.8/site-packages'
+[6.762s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/bin'
+[6.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[6.773s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[6.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.sh'
+[6.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.bash'
+[6.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[6.803s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/SLAM_WS/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[6.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[6.812s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros' for CMake module files
+[6.815s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros' for CMake config files
+[6.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[6.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[6.827s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[6.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[6.836s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/lib'
+[6.836s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/bin'
+[6.837s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[6.842s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/lib/python3.8/site-packages'
+[6.843s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/rplidar_ros/bin'
+[6.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[6.852s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[6.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.sh'
+[6.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.bash'
+[6.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[6.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/SLAM_WS/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[8.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/SLAM_WS/src/kinematics': PYTHONPATH=/home/jetson/SLAM_WS/build/kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinematics build --build-base /home/jetson/SLAM_WS/build/kinematics/build install --record /home/jetson/SLAM_WS/build/kinematics/install.log --single-version-externally-managed install_data
+[8.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/SLAM_WS/src/teleop_omni': PYTHONPATH=/home/jetson/SLAM_WS/build/teleop_omni/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_omni build --build-base /home/jetson/SLAM_WS/build/teleop_omni/build install --record /home/jetson/SLAM_WS/build/teleop_omni/install.log --single-version-externally-managed install_data
+[8.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/SLAM_WS/src/omni_bot': PYTHONPATH=/home/jetson/SLAM_WS/build/omni_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/omni_bot build --build-base /home/jetson/SLAM_WS/build/omni_bot/build install --record /home/jetson/SLAM_WS/build/omni_bot/install.log --single-version-externally-managed install_data
+[10.341s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/kinematics' for CMake module files
+[10.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/SLAM_WS/src/kinematics' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinematics build --build-base /home/jetson/SLAM_WS/build/kinematics/build install --record /home/jetson/SLAM_WS/build/kinematics/install.log --single-version-externally-managed install_data
+[10.346s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/kinematics' for CMake config files
+[10.350s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/kinematics/lib'
+[10.351s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/kinematics/bin'
+[10.351s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/kinematics/lib/pkgconfig/kinematics.pc'
+[10.352s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages'
+[10.353s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinematics', 'pythonpath')
+[10.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/hook/pythonpath.ps1'
+[10.358s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/hook/pythonpath.dsv'
+[10.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/hook/pythonpath.sh'
+[10.363s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/kinematics/bin'
+[10.364s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kinematics)
+[10.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/package.ps1'
+[10.370s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/package.dsv'
+[10.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/package.sh'
+[10.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/package.bash'
+[10.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/kinematics/share/kinematics/package.zsh'
+[10.379s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/SLAM_WS/install/kinematics/share/colcon-core/packages/kinematics)
+[10.384s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/teleop_omni' for CMake module files
+[10.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/SLAM_WS/src/teleop_omni' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/teleop_omni/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_omni build --build-base /home/jetson/SLAM_WS/build/teleop_omni/build install --record /home/jetson/SLAM_WS/build/teleop_omni/install.log --single-version-externally-managed install_data
+[10.389s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/teleop_omni' for CMake config files
+[10.392s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/teleop_omni/lib'
+[10.392s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/teleop_omni/bin'
+[10.393s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/teleop_omni/lib/pkgconfig/teleop_omni.pc'
+[10.394s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages'
+[10.394s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_omni', 'pythonpath')
+[10.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/hook/pythonpath.ps1'
+[10.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/hook/pythonpath.dsv'
+[10.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/hook/pythonpath.sh'
+[10.402s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/teleop_omni/bin'
+[10.403s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_omni)
+[10.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/package.ps1'
+[10.407s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/package.dsv'
+[10.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/package.sh'
+[10.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/package.bash'
+[10.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni/package.zsh'
+[10.416s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/SLAM_WS/install/teleop_omni/share/colcon-core/packages/teleop_omni)
+[10.421s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/omni_bot' for CMake module files
+[10.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/SLAM_WS/src/omni_bot' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/omni_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/omni_bot build --build-base /home/jetson/SLAM_WS/build/omni_bot/build install --record /home/jetson/SLAM_WS/build/omni_bot/install.log --single-version-externally-managed install_data
+[10.425s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/omni_bot' for CMake config files
+[10.428s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/omni_bot/lib'
+[10.428s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/omni_bot/bin'
+[10.428s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/omni_bot/lib/pkgconfig/omni_bot.pc'
+[10.429s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages'
+[10.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_bot', 'pythonpath')
+[10.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/hook/pythonpath.ps1'
+[10.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/hook/pythonpath.dsv'
+[10.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/hook/pythonpath.sh'
+[10.436s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/SLAM_WS/install/omni_bot/bin'
+[10.436s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_bot)
+[10.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/package.ps1'
+[10.440s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/package.dsv'
+[10.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/package.sh'
+[10.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/package.bash'
+[10.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/SLAM_WS/install/omni_bot/share/omni_bot/package.zsh'
+[10.446s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/SLAM_WS/install/omni_bot/share/colcon-core/packages/omni_bot)
+[10.447s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.449s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.449s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.450s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.473s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.473s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.473s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.512s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.Notifications exited with status 1
+[10.512s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.514s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/SLAM_WS/install/local_setup.ps1'
+[10.518s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/SLAM_WS/install/_local_setup_util_ps1.py'
+[10.525s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/SLAM_WS/install/setup.ps1'
+[10.530s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/SLAM_WS/install/local_setup.sh'
+[10.533s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/SLAM_WS/install/_local_setup_util_sh.py'
+[10.536s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/SLAM_WS/install/setup.sh'
+[10.541s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/SLAM_WS/install/local_setup.bash'
+[10.543s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/SLAM_WS/install/setup.bash'
+[10.549s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/SLAM_WS/install/local_setup.zsh'
+[10.551s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/SLAM_WS/install/setup.zsh'

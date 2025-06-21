@@ -1,0 +1,1124 @@
+[0.000000] (-) TimerEvent: {}
+[0.001983] (inverse_kinematic) JobQueued: {'identifier': 'inverse_kinematic', 'dependencies': OrderedDict()}
+[0.003059] (omni_bot) JobQueued: {'identifier': 'omni_bot', 'dependencies': OrderedDict()}
+[0.004050] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.004475] (teleop_omni) JobQueued: {'identifier': 'teleop_omni', 'dependencies': OrderedDict()}
+[0.007900] (inverse_kinematic) JobStarted: {'identifier': 'inverse_kinematic'}
+[0.042437] (omni_bot) JobStarted: {'identifier': 'omni_bot'}
+[0.070711] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.094361] (teleop_omni) JobStarted: {'identifier': 'teleop_omni'}
+[0.099141] (-) TimerEvent: {}
+[0.201537] (-) TimerEvent: {}
+[0.302471] (-) TimerEvent: {}
+[0.403232] (-) TimerEvent: {}
+[0.503945] (-) TimerEvent: {}
+[0.604632] (-) TimerEvent: {}
+[0.705299] (-) TimerEvent: {}
+[0.806059] (-) TimerEvent: {}
+[0.906734] (-) TimerEvent: {}
+[1.007494] (-) TimerEvent: {}
+[1.108203] (-) TimerEvent: {}
+[1.208878] (-) TimerEvent: {}
+[1.309622] (-) TimerEvent: {}
+[1.410495] (-) TimerEvent: {}
+[1.511396] (-) TimerEvent: {}
+[1.612039] (-) TimerEvent: {}
+[1.712684] (-) TimerEvent: {}
+[1.813315] (-) TimerEvent: {}
+[1.913956] (-) TimerEvent: {}
+[2.014616] (-) TimerEvent: {}
+[2.115288] (-) TimerEvent: {}
+[2.215962] (-) TimerEvent: {}
+[2.316628] (-) TimerEvent: {}
+[2.417302] (-) TimerEvent: {}
+[2.518000] (-) TimerEvent: {}
+[2.589139] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[2.591370] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/SLAM_WS/src/rplidar_ros', '-DCMAKE_INSTALL_PREFIX=/home/jetson/SLAM_WS/src/install/rplidar_ros'], 'cwd': '/home/jetson/SLAM_WS/src/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.2.1 52261 22'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/SLAM_WS'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Nano Developer Kit'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/jetson/SLAM_WS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Nano (4 GB ram)'), ('JETSON_SERIAL_NUMBER', '1420923022899'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Porg'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('AMENT_PREFIX_PATH', '/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/SLAM_WS/src/build/rplidar_ros'), ('SSH_CONNECTION', '192.168.2.1 52261 192.168.2.3 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2'), ('JETSON_P_NUMBER', 'p3448-0000')]), 'shell': False}
+[2.618381] (-) TimerEvent: {}
+[2.719743] (-) TimerEvent: {}
+[2.820448] (-) TimerEvent: {}
+[2.921500] (-) TimerEvent: {}
+[3.022216] (-) TimerEvent: {}
+[3.122844] (-) TimerEvent: {}
+[3.223629] (-) TimerEvent: {}
+[3.324262] (-) TimerEvent: {}
+[3.424937] (-) TimerEvent: {}
+[3.525657] (-) TimerEvent: {}
+[3.626334] (-) TimerEvent: {}
+[3.726986] (-) TimerEvent: {}
+[3.827717] (-) TimerEvent: {}
+[3.928486] (-) TimerEvent: {}
+[3.990965] (rplidar_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[3.991988] (rplidar_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[3.993071] (rplidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[3.993777] (rplidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.994990] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.028975] (-) TimerEvent: {}
+[4.130232] (-) TimerEvent: {}
+[4.189543] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.230355] (-) TimerEvent: {}
+[4.249544] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.252665] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.270068] (rplidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[4.330531] (-) TimerEvent: {}
+[4.431369] (-) TimerEvent: {}
+[4.532122] (-) TimerEvent: {}
+[4.591504] (rplidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[4.600396] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.632276] (-) TimerEvent: {}
+[4.733212] (-) TimerEvent: {}
+[4.834157] (-) TimerEvent: {}
+[4.924255] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.934326] (-) TimerEvent: {}
+[4.986500] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.989505] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.017646] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[5.034519] (-) TimerEvent: {}
+[5.135509] (-) TimerEvent: {}
+[5.159450] (rplidar_ros) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[5.160828] (rplidar_ros) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.235666] (-) TimerEvent: {}
+[5.336361] (-) TimerEvent: {}
+[5.437339] (-) TimerEvent: {}
+[5.538309] (-) TimerEvent: {}
+[5.656778] (-) TimerEvent: {}
+[5.757753] (-) TimerEvent: {}
+[5.858737] (-) TimerEvent: {}
+[5.959730] (-) TimerEvent: {}
+[6.060862] (-) TimerEvent: {}
+[6.073519] (teleop_omni) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/teleop_omni', 'build', '--build-base', '/home/jetson/SLAM_WS/src/build/teleop_omni/build', 'install', '--record', '/home/jetson/SLAM_WS/src/build/teleop_omni/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/teleop_omni', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.2.1 52261 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS', 'SSH_TTY': '/dev/pts/0', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022899', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/src/build/teleop_omni', 'SSH_CONNECTION': '192.168.2.1 52261 192.168.2.3 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/src/build/teleop_omni/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/src/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[6.085281] (omni_bot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/omni_bot', 'build', '--build-base', '/home/jetson/SLAM_WS/src/build/omni_bot/build', 'install', '--record', '/home/jetson/SLAM_WS/src/build/omni_bot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/omni_bot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.2.1 52261 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS', 'SSH_TTY': '/dev/pts/0', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022899', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/src/build/omni_bot', 'SSH_CONNECTION': '192.168.2.1 52261 192.168.2.3 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/src/build/omni_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[6.098789] (inverse_kinematic) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/inverse_kinematic', 'build', '--build-base', '/home/jetson/SLAM_WS/src/build/inverse_kinematic/build', 'install', '--record', '/home/jetson/SLAM_WS/src/build/inverse_kinematic/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/inverse_kinematic', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.2.1 52261 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS', 'SSH_TTY': '/dev/pts/0', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022899', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/src/build/inverse_kinematic', 'SSH_CONNECTION': '192.168.2.1 52261 192.168.2.3 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/src/build/inverse_kinematic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/src/install/inverse_kinematic/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[6.161102] (-) TimerEvent: {}
+[6.261957] (-) TimerEvent: {}
+[6.363053] (-) TimerEvent: {}
+[6.464046] (-) TimerEvent: {}
+[6.513211] (rplidar_ros) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[6.564212] (-) TimerEvent: {}
+[6.665132] (-) TimerEvent: {}
+[6.766074] (-) TimerEvent: {}
+[6.802580] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.848733] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[6.866231] (-) TimerEvent: {}
+[6.967185] (-) TimerEvent: {}
+[7.068125] (-) TimerEvent: {}
+[7.169101] (-) TimerEvent: {}
+[7.270066] (-) TimerEvent: {}
+[7.283759] (rplidar_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[7.370248] (-) TimerEvent: {}
+[7.404690] (teleop_omni) StdoutLine: {'line': b'running egg_info\n'}
+[7.407289] (teleop_omni) StdoutLine: {'line': b'creating ../build/teleop_omni/teleop_omni.egg-info\n'}
+[7.409181] (teleop_omni) StdoutLine: {'line': b'writing ../build/teleop_omni/teleop_omni.egg-info/PKG-INFO\n'}
+[7.410044] (teleop_omni) StdoutLine: {'line': b'writing dependency_links to ../build/teleop_omni/teleop_omni.egg-info/dependency_links.txt\n'}
+[7.410504] (teleop_omni) StdoutLine: {'line': b'writing entry points to ../build/teleop_omni/teleop_omni.egg-info/entry_points.txt\n'}
+[7.412592] (teleop_omni) StdoutLine: {'line': b'writing requirements to ../build/teleop_omni/teleop_omni.egg-info/requires.txt\n'}
+[7.413168] (teleop_omni) StdoutLine: {'line': b'writing top-level names to ../build/teleop_omni/teleop_omni.egg-info/top_level.txt\n'}
+[7.417426] (teleop_omni) StdoutLine: {'line': b"writing manifest file '../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'\n"}
+[7.423882] (teleop_omni) StdoutLine: {'line': b"reading manifest file '../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'\n"}
+[7.425238] (rplidar_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[7.428565] (teleop_omni) StdoutLine: {'line': b"writing manifest file '../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'\n"}
+[7.431098] (teleop_omni) StdoutLine: {'line': b'running build\n'}
+[7.431747] (teleop_omni) StdoutLine: {'line': b'running build_py\n'}
+[7.432215] (teleop_omni) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/teleop_omni/build\n'}
+[7.432655] (teleop_omni) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/teleop_omni/build/lib\n'}
+[7.433058] (teleop_omni) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/teleop_omni/build/lib/teleop_omni\n'}
+[7.433839] (teleop_omni) StdoutLine: {'line': b'copying teleop_omni/__init__.py -> /home/jetson/SLAM_WS/src/build/teleop_omni/build/lib/teleop_omni\n'}
+[7.434334] (teleop_omni) StdoutLine: {'line': b'copying teleop_omni/teleop_keyboard.py -> /home/jetson/SLAM_WS/src/build/teleop_omni/build/lib/teleop_omni\n'}
+[7.434792] (teleop_omni) StdoutLine: {'line': b'running install\n'}
+[7.435409] (teleop_omni) StdoutLine: {'line': b'running install_lib\n'}
+[7.437459] (teleop_omni) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/teleop_omni/lib/python3.8/site-packages/teleop_omni\n'}
+[7.438288] (teleop_omni) StdoutLine: {'line': b'copying /home/jetson/SLAM_WS/src/build/teleop_omni/build/lib/teleop_omni/__init__.py -> /home/jetson/SLAM_WS/src/install/teleop_omni/lib/python3.8/site-packages/teleop_omni\n'}
+[7.438772] (teleop_omni) StdoutLine: {'line': b'copying /home/jetson/SLAM_WS/src/build/teleop_omni/build/lib/teleop_omni/teleop_keyboard.py -> /home/jetson/SLAM_WS/src/install/teleop_omni/lib/python3.8/site-packages/teleop_omni\n'}
+[7.440539] (teleop_omni) StdoutLine: {'line': b'byte-compiling /home/jetson/SLAM_WS/src/install/teleop_omni/lib/python3.8/site-packages/teleop_omni/__init__.py to __init__.cpython-38.pyc\n'}
+[7.441428] (teleop_omni) StdoutLine: {'line': b'byte-compiling /home/jetson/SLAM_WS/src/install/teleop_omni/lib/python3.8/site-packages/teleop_omni/teleop_keyboard.py to teleop_keyboard.cpython-38.pyc\n'}
+[7.444285] (teleop_omni) StdoutLine: {'line': b'running install_data\n'}
+[7.445219] (teleop_omni) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/teleop_omni/share/ament_index\n'}
+[7.445914] (teleop_omni) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/teleop_omni/share/ament_index/resource_index\n'}
+[7.446513] (teleop_omni) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/teleop_omni/share/ament_index/resource_index/packages\n'}
+[7.446946] (teleop_omni) StdoutLine: {'line': b'copying resource/teleop_omni -> /home/jetson/SLAM_WS/src/install/teleop_omni/share/ament_index/resource_index/packages\n'}
+[7.447441] (teleop_omni) StdoutLine: {'line': b'copying package.xml -> /home/jetson/SLAM_WS/src/install/teleop_omni/share/teleop_omni\n'}
+[7.447906] (teleop_omni) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.454714] (teleop_omni) StdoutLine: {'line': b'Copying ../build/teleop_omni/teleop_omni.egg-info to /home/jetson/SLAM_WS/src/install/teleop_omni/lib/python3.8/site-packages/teleop_omni-0.0.0-py3.8.egg-info\n'}
+[7.458716] (teleop_omni) StdoutLine: {'line': b'running install_scripts\n'}
+[7.461626] (inverse_kinematic) StdoutLine: {'line': b'running egg_info\n'}
+[7.464442] (inverse_kinematic) StdoutLine: {'line': b'creating ../build/inverse_kinematic/inverse_kinematic.egg-info\n'}
+[7.465187] (inverse_kinematic) StdoutLine: {'line': b'writing ../build/inverse_kinematic/inverse_kinematic.egg-info/PKG-INFO\n'}
+[7.465914] (inverse_kinematic) StdoutLine: {'line': b'writing dependency_links to ../build/inverse_kinematic/inverse_kinematic.egg-info/dependency_links.txt\n'}
+[7.466497] (inverse_kinematic) StdoutLine: {'line': b'writing entry points to ../build/inverse_kinematic/inverse_kinematic.egg-info/entry_points.txt\n'}
+[7.467054] (inverse_kinematic) StdoutLine: {'line': b'writing requirements to ../build/inverse_kinematic/inverse_kinematic.egg-info/requires.txt\n'}
+[7.467613] (inverse_kinematic) StdoutLine: {'line': b'writing top-level names to ../build/inverse_kinematic/inverse_kinematic.egg-info/top_level.txt\n'}
+[7.470414] (-) TimerEvent: {}
+[7.474506] (inverse_kinematic) StdoutLine: {'line': b"writing manifest file '../build/inverse_kinematic/inverse_kinematic.egg-info/SOURCES.txt'\n"}
+[7.479304] (omni_bot) StdoutLine: {'line': b'running egg_info\n'}
+[7.482097] (omni_bot) StdoutLine: {'line': b'creating ../build/omni_bot/omni_bot.egg-info\n'}
+[7.482776] (inverse_kinematic) StdoutLine: {'line': b"reading manifest file '../build/inverse_kinematic/inverse_kinematic.egg-info/SOURCES.txt'\n"}
+[7.483452] (omni_bot) StdoutLine: {'line': b'writing ../build/omni_bot/omni_bot.egg-info/PKG-INFO\n'}
+[7.485636] (omni_bot) StdoutLine: {'line': b'writing dependency_links to ../build/omni_bot/omni_bot.egg-info/dependency_links.txt\n'}
+[7.486393] (inverse_kinematic) StdoutLine: {'line': b"writing manifest file '../build/inverse_kinematic/inverse_kinematic.egg-info/SOURCES.txt'\n"}
+[7.487029] (inverse_kinematic) StdoutLine: {'line': b'running build\n'}
+[7.487863] (inverse_kinematic) StdoutLine: {'line': b'running build_py\n'}
+[7.488428] (omni_bot) StdoutLine: {'line': b'writing entry points to ../build/omni_bot/omni_bot.egg-info/entry_points.txt\n'}
+[7.489038] (inverse_kinematic) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/inverse_kinematic/build\n'}
+[7.489678] (inverse_kinematic) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/inverse_kinematic/build/lib\n'}
+[7.490191] (inverse_kinematic) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/inverse_kinematic/build/lib/inverse_kinematic\n'}
+[7.490584] (inverse_kinematic) StdoutLine: {'line': b'copying inverse_kinematic/__init__.py -> /home/jetson/SLAM_WS/src/build/inverse_kinematic/build/lib/inverse_kinematic\n'}
+[7.491094] (omni_bot) StdoutLine: {'line': b'writing requirements to ../build/omni_bot/omni_bot.egg-info/requires.txt\n'}
+[7.491764] (inverse_kinematic) StdoutLine: {'line': b'copying inverse_kinematic/inverse_kinematic_node.py -> /home/jetson/SLAM_WS/src/build/inverse_kinematic/build/lib/inverse_kinematic\n'}
+[7.492230] (inverse_kinematic) StdoutLine: {'line': b'running install\n'}
+[7.492703] (omni_bot) StdoutLine: {'line': b'writing top-level names to ../build/omni_bot/omni_bot.egg-info/top_level.txt\n'}
+[7.494562] (inverse_kinematic) StdoutLine: {'line': b'running install_lib\n'}
+[7.498498] (inverse_kinematic) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/inverse_kinematic/lib/python3.8/site-packages/inverse_kinematic\n'}
+[7.499336] (inverse_kinematic) StdoutLine: {'line': b'copying /home/jetson/SLAM_WS/src/build/inverse_kinematic/build/lib/inverse_kinematic/__init__.py -> /home/jetson/SLAM_WS/src/install/inverse_kinematic/lib/python3.8/site-packages/inverse_kinematic\n'}
+[7.499993] (inverse_kinematic) StdoutLine: {'line': b'copying /home/jetson/SLAM_WS/src/build/inverse_kinematic/build/lib/inverse_kinematic/inverse_kinematic_node.py -> /home/jetson/SLAM_WS/src/install/inverse_kinematic/lib/python3.8/site-packages/inverse_kinematic\n'}
+[7.500630] (omni_bot) StdoutLine: {'line': b"writing manifest file '../build/omni_bot/omni_bot.egg-info/SOURCES.txt'\n"}
+[7.502905] (inverse_kinematic) StdoutLine: {'line': b'byte-compiling /home/jetson/SLAM_WS/src/install/inverse_kinematic/lib/python3.8/site-packages/inverse_kinematic/__init__.py to __init__.cpython-38.pyc\n'}
+[7.504607] (inverse_kinematic) StdoutLine: {'line': b'byte-compiling /home/jetson/SLAM_WS/src/install/inverse_kinematic/lib/python3.8/site-packages/inverse_kinematic/inverse_kinematic_node.py to inverse_kinematic_node.cpython-38.pyc\n'}
+[7.506345] (inverse_kinematic) StdoutLine: {'line': b'running install_data\n'}
+[7.507201] (inverse_kinematic) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/inverse_kinematic/share/ament_index\n'}
+[7.507763] (inverse_kinematic) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/inverse_kinematic/share/ament_index/resource_index\n'}
+[7.515721] (inverse_kinematic) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/inverse_kinematic/share/ament_index/resource_index/packages\n'}
+[7.516257] (inverse_kinematic) StdoutLine: {'line': b'copying resource/inverse_kinematic -> /home/jetson/SLAM_WS/src/install/inverse_kinematic/share/ament_index/resource_index/packages\n'}
+[7.516983] (inverse_kinematic) StdoutLine: {'line': b'copying package.xml -> /home/jetson/SLAM_WS/src/install/inverse_kinematic/share/inverse_kinematic\n'}
+[7.517405] (inverse_kinematic) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.518051] (omni_bot) StdoutLine: {'line': b"reading manifest file '../build/omni_bot/omni_bot.egg-info/SOURCES.txt'\n"}
+[7.518550] (omni_bot) StdoutLine: {'line': b"writing manifest file '../build/omni_bot/omni_bot.egg-info/SOURCES.txt'\n"}
+[7.518995] (omni_bot) StdoutLine: {'line': b'running build\n'}
+[7.519567] (omni_bot) StdoutLine: {'line': b'running build_py\n'}
+[7.520072] (omni_bot) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/omni_bot/build\n'}
+[7.520531] (omni_bot) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/omni_bot/build/lib\n'}
+[7.520981] (omni_bot) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/build/omni_bot/build/lib/omni_bot\n'}
+[7.521436] (omni_bot) StdoutLine: {'line': b'copying omni_bot/__init__.py -> /home/jetson/SLAM_WS/src/build/omni_bot/build/lib/omni_bot\n'}
+[7.522079] (omni_bot) StdoutLine: {'line': b'running install\n'}
+[7.522517] (omni_bot) StdoutLine: {'line': b'running install_lib\n'}
+[7.524500] (inverse_kinematic) StdoutLine: {'line': b'Copying ../build/inverse_kinematic/inverse_kinematic.egg-info to /home/jetson/SLAM_WS/src/install/inverse_kinematic/lib/python3.8/site-packages/inverse_kinematic-0.0.0-py3.8.egg-info\n'}
+[7.531304] (omni_bot) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages/omni_bot\n'}
+[7.531904] (omni_bot) StdoutLine: {'line': b'copying /home/jetson/SLAM_WS/src/build/omni_bot/build/lib/omni_bot/__init__.py -> /home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages/omni_bot\n'}
+[7.532363] (omni_bot) StdoutLine: {'line': b'byte-compiling /home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages/omni_bot/__init__.py to __init__.cpython-38.pyc\n'}
+[7.532756] (omni_bot) StdoutLine: {'line': b'running install_data\n'}
+[7.533137] (inverse_kinematic) StdoutLine: {'line': b'running install_scripts\n'}
+[7.533532] (omni_bot) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/omni_bot/share/ament_index\n'}
+[7.533891] (omni_bot) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/omni_bot/share/ament_index/resource_index\n'}
+[7.534257] (omni_bot) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/omni_bot/share/ament_index/resource_index/packages\n'}
+[7.534678] (omni_bot) StdoutLine: {'line': b'copying resource/omni_bot -> /home/jetson/SLAM_WS/src/install/omni_bot/share/ament_index/resource_index/packages\n'}
+[7.535129] (omni_bot) StdoutLine: {'line': b'copying package.xml -> /home/jetson/SLAM_WS/src/install/omni_bot/share/omni_bot\n'}
+[7.535709] (omni_bot) StdoutLine: {'line': b'creating /home/jetson/SLAM_WS/src/install/omni_bot/share/omni_bot/launch\n'}
+[7.536151] (omni_bot) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.540003] (teleop_omni) StdoutLine: {'line': b'Installing teleop_keyboard script to /home/jetson/SLAM_WS/src/install/teleop_omni/lib/teleop_omni\n'}
+[7.540749] (omni_bot) StdoutLine: {'line': b'Copying ../build/omni_bot/omni_bot.egg-info to /home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages/omni_bot-0.0.0-py3.8.egg-info\n'}
+[7.541853] (teleop_omni) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/src/build/teleop_omni/install.log'\n"}
+[7.545632] (omni_bot) StdoutLine: {'line': b'running install_scripts\n'}
+[7.570599] (-) TimerEvent: {}
+[7.622520] (inverse_kinematic) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/src/build/inverse_kinematic/install.log'\n"}
+[7.633767] (omni_bot) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/src/build/omni_bot/install.log'\n"}
+[7.651838] (teleop_omni) CommandEnded: {'returncode': 0}
+[7.672800] (-) TimerEvent: {}
+[7.724820] (teleop_omni) JobEnded: {'identifier': 'teleop_omni', 'rc': 0}
+[7.736044] (inverse_kinematic) CommandEnded: {'returncode': 0}
+[7.761476] (inverse_kinematic) JobEnded: {'identifier': 'inverse_kinematic', 'rc': 0}
+[7.767061] (omni_bot) CommandEnded: {'returncode': 0}
+[7.772949] (-) TimerEvent: {}
+[7.792825] (omni_bot) JobEnded: {'identifier': 'omni_bot', 'rc': 0}
+[7.873168] (-) TimerEvent: {}
+[7.883798] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.973379] (-) TimerEvent: {}
+[8.074007] (-) TimerEvent: {}
+[8.171220] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[8.174122] (-) TimerEvent: {}
+[8.180531] (rplidar_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.185892] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.274298] (-) TimerEvent: {}
+[8.374963] (-) TimerEvent: {}
+[8.446281] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.447121] (rplidar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.475127] (-) TimerEvent: {}
+[8.576048] (-) TimerEvent: {}
+[8.676643] (-) TimerEvent: {}
+[8.689138] (rplidar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[8.689792] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[8.776865] (-) TimerEvent: {}
+[8.877549] (-) TimerEvent: {}
+[8.882201] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[8.882982] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[8.977711] (-) TimerEvent: {}
+[9.078418] (-) TimerEvent: {}
+[9.114746] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[9.118551] (rplidar_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.178585] (-) TimerEvent: {}
+[9.279226] (-) TimerEvent: {}
+[9.379872] (-) TimerEvent: {}
+[9.480509] (-) TimerEvent: {}
+[9.581096] (-) TimerEvent: {}
+[9.681679] (-) TimerEvent: {}
+[9.782235] (-) TimerEvent: {}
+[9.853993] (rplidar_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[9.882428] (-) TimerEvent: {}
+[9.982969] (-) TimerEvent: {}
+[10.083551] (-) TimerEvent: {}
+[10.184154] (-) TimerEvent: {}
+[10.284694] (-) TimerEvent: {}
+[10.385273] (-) TimerEvent: {}
+[10.386617] (rplidar_ros) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[10.485477] (-) TimerEvent: {}
+[10.586105] (-) TimerEvent: {}
+[10.686795] (-) TimerEvent: {}
+[10.736739] (rplidar_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.787004] (-) TimerEvent: {}
+[10.817019] (rplidar_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[10.849989] (rplidar_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/SLAM_WS/src/build/rplidar_ros\n'}
+[10.878219] (rplidar_ros) CommandEnded: {'returncode': 0}
+[10.880300] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[10.882888] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/SLAM_WS/src/build/rplidar_ros', '--', '-j4', '-l4'], 'cwd': '/home/jetson/SLAM_WS/src/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.2.1 52261 22'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/SLAM_WS'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Nano Developer Kit'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/jetson/SLAM_WS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Nano (4 GB ram)'), ('JETSON_SERIAL_NUMBER', '1420923022899'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Porg'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('AMENT_PREFIX_PATH', '/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/SLAM_WS/src/build/rplidar_ros'), ('SSH_CONNECTION', '192.168.2.1 52261 192.168.2.3 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/ldlidar_stl_ros2'), ('JETSON_P_NUMBER', 'p3448-0000')]), 'shell': False}
+[10.889827] (-) TimerEvent: {}
+[10.990593] (-) TimerEvent: {}
+[11.027660] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidar_client\x1b[0m\n'}
+[11.028365] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidar_composition\x1b[0m\n'}
+[11.028761] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidar_node\x1b[0m\n'}
+[11.090750] (-) TimerEvent: {}
+[11.191375] (-) TimerEvent: {}
+[11.291996] (-) TimerEvent: {}
+[11.343083] (rplidar_ros) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o\x1b[0m\n'}
+[11.351599] (rplidar_ros) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o\x1b[0m\n'}
+[11.369589] (rplidar_ros) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o\x1b[0m\n'}
+[11.375805] (rplidar_ros) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o\x1b[0m\n'}
+[11.392174] (-) TimerEvent: {}
+[11.492905] (-) TimerEvent: {}
+[11.593760] (-) TimerEvent: {}
+[11.694442] (-) TimerEvent: {}
+[11.795390] (-) TimerEvent: {}
+[11.896298] (-) TimerEvent: {}
+[11.997230] (-) TimerEvent: {}
+[12.098154] (-) TimerEvent: {}
+[12.199130] (-) TimerEvent: {}
+[12.300092] (-) TimerEvent: {}
+[12.401053] (-) TimerEvent: {}
+[12.456151] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.456895] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:97:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.457415] (rplidar_ros) StderrLine: {'line': b' bool raw_serial::open(const char * portname, uint32_t baudrate, \x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K)\n'}
+[12.457987] (rplidar_ros) StderrLine: {'line': b'                                                                 \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.458940] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::flush(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.459498] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:281:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.459960] (rplidar_ros) StderrLine: {'line': b' void raw_serial::flush( \x1b[01;35m\x1b[K_u32 flags\x1b[m\x1b[K)\n'}
+[12.460367] (rplidar_ros) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.460768] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.461163] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:286:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.461601] (rplidar_ros) StderrLine: {'line': b' int raw_serial::waitforsent(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[12.462044] (rplidar_ros) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.462441] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.462815] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:292:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.463232] (rplidar_ros) StderrLine: {'line': b' int raw_serial::waitforrecv(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[12.463936] (rplidar_ros) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.464411] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::cancelOperation()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.464847] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:427:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvalue computed is not used [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[12.465270] (rplidar_ros) StderrLine: {'line': b'     \x1b[01;35m\x1b[K(int)::write(_selfpipe[1], "x", 1)\x1b[m\x1b[K;\n'}
+[12.465661] (rplidar_ros) StderrLine: {'line': b'     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.501248] (-) TimerEvent: {}
+[12.602249] (-) TimerEvent: {}
+[12.703375] (-) TimerEvent: {}
+[12.804099] (-) TimerEvent: {}
+[12.881304] (rplidar_ros) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o\x1b[0m\n'}
+[12.904284] (-) TimerEvent: {}
+[13.005040] (-) TimerEvent: {}
+[13.105792] (-) TimerEvent: {}
+[13.206791] (-) TimerEvent: {}
+[13.307754] (-) TimerEvent: {}
+[13.408705] (-) TimerEvent: {}
+[13.509688] (-) TimerEvent: {}
+[13.610630] (-) TimerEvent: {}
+[13.711614] (-) TimerEvent: {}
+[13.812556] (-) TimerEvent: {}
+[13.890691] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.891375] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:97:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.891901] (rplidar_ros) StderrLine: {'line': b' bool raw_serial::open(const char * portname, uint32_t baudrate, \x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K)\n'}
+[13.892682] (rplidar_ros) StderrLine: {'line': b'                                                                 \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[13.893288] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::flush(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.893757] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:281:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.894206] (rplidar_ros) StderrLine: {'line': b' void raw_serial::flush( \x1b[01;35m\x1b[K_u32 flags\x1b[m\x1b[K)\n'}
+[13.894662] (rplidar_ros) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~~~~^~~~~\x1b[m\x1b[K\n'}
+[13.895552] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.896120] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:286:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.896652] (rplidar_ros) StderrLine: {'line': b' int raw_serial::waitforsent(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[13.897201] (rplidar_ros) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[13.897703] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.898176] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:292:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.898953] (rplidar_ros) StderrLine: {'line': b' int raw_serial::waitforrecv(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[13.899498] (rplidar_ros) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[13.899977] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::cancelOperation()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.900446] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:427:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvalue computed is not used [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[13.900931] (rplidar_ros) StderrLine: {'line': b'     \x1b[01;35m\x1b[K(int)::write(_selfpipe[1], "x", 1)\x1b[m\x1b[K;\n'}
+[13.901376] (rplidar_ros) StderrLine: {'line': b'     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.912744] (-) TimerEvent: {}
+[14.013793] (-) TimerEvent: {}
+[14.114792] (-) TimerEvent: {}
+[14.173673] (rplidar_ros) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o\x1b[0m\n'}
+[14.214986] (-) TimerEvent: {}
+[14.315987] (-) TimerEvent: {}
+[14.416975] (-) TimerEvent: {}
+[14.518112] (-) TimerEvent: {}
+[14.619235] (-) TimerEvent: {}
+[14.720309] (-) TimerEvent: {}
+[14.821272] (-) TimerEvent: {}
+[14.922259] (-) TimerEvent: {}
+[15.023232] (-) TimerEvent: {}
+[15.124172] (-) TimerEvent: {}
+[15.225246] (-) TimerEvent: {}
+[15.326274] (-) TimerEvent: {}
+[15.427273] (-) TimerEvent: {}
+[15.528223] (-) TimerEvent: {}
+[15.596435] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[15.597092] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[15.597608] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[15.598162] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[15.598630] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[15.599092] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[15.599607] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[15.600373] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[15.600926] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[15.601393] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[15.601859] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[15.602349] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[15.602844] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[15.603341] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[15.628403] (-) TimerEvent: {}
+[15.729461] (-) TimerEvent: {}
+[15.851099] (-) TimerEvent: {}
+[15.889417] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/arch_linux.h:42\x1b[m\x1b[K,\n'}
+[15.890341] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:41\x1b[m\x1b[K,\n'}
+[15.891117] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[15.891994] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.892836] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:733:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[15.893642] (rplidar_ros) StderrLine: {'line': b'             assert(\x1b[01;35m\x1b[Kans == len\x1b[m\x1b[K);\n'}
+[15.894421] (rplidar_ros) StderrLine: {'line': b'                    \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[15.951303] (-) TimerEvent: {}
+[16.052253] (-) TimerEvent: {}
+[16.153191] (-) TimerEvent: {}
+[16.254170] (-) TimerEvent: {}
+[16.355125] (-) TimerEvent: {}
+[16.456141] (-) TimerEvent: {}
+[16.556826] (-) TimerEvent: {}
+[16.624879] (rplidar_ros) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o\x1b[0m\n'}
+[16.657020] (-) TimerEvent: {}
+[16.757734] (-) TimerEvent: {}
+[16.858493] (-) TimerEvent: {}
+[16.959649] (-) TimerEvent: {}
+[16.988384] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[16.989051] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[16.989554] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[16.990114] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[16.990631] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[16.991126] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[16.992077] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[16.992561] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[16.993035] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[16.993452] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[16.993844] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[16.994250] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[16.994655] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.059821] (-) TimerEvent: {}
+[17.160761] (-) TimerEvent: {}
+[17.261715] (-) TimerEvent: {}
+[17.280425] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[17.281340] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[17.282105] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[17.282836] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[17.283661] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.284465] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[17.285219] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.287895] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[17.288712] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[17.289461] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[17.290218] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.290928] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[17.291670] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.361900] (-) TimerEvent: {}
+[17.462843] (-) TimerEvent: {}
+[17.563825] (-) TimerEvent: {}
+[17.664838] (-) TimerEvent: {}
+[17.765843] (-) TimerEvent: {}
+[17.866826] (-) TimerEvent: {}
+[17.904438] (rplidar_ros) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o\x1b[0m\n'}
+[17.967017] (-) TimerEvent: {}
+[18.067870] (-) TimerEvent: {}
+[18.168851] (-) TimerEvent: {}
+[18.269829] (-) TimerEvent: {}
+[18.370814] (-) TimerEvent: {}
+[18.471822] (-) TimerEvent: {}
+[18.572822] (-) TimerEvent: {}
+[18.673822] (-) TimerEvent: {}
+[18.774823] (-) TimerEvent: {}
+[18.875851] (-) TimerEvent: {}
+[18.890486] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[18.891247] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[18.891775] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[18.892353] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[18.892907] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:39\x1b[m\x1b[K:\n'}
+[18.893416] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[18.893907] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[18.894369] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[18.895318] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[18.895946] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[18.896473] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[18.896955] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[18.897422] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:39\x1b[m\x1b[K:\n'}
+[18.897929] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[18.898423] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[18.898896] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[18.976043] (-) TimerEvent: {}
+[19.077048] (-) TimerEvent: {}
+[19.178045] (-) TimerEvent: {}
+[19.279051] (-) TimerEvent: {}
+[19.282877] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:40\x1b[m\x1b[K:\n'}
+[19.283924] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.284866] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.285782] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[19.286595] (rplidar_ros) StderrLine: {'line': b'                                         \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[19.287546] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.288433] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[19.289241] (rplidar_ros) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.290173] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.291008] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[19.291882] (rplidar_ros) StderrLine: {'line': b'                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[19.292827] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.293673] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[19.294459] (rplidar_ros) StderrLine: {'line': b'                                                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[19.295481] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.307331] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.308014] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[19.308523] (rplidar_ros) StderrLine: {'line': b'                               \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[19.308979] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.309446] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[19.309910] (rplidar_ros) StderrLine: {'line': b'                                           \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[19.310420] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.310913] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[19.311452] (rplidar_ros) StderrLine: {'line': b'                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[19.311971] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.312431] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[19.312893] (rplidar_ros) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[19.379268] (-) TimerEvent: {}
+[19.480003] (-) TimerEvent: {}
+[19.580967] (-) TimerEvent: {}
+[19.681943] (-) TimerEvent: {}
+[19.782895] (-) TimerEvent: {}
+[19.883856] (-) TimerEvent: {}
+[19.984791] (-) TimerEvent: {}
+[20.069682] (rplidar_ros) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o\x1b[0m\n'}
+[20.084977] (-) TimerEvent: {}
+[20.185980] (-) TimerEvent: {}
+[20.286968] (-) TimerEvent: {}
+[20.387953] (-) TimerEvent: {}
+[20.488945] (-) TimerEvent: {}
+[20.589927] (-) TimerEvent: {}
+[20.690928] (-) TimerEvent: {}
+[20.791960] (-) TimerEvent: {}
+[20.898993] (-) TimerEvent: {}
+[21.000026] (-) TimerEvent: {}
+[21.100548] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[21.101199] (-) TimerEvent: {}
+[21.102177] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[21.103043] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[21.104004] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[21.104816] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39\x1b[m\x1b[K:\n'}
+[21.105663] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[21.106262] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[21.106746] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[21.107852] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[21.108828] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[21.109418] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[21.109951] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[21.110433] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39\x1b[m\x1b[K:\n'}
+[21.110909] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[21.111491] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[21.112033] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[21.201400] (-) TimerEvent: {}
+[21.302394] (-) TimerEvent: {}
+[21.403387] (-) TimerEvent: {}
+[21.504379] (-) TimerEvent: {}
+[21.518051] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:40\x1b[m\x1b[K:\n'}
+[21.518778] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.519411] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[21.519981] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[21.520539] (rplidar_ros) StderrLine: {'line': b'                                         \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[21.521069] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[21.521609] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[21.522114] (rplidar_ros) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.522627] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[21.523131] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[21.523709] (rplidar_ros) StderrLine: {'line': b'                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[21.524277] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[21.524805] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[21.525341] (rplidar_ros) StderrLine: {'line': b'                                                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[21.525852] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.526379] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[21.526969] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[21.527560] (rplidar_ros) StderrLine: {'line': b'                               \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[21.528069] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[21.528571] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[21.529040] (rplidar_ros) StderrLine: {'line': b'                                           \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[21.529478] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[21.529941] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[21.530408] (rplidar_ros) StderrLine: {'line': b'                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[21.530850] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[21.543486] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[21.544069] (rplidar_ros) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[21.557089] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::internal::unpacker::UnpackerHandler_DenseCapsuleNode::_onScanNodeDenseCapsuleData(rplidar_response_dense_capsule_measurement_nodes_t&, sl::internal::LIDARSampleDataUnpackerInner*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.557828] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:763:108:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on cast result type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[21.558392] (rplidar_ros) StderrLine: {'line': b'             const int dist = static_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[21.558935] (rplidar_ros) StderrLine: {'line': b'                                                                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[21.604585] (-) TimerEvent: {}
+[21.705337] (-) TimerEvent: {}
+[21.806352] (-) TimerEvent: {}
+[21.907325] (-) TimerEvent: {}
+[22.008363] (-) TimerEvent: {}
+[22.104711] (rplidar_ros) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o\x1b[0m\n'}
+[22.108542] (-) TimerEvent: {}
+[22.209543] (-) TimerEvent: {}
+[22.310542] (-) TimerEvent: {}
+[22.411566] (-) TimerEvent: {}
+[22.512587] (-) TimerEvent: {}
+[22.613573] (-) TimerEvent: {}
+[22.714567] (-) TimerEvent: {}
+[22.815686] (-) TimerEvent: {}
+[22.916697] (-) TimerEvent: {}
+[23.017734] (-) TimerEvent: {}
+[23.118746] (-) TimerEvent: {}
+[23.176220] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[23.177227] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[23.178081] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[23.178914] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[23.179797] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39\x1b[m\x1b[K:\n'}
+[23.180638] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[23.181430] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[23.182224] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.185275] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[23.186191] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[23.187011] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[23.187905] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[23.188746] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39\x1b[m\x1b[K:\n'}
+[23.189610] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[23.190466] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[23.191306] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[23.218948] (-) TimerEvent: {}
+[23.319719] (-) TimerEvent: {}
+[23.420747] (-) TimerEvent: {}
+[23.521750] (-) TimerEvent: {}
+[23.619274] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:40\x1b[m\x1b[K:\n'}
+[23.619945] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.620462] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.620964] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[23.621476] (rplidar_ros) StderrLine: {'line': b'                                         \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[23.621929] (-) TimerEvent: {}
+[23.622724] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.623424] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[23.623959] (rplidar_ros) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.624463] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.624967] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[23.625454] (rplidar_ros) StderrLine: {'line': b'                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[23.625983] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.626473] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[23.626966] (rplidar_ros) StderrLine: {'line': b'                                                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[23.627523] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.628055] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.628563] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[23.629084] (rplidar_ros) StderrLine: {'line': b'                               \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[23.629607] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.630112] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[23.630609] (rplidar_ros) StderrLine: {'line': b'                                           \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[23.631077] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.631665] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[23.632166] (rplidar_ros) StderrLine: {'line': b'                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[23.632661] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[23.633164] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[23.633738] (rplidar_ros) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[23.722144] (-) TimerEvent: {}
+[23.832888] (-) TimerEvent: {}
+[23.933959] (-) TimerEvent: {}
+[24.017128] (rplidar_ros) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o\x1b[0m\n'}
+[24.034162] (-) TimerEvent: {}
+[24.134905] (-) TimerEvent: {}
+[24.235611] (-) TimerEvent: {}
+[24.336609] (-) TimerEvent: {}
+[24.437613] (-) TimerEvent: {}
+[24.538619] (-) TimerEvent: {}
+[24.639693] (-) TimerEvent: {}
+[24.740727] (-) TimerEvent: {}
+[24.841747] (-) TimerEvent: {}
+[24.942760] (-) TimerEvent: {}
+[25.043811] (-) TimerEvent: {}
+[25.088690] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[25.089684] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[25.090535] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[25.091399] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[25.092201] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39\x1b[m\x1b[K:\n'}
+[25.093028] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[25.093848] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[25.094647] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[25.097749] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[25.098709] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[25.099575] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[25.100428] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[25.101241] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39\x1b[m\x1b[K:\n'}
+[25.102052] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[25.102884] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[25.103981] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[25.144000] (-) TimerEvent: {}
+[25.244757] (-) TimerEvent: {}
+[25.345771] (-) TimerEvent: {}
+[25.446777] (-) TimerEvent: {}
+[25.520627] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:40\x1b[m\x1b[K:\n'}
+[25.521301] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.521866] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.522421] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[25.522921] (rplidar_ros) StderrLine: {'line': b'                                         \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[25.523525] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.524016] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[25.524478] (rplidar_ros) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.524935] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.525372] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[25.525784] (rplidar_ros) StderrLine: {'line': b'                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[25.526199] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.526624] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[25.527040] (rplidar_ros) StderrLine: {'line': b'                                                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[25.527532] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.528015] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.528466] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[25.528922] (rplidar_ros) StderrLine: {'line': b'                               \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[25.529971] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.530503] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[25.530983] (rplidar_ros) StderrLine: {'line': b'                                           \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[25.543698] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.544292] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[25.544790] (rplidar_ros) StderrLine: {'line': b'                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[25.545275] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.545755] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[25.546251] (rplidar_ros) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[25.546898] (-) TimerEvent: {}
+[25.647557] (-) TimerEvent: {}
+[25.748537] (-) TimerEvent: {}
+[25.849510] (-) TimerEvent: {}
+[25.894474] (rplidar_ros) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o\x1b[0m\n'}
+[25.949703] (-) TimerEvent: {}
+[26.050687] (-) TimerEvent: {}
+[26.151772] (-) TimerEvent: {}
+[26.252759] (-) TimerEvent: {}
+[26.312595] (rplidar_ros) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o\x1b[0m\n'}
+[26.352963] (-) TimerEvent: {}
+[26.453705] (-) TimerEvent: {}
+[26.554716] (-) TimerEvent: {}
+[26.619239] (rplidar_ros) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/arch/linux/timer.cpp.o\x1b[0m\n'}
+[26.654947] (-) TimerEvent: {}
+[26.756345] (-) TimerEvent: {}
+[26.857428] (-) TimerEvent: {}
+[26.918146] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[26.918798] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[26.919324] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[26.919852] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[26.920348] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[26.920801] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[26.921274] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[26.922040] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[26.922632] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[26.923127] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[26.923706] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[26.924213] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[26.924724] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[26.925195] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[26.957629] (-) TimerEvent: {}
+[27.058355] (-) TimerEvent: {}
+[27.069434] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/hal/thread.cpp:43\x1b[m\x1b[K:\n'}
+[27.070425] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.071376] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:52:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcast between incompatible function types from \xe2\x80\x98\x1b[01m\x1b[Kthread_proc_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wcast-function-type\x1b[m\x1b[K]\n'}
+[27.072236] (rplidar_ros) StderrLine: {'line': b'     pthread_create((pthread_t *)&newborn._handle, NULL, (void * (*)(void *))\x1b[01;35m\x1b[Kproc\x1b[m\x1b[K, data);\n'}
+[27.073011] (rplidar_ros) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[27.076985] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::hal::Thread::join(long unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.077939] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:176:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[27.078776] (rplidar_ros) StderrLine: {'line': b' u_result Thread::join(\x1b[01;35m\x1b[Kunsigned long timeout\x1b[m\x1b[K)\n'}
+[27.079831] (rplidar_ros) StderrLine: {'line': b'                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[27.158549] (-) TimerEvent: {}
+[27.259594] (-) TimerEvent: {}
+[27.289489] (rplidar_ros) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o\x1b[0m\n'}
+[27.349690] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[27.350336] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[27.350859] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[27.351404] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[27.351918] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[27.352418] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[27.352897] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[27.355505] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[27.356426] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[27.357195] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[27.357932] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[27.358734] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[27.359611] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[27.360230] (-) TimerEvent: {}
+[27.361256] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[27.460431] (-) TimerEvent: {}
+[27.561420] (-) TimerEvent: {}
+[27.563120] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/arch_linux.h:42\x1b[m\x1b[K,\n'}
+[27.564102] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:41\x1b[m\x1b[K,\n'}
+[27.564950] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[27.565815] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.566688] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:733:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[27.567631] (rplidar_ros) StderrLine: {'line': b'             assert(\x1b[01;35m\x1b[Kans == len\x1b[m\x1b[K);\n'}
+[27.568498] (rplidar_ros) StderrLine: {'line': b'                    \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[27.661613] (-) TimerEvent: {}
+[27.708589] (rplidar_ros) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o\x1b[0m\n'}
+[27.761811] (-) TimerEvent: {}
+[27.862911] (-) TimerEvent: {}
+[27.964191] (-) TimerEvent: {}
+[28.065277] (-) TimerEvent: {}
+[28.090484] (rplidar_ros) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/dataunpacker.cpp.o\x1b[0m\n'}
+[28.168124] (-) TimerEvent: {}
+[28.269249] (-) TimerEvent: {}
+[28.317357] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[28.318328] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[28.319239] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[28.320150] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[28.321082] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[28.322002] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[28.322893] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[28.326026] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[28.326979] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[28.328092] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[28.328934] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[28.329805] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[28.330663] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[28.331535] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[28.369443] (-) TimerEvent: {}
+[28.470201] (-) TimerEvent: {}
+[28.571239] (-) TimerEvent: {}
+[28.588893] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.589834] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:67:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.590630] (rplidar_ros) StderrLine: {'line': b'     u_result RPlidarDriver::connect(const char *path, _u32 portOrBaud, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[28.591464] (rplidar_ros) StderrLine: {'line': b'                                                                        \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[28.593093] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::reset(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.594026] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:101:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.594807] (rplidar_ros) StderrLine: {'line': b'     u_result RPlidarDriver::reset(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[28.595619] (rplidar_ros) StderrLine: {'line': b'                                   \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[28.599841] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.600888] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:180:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knodebuffer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.601766] (rplidar_ros) StderrLine: {'line': b'     u_result RPlidarDriver::getScanDataWithInterval(\x1b[01;35m\x1b[Krplidar_response_measurement_node_t * nodebuffer\x1b[m\x1b[K, size_t & count)\n'}
+[28.602527] (rplidar_ros) StderrLine: {'line': b'                                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.603440] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/rplidar_driver.cpp:180:112:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcount\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.604323] (rplidar_ros) StderrLine: {'line': b'     u_result RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t * nodebuffer, \x1b[01;35m\x1b[Ksize_t & count\x1b[m\x1b[K)\n'}
+[28.605181] (rplidar_ros) StderrLine: {'line': b'                                                                                                       \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[28.671407] (-) TimerEvent: {}
+[28.747483] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[28.748474] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[28.749373] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[28.750246] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp:35\x1b[m\x1b[K:\n'}
+[28.751110] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[28.752026] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[28.752905] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[28.755967] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[28.756894] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[28.757743] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[28.758554] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp:35\x1b[m\x1b[K:\n'}
+[28.759419] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[28.760229] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[28.760991] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[28.771586] (-) TimerEvent: {}
+[28.872358] (-) TimerEvent: {}
+[28.873803] (rplidar_ros) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o\x1b[0m\n'}
+[28.915545] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[28.916202] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_crc.h:36\x1b[m\x1b[K,\n'}
+[28.916682] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_crc.cpp:33\x1b[m\x1b[K:\n'}
+[28.917264] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[28.917763] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[28.918236] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[28.919007] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_crc.h:36\x1b[m\x1b[K,\n'}
+[28.919680] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_crc.cpp:33\x1b[m\x1b[K:\n'}
+[28.920175] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[28.920660] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[28.921130] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[28.972558] (-) TimerEvent: {}
+[28.998935] (rplidar_ros) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o\x1b[0m\n'}
+[29.072759] (-) TimerEvent: {}
+[29.117151] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp:44\x1b[m\x1b[K:\n'}
+[29.117799] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.118227] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.118683] (rplidar_ros) StderrLine: {'line': b'  virtual void   onChannelError(\x1b[01;35m\x1b[Ku_result errCode\x1b[m\x1b[K) {}\n'}
+[29.119196] (rplidar_ros) StderrLine: {'line': b'                                \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[29.145532] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[29.146208] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[29.146731] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[29.147385] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[29.148235] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:39\x1b[m\x1b[K:\n'}
+[29.148693] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[29.149179] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[29.149629] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[29.150143] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[29.150631] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[29.151096] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[29.151627] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[29.152100] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:39\x1b[m\x1b[K:\n'}
+[29.152552] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[29.152986] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[29.153717] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[29.172949] (-) TimerEvent: {}
+[29.273975] (-) TimerEvent: {}
+[29.374945] (-) TimerEvent: {}
+[29.475985] (-) TimerEvent: {}
+[29.554426] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:40\x1b[m\x1b[K:\n'}
+[29.555428] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.556325] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.557212] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[29.558171] (rplidar_ros) StderrLine: {'line': b'                                         \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[29.559253] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.560164] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[29.561084] (rplidar_ros) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[29.562168] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.563090] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[29.564103] (rplidar_ros) StderrLine: {'line': b'                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[29.565201] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.566120] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[29.567020] (rplidar_ros) StderrLine: {'line': b'                                                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[29.568178] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.575367] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.576079] (-) TimerEvent: {}
+[29.576835] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[29.577422] (rplidar_ros) StderrLine: {'line': b'                               \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[29.577890] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.578326] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[29.578747] (rplidar_ros) StderrLine: {'line': b'                                           \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[29.579141] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.579713] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[29.580140] (rplidar_ros) StderrLine: {'line': b'                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[29.580647] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[29.581111] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[29.581538] (rplidar_ros) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[29.595808] (rplidar_ros) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o\x1b[0m\n'}
+[29.676276] (-) TimerEvent: {}
+[29.776964] (-) TimerEvent: {}
+[29.877956] (-) TimerEvent: {}
+[29.978945] (-) TimerEvent: {}
+[30.023342] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[30.023963] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[30.024381] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[30.024773] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[30.025314] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[30.025748] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[30.026147] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.026830] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[30.027368] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[30.027875] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[30.028327] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[30.028735] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[30.029197] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[30.029642] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.079188] (-) TimerEvent: {}
+[30.180158] (-) TimerEvent: {}
+[30.281143] (-) TimerEvent: {}
+[30.344955] (rplidar_ros) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o\x1b[0m\n'}
+[30.381332] (-) TimerEvent: {}
+[30.482359] (-) TimerEvent: {}
+[30.504452] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:50\x1b[m\x1b[K:\n'}
+[30.505109] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.505631] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.506137] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[30.506597] (rplidar_ros) StderrLine: {'line': b'                                         \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.507050] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.507590] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[30.508027] (rplidar_ros) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.508443] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.508879] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[30.509277] (rplidar_ros) StderrLine: {'line': b'                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[30.509662] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.510044] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[30.510441] (rplidar_ros) StderrLine: {'line': b'                                                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[30.510839] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.511359] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.511836] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[30.512238] (rplidar_ros) StderrLine: {'line': b'                               \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[30.512680] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.513162] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[30.513625] (rplidar_ros) StderrLine: {'line': b'                                           \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.514036] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.514470] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[30.514882] (rplidar_ros) StderrLine: {'line': b'                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.515323] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.515754] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[30.516148] (rplidar_ros) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[30.537364] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:51\x1b[m\x1b[K:\n'}
+[30.537998] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.538500] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.538945] (rplidar_ros) StderrLine: {'line': b'  virtual void   onChannelError(\x1b[01;35m\x1b[Ku_result errCode\x1b[m\x1b[K) {}\n'}
+[30.539432] (rplidar_ros) StderrLine: {'line': b'                                \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.582660] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[30.583299] (-) TimerEvent: {}
+[30.584014] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[30.584563] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[30.585419] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp:35\x1b[m\x1b[K:\n'}
+[30.585959] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[30.586480] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[30.586937] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.587388] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[30.588023] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[30.588702] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[30.589360] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp:35\x1b[m\x1b[K:\n'}
+[30.590043] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[30.590709] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[30.591376] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[30.631567] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::reset(sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.632215] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:511:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.632685] (rplidar_ros) StderrLine: {'line': b'         sl_result reset(\x1b[01;35m\x1b[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[30.633111] (rplidar_ros) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.643807] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::startScan(bool, bool, sl_u32, sl::LidarScanMode*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.644441] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:586:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Koptions\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.644892] (rplidar_ros) StderrLine: {'line': b'         sl_result startScan(bool force, bool useTypicalScan, \x1b[01;35m\x1b[Ksl_u32 options = 0\x1b[m\x1b[K, LidarScanMode* outUsedScanMode = nullptr)\n'}
+[30.645355] (rplidar_ros) StderrLine: {'line': b'                                                              \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.651454] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::stop(sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.652104] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:763:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.652599] (rplidar_ros) StderrLine: {'line': b'         sl_result stop(\x1b[01;35m\x1b[Ksl_u32 timeout = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[30.653035] (rplidar_ros) StderrLine: {'line': b'                        \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.659302] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getFrequency(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.659929] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:880:110:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knodes\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.660387] (rplidar_ros) StderrLine: {'line': b'         sl_result getFrequency(const LidarScanMode& scanMode, \x1b[01;35m\x1b[Kconst sl_lidar_response_measurement_node_hq_t* nodes\x1b[m\x1b[K, size_t count, float& frequency)\n'}
+[30.660810] (rplidar_ros) StderrLine: {'line': b'                                                               \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[30.668417] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getMotorInfo(sl::LidarMotorInfo&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.669059] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1023:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.669527] (rplidar_ros) StderrLine: {'line': b'         sl_result getMotorInfo(LidarMotorInfo &motorInfo, \x1b[01;35m\x1b[Ksl_u32 timeoutInMs\x1b[m\x1b[K)\n'}
+[30.669939] (rplidar_ros) StderrLine: {'line': b'                                                           \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.673156] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result sl::SlamtecLidarDriver::getScanModeCount(sl_u16&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.673774] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1199:61:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.674296] (rplidar_ros) StderrLine: {'line': b'         u_result getScanModeCount(sl_u16& modeCount, \x1b[01;35m\x1b[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[30.674752] (rplidar_ros) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.683494] (-) TimerEvent: {}
+[30.779540] (rplidar_ros) StderrLine: {'line': b'/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::RawSampleNodeHolder<T>::pushNode(_u64, const T*) [with T = sl_lidar_response_measurement_node_hq_t; _u64 = long unsigned int]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.780266] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1648:61:\x1b[m\x1b[K   required from here\n'}
+[30.780839] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:202:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimestamp_uS\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.781457] (rplidar_ros) StderrLine: {'line': b'         void pushNode(\x1b[01;35m\x1b[K_u64 timestamp_uS\x1b[m\x1b[K, const T* node)\n'}
+[30.782031] (rplidar_ros) StderrLine: {'line': b'                       \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.783678] (-) TimerEvent: {}
+[30.884739] (-) TimerEvent: {}
+[30.985931] (-) TimerEvent: {}
+[31.017258] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp:49\x1b[m\x1b[K:\n'}
+[31.018274] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.019231] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.020174] (rplidar_ros) StderrLine: {'line': b'  virtual void   onChannelError(\x1b[01;35m\x1b[Ku_result errCode\x1b[m\x1b[K) {}\n'}
+[31.021136] (rplidar_ros) StderrLine: {'line': b'                                \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[31.086135] (-) TimerEvent: {}
+[31.162136] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K At global scope:\n'}
+[31.162752] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:83:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid sl::convert(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[31.163762] (rplidar_ros) StderrLine: {'line': b'     static void \x1b[01;35m\x1b[Kconvert\x1b[m\x1b[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)\n'}
+[31.164409] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[31.165003] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:75:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid sl::convert(const sl_lidar_response_measurement_node_t&, sl_lidar_response_measurement_node_hq_t&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[31.165643] (rplidar_ros) StderrLine: {'line': b'     static void \x1b[01;35m\x1b[Kconvert\x1b[m\x1b[K(const sl_lidar_response_measurement_node_t& from, sl_lidar_response_measurement_node_hq_t& to)\n'}
+[31.166206] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[31.166771] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:70:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid sl::printDeprecationWarn(const char*, const char*)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[31.167393] (rplidar_ros) StderrLine: {'line': b'     static void \x1b[01;35m\x1b[KprintDeprecationWarn\x1b[m\x1b[K(const char* fn, const char* replacement)\n'}
+[31.167973] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.186334] (-) TimerEvent: {}
+[31.222337] (rplidar_ros) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX executable rplidar_client\x1b[0m\n'}
+[31.286541] (-) TimerEvent: {}
+[31.350114] (rplidar_ros) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o\x1b[0m\n'}
+[31.386741] (-) TimerEvent: {}
+[31.401453] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[31.402878] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[31.404581] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[31.405640] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[31.406565] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39\x1b[m\x1b[K:\n'}
+[31.407055] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[31.407560] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[31.408331] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[31.408790] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[31.409231] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[31.409635] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[31.410101] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[31.410554] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39\x1b[m\x1b[K:\n'}
+[31.411043] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[31.411933] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[31.412534] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[31.487400] (-) TimerEvent: {}
+[31.588180] (-) TimerEvent: {}
+[31.689043] (-) TimerEvent: {}
+[31.789829] (-) TimerEvent: {}
+[31.853868] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:40\x1b[m\x1b[K:\n'}
+[31.854838] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.855968] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.857145] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[31.858275] (rplidar_ros) StderrLine: {'line': b'                                         \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[31.859582] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.860810] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[31.861955] (rplidar_ros) StderrLine: {'line': b'                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.863252] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.864212] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[31.865088] (rplidar_ros) StderrLine: {'line': b'                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[31.866133] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.867054] (rplidar_ros) StderrLine: {'line': b'  virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[31.869235] (rplidar_ros) StderrLine: {'line': b'                                                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[31.869949] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.870605] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.871251] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[31.871864] (rplidar_ros) StderrLine: {'line': b'                               \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[31.872459] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.878928] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[31.879700] (rplidar_ros) StderrLine: {'line': b'                                           \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[31.880294] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.880978] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[31.881620] (rplidar_ros) StderrLine: {'line': b'                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[31.882323] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[31.883020] (rplidar_ros) StderrLine: {'line': b'  virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[31.883740] (rplidar_ros) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[31.895329] (-) TimerEvent: {}
+[31.922555] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::internal::unpacker::UnpackerHandler_DenseCapsuleNode::_onScanNodeDenseCapsuleData(rplidar_response_dense_capsule_measurement_nodes_t&, sl::internal::LIDARSampleDataUnpackerInner*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.923555] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:763:108:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on cast result type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[31.924489] (rplidar_ros) StderrLine: {'line': b'             const int dist = static_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[31.925409] (rplidar_ros) StderrLine: {'line': b'                                                                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[31.995519] (-) TimerEvent: {}
+[32.096552] (-) TimerEvent: {}
+[32.144794] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[32.145728] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[32.146577] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_serial_channel.cpp:33\x1b[m\x1b[K:\n'}
+[32.147467] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[32.148311] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[32.149103] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[32.152410] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[32.153367] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_serial_channel.cpp:33\x1b[m\x1b[K:\n'}
+[32.154309] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[32.155284] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[32.156193] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[32.196756] (-) TimerEvent: {}
+[32.297519] (-) TimerEvent: {}
+[32.398487] (-) TimerEvent: {}
+[32.419103] (rplidar_ros) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o\x1b[0m\n'}
+[32.469209] (rplidar_ros) StdoutLine: {'line': b'[ 63%] Built target rplidar_client\n'}
+[32.482782] (rplidar_ros) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o\x1b[0m\n'}
+[32.498680] (-) TimerEvent: {}
+[32.507710] (rplidar_ros) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o\x1b[0m\n'}
+[32.598869] (-) TimerEvent: {}
+[32.699819] (-) TimerEvent: {}
+[32.800729] (-) TimerEvent: {}
+[32.880910] (rplidar_ros) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o\x1b[0m\n'}
+[32.900919] (-) TimerEvent: {}
+[33.001615] (-) TimerEvent: {}
+[33.096671] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[33.097584] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[33.098348] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:33\x1b[m\x1b[K:\n'}
+[33.099150] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[33.100018] (rplidar_ros) StderrLine: {'line': b'     sl_u8 data[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[33.100762] (rplidar_ros) StderrLine: {'line': b'                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.101755] (-) TimerEvent: {}
+[33.104189] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[33.105063] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:33\x1b[m\x1b[K:\n'}
+[33.105819] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[33.106619] (rplidar_ros) StderrLine: {'line': b'     sl_u8  payload[0\x1b[01;35m\x1b[K]\x1b[m\x1b[K;\n'}
+[33.107430] (rplidar_ros) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[33.122924] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::TcpChannel::setStatus(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.123946] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/SLAM_WS/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:109:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[33.124775] (rplidar_ros) StderrLine: {'line': b'         void setStatus(\x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K){}\n'}
+[33.125549] (rplidar_ros) StderrLine: {'line': b'                        \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[33.201957] (-) TimerEvent: {}
+[33.303013] (-) TimerEvent: {}
+[33.337921] (rplidar_ros) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/hal/thread.cpp.o\x1b[0m\n'}
+[33.376184] (rplidar_ros) StderrLine: {'line': b'make[2]: *** [CMakeFiles/rplidar_node.dir/build.make:141: CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o] Interrupt\n'}
+[33.376882] (rplidar_ros) StderrLine: {'line': b'make[2]: *** [CMakeFiles/rplidar_node.dir/build.make:154: CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o] Interrupt\n'}
+[33.377400] (rplidar_ros) StderrLine: {'line': b'make[2]: *** [CMakeFiles/rplidar_node.dir/build.make:167: CMakeFiles/rplidar_node.dir/sdk/src/hal/thread.cpp.o] Interrupt\n'}
+[33.378140] (rplidar_ros) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/rplidar_node.dir/all] Interrupt\n'}
+[33.378620] (rplidar_ros) StderrLine: {'line': b'make[2]: *** wait: No child processes.  Stop.\n'}
+[33.379059] (rplidar_ros) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[33.379545] (rplidar_ros) StderrLine: {'line': b'make[2]: *** wait: No child processes.  Stop.\n'}
+[33.379979] (rplidar_ros) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/rplidar_composition.dir/all] Error 2\n'}
+[33.381848] (rplidar_ros) StderrLine: {'line': b'make: *** [Makefile:141: all] Interrupt\n'}
+[33.388021] (rplidar_ros) CommandEnded: {'returncode': -2}
+[33.403327] (-) TimerEvent: {}
+[33.407959] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 'SIGINT'}
+[33.419499] (-) EventReactorShutdown: {}

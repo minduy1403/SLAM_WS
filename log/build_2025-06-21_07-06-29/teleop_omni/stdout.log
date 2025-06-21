@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/teleop_omni/teleop_omni.egg-info
+writing ../../build/teleop_omni/teleop_omni.egg-info/PKG-INFO
+writing dependency_links to ../../build/teleop_omni/teleop_omni.egg-info/dependency_links.txt
+writing entry points to ../../build/teleop_omni/teleop_omni.egg-info/entry_points.txt
+writing requirements to ../../build/teleop_omni/teleop_omni.egg-info/requires.txt
+writing top-level names to ../../build/teleop_omni/teleop_omni.egg-info/top_level.txt
+writing manifest file '../../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'
+reading manifest file '../../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'
+writing manifest file '../../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jetson/SLAM_WS/build/teleop_omni/build
+creating /home/jetson/SLAM_WS/build/teleop_omni/build/lib
+creating /home/jetson/SLAM_WS/build/teleop_omni/build/lib/teleop_omni
+copying teleop_omni/__init__.py -> /home/jetson/SLAM_WS/build/teleop_omni/build/lib/teleop_omni
+copying teleop_omni/teleop_keyboard.py -> /home/jetson/SLAM_WS/build/teleop_omni/build/lib/teleop_omni
+running install
+running install_lib
+creating /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni
+copying /home/jetson/SLAM_WS/build/teleop_omni/build/lib/teleop_omni/__init__.py -> /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni
+copying /home/jetson/SLAM_WS/build/teleop_omni/build/lib/teleop_omni/teleop_keyboard.py -> /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni
+byte-compiling /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni/teleop_keyboard.py to teleop_keyboard.cpython-38.pyc
+running install_data
+creating /home/jetson/SLAM_WS/install/teleop_omni/share/ament_index
+creating /home/jetson/SLAM_WS/install/teleop_omni/share/ament_index/resource_index
+creating /home/jetson/SLAM_WS/install/teleop_omni/share/ament_index/resource_index/packages
+copying resource/teleop_omni -> /home/jetson/SLAM_WS/install/teleop_omni/share/ament_index/resource_index/packages
+copying package.xml -> /home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni
+running install_egg_info
+Copying ../../build/teleop_omni/teleop_omni.egg-info to /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni-0.0.0-py3.8.egg-info
+running install_scripts
+Installing teleop_keyboard script to /home/jetson/SLAM_WS/install/teleop_omni/lib/teleop_omni
+writing list of installed files to '/home/jetson/SLAM_WS/build/teleop_omni/install.log'

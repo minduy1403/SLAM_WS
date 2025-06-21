@@ -1,0 +1,34 @@
+[6.046s] Invoking command in '/home/jetson/SLAM_WS/src/omni_bot': PYTHONPATH=/home/jetson/SLAM_WS/src/build/omni_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/omni_bot build --build-base /home/jetson/SLAM_WS/src/build/omni_bot/build install --record /home/jetson/SLAM_WS/src/build/omni_bot/install.log --single-version-externally-managed install_data
+[7.435s] running egg_info
+[7.438s] creating ../build/omni_bot/omni_bot.egg-info
+[7.439s] writing ../build/omni_bot/omni_bot.egg-info/PKG-INFO
+[7.441s] writing dependency_links to ../build/omni_bot/omni_bot.egg-info/dependency_links.txt
+[7.444s] writing entry points to ../build/omni_bot/omni_bot.egg-info/entry_points.txt
+[7.447s] writing requirements to ../build/omni_bot/omni_bot.egg-info/requires.txt
+[7.448s] writing top-level names to ../build/omni_bot/omni_bot.egg-info/top_level.txt
+[7.456s] writing manifest file '../build/omni_bot/omni_bot.egg-info/SOURCES.txt'
+[7.473s] reading manifest file '../build/omni_bot/omni_bot.egg-info/SOURCES.txt'
+[7.474s] writing manifest file '../build/omni_bot/omni_bot.egg-info/SOURCES.txt'
+[7.474s] running build
+[7.475s] running build_py
+[7.475s] creating /home/jetson/SLAM_WS/src/build/omni_bot/build
+[7.476s] creating /home/jetson/SLAM_WS/src/build/omni_bot/build/lib
+[7.476s] creating /home/jetson/SLAM_WS/src/build/omni_bot/build/lib/omni_bot
+[7.477s] copying omni_bot/__init__.py -> /home/jetson/SLAM_WS/src/build/omni_bot/build/lib/omni_bot
+[7.477s] running install
+[7.478s] running install_lib
+[7.487s] creating /home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages/omni_bot
+[7.487s] copying /home/jetson/SLAM_WS/src/build/omni_bot/build/lib/omni_bot/__init__.py -> /home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages/omni_bot
+[7.488s] byte-compiling /home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages/omni_bot/__init__.py to __init__.cpython-38.pyc
+[7.488s] running install_data
+[7.489s] creating /home/jetson/SLAM_WS/src/install/omni_bot/share/ament_index
+[7.489s] creating /home/jetson/SLAM_WS/src/install/omni_bot/share/ament_index/resource_index
+[7.490s] creating /home/jetson/SLAM_WS/src/install/omni_bot/share/ament_index/resource_index/packages
+[7.490s] copying resource/omni_bot -> /home/jetson/SLAM_WS/src/install/omni_bot/share/ament_index/resource_index/packages
+[7.491s] copying package.xml -> /home/jetson/SLAM_WS/src/install/omni_bot/share/omni_bot
+[7.491s] creating /home/jetson/SLAM_WS/src/install/omni_bot/share/omni_bot/launch
+[7.491s] running install_egg_info
+[7.496s] Copying ../build/omni_bot/omni_bot.egg-info to /home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages/omni_bot-0.0.0-py3.8.egg-info
+[7.501s] running install_scripts
+[7.589s] writing list of installed files to '/home/jetson/SLAM_WS/src/build/omni_bot/install.log'
+[7.723s] Invoked command in '/home/jetson/SLAM_WS/src/omni_bot' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/src/build/omni_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/src/install/omni_bot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/omni_bot build --build-base /home/jetson/SLAM_WS/src/build/omni_bot/build install --record /home/jetson/SLAM_WS/src/build/omni_bot/install.log --single-version-externally-managed install_data

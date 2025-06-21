@@ -1,0 +1,21 @@
+[6.269s] Invoking command in '/home/jetson/SLAM_WS/src/kinematics': PYTHONPATH=/home/jetson/SLAM_WS/build/kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinematics build --build-base /home/jetson/SLAM_WS/build/kinematics/build install --record /home/jetson/SLAM_WS/build/kinematics/install.log --single-version-externally-managed install_data
+[7.631s] running egg_info
+[7.633s] writing ../../build/kinematics/kinematics.egg-info/PKG-INFO
+[7.635s] writing dependency_links to ../../build/kinematics/kinematics.egg-info/dependency_links.txt
+[7.635s] writing entry points to ../../build/kinematics/kinematics.egg-info/entry_points.txt
+[7.639s] writing requirements to ../../build/kinematics/kinematics.egg-info/requires.txt
+[7.640s] writing top-level names to ../../build/kinematics/kinematics.egg-info/top_level.txt
+[7.649s] reading manifest file '../../build/kinematics/kinematics.egg-info/SOURCES.txt'
+[7.654s] writing manifest file '../../build/kinematics/kinematics.egg-info/SOURCES.txt'
+[7.655s] running build
+[7.656s] running build_py
+[7.658s] running install
+[7.662s] running install_lib
+[7.670s] running install_data
+[7.671s] copying resource/kinematics -> /home/jetson/SLAM_WS/install/kinematics/share/ament_index/resource_index/packages
+[7.672s] running install_egg_info
+[7.683s] Copying ../../build/kinematics/kinematics.egg-info to /home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages/kinematics-0.0.0-py3.8.egg-info
+[7.687s] running install_scripts
+[7.768s] Installing kinematics script to /home/jetson/SLAM_WS/install/kinematics/lib/inverse_kinematic
+[7.772s] writing list of installed files to '/home/jetson/SLAM_WS/build/kinematics/install.log'
+[7.897s] Invoked command in '/home/jetson/SLAM_WS/src/kinematics' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinematics build --build-base /home/jetson/SLAM_WS/build/kinematics/build install --record /home/jetson/SLAM_WS/build/kinematics/install.log --single-version-externally-managed install_data

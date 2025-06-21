@@ -1,0 +1,3 @@
+[console_scripts]
+kinematics = kinematics.inverse_kinematic_node:main
+

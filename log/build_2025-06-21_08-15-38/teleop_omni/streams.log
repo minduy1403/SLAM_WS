@@ -1,0 +1,21 @@
+[6.133s] Invoking command in '/home/jetson/SLAM_WS/src/teleop_omni': PYTHONPATH=/home/jetson/SLAM_WS/build/teleop_omni/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_omni build --build-base /home/jetson/SLAM_WS/build/teleop_omni/build install --record /home/jetson/SLAM_WS/build/teleop_omni/install.log --single-version-externally-managed install_data
+[7.488s] running egg_info
+[7.490s] writing ../../build/teleop_omni/teleop_omni.egg-info/PKG-INFO
+[7.491s] writing dependency_links to ../../build/teleop_omni/teleop_omni.egg-info/dependency_links.txt
+[7.493s] writing entry points to ../../build/teleop_omni/teleop_omni.egg-info/entry_points.txt
+[7.494s] writing requirements to ../../build/teleop_omni/teleop_omni.egg-info/requires.txt
+[7.496s] writing top-level names to ../../build/teleop_omni/teleop_omni.egg-info/top_level.txt
+[7.512s] reading manifest file '../../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'
+[7.517s] writing manifest file '../../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'
+[7.518s] running build
+[7.518s] running build_py
+[7.520s] running install
+[7.525s] running install_lib
+[7.532s] running install_data
+[7.533s] running install_egg_info
+[7.543s] removing '/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni-0.0.0-py3.8.egg-info' (and everything under it)
+[7.546s] Copying ../../build/teleop_omni/teleop_omni.egg-info to /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni-0.0.0-py3.8.egg-info
+[7.551s] running install_scripts
+[7.635s] Installing teleop_keyboard script to /home/jetson/SLAM_WS/install/teleop_omni/lib/teleop_omni
+[7.637s] writing list of installed files to '/home/jetson/SLAM_WS/build/teleop_omni/install.log'
+[7.769s] Invoked command in '/home/jetson/SLAM_WS/src/teleop_omni' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/teleop_omni/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_omni build --build-base /home/jetson/SLAM_WS/build/teleop_omni/build install --record /home/jetson/SLAM_WS/build/teleop_omni/install.log --single-version-externally-managed install_data
