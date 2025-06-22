@@ -19,6 +19,5 @@ def generate_launch_description():
             executable='serial_driver',
             name='serial_driver',
             output='screen',
-            parameters=[{'serial_port': '/dev/ttyUSB0'}]
         ),
     ])
