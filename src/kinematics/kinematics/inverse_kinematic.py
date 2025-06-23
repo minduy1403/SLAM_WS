@@ -7,69 +7,59 @@ from std_msgs.msg import Float32MultiArray
 class InverseKinematicNode(Node):
     def __init__(self):
         super().__init__('inverse_kinematic')
-        # Subscribe to cmd_vel
-        self.subscription = self.create_subscription(
-            Twist,
-            'cmd_vel',
-            self.cmd_vel_callback,
-            10
-        )
-        self.subscription  # avoid unused warning
+        # Subscribe to cmd_vel topic
+        self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
+        # Publisher for wheel speeds in RPM
+        self.pub = self.create_publisher(Float32MultiArray, 'wheel_speeds', 10)
 
-        # Publisher wheel speeds
-        self.pub = self.create_publisher(
-            Float32MultiArray,
-            'wheel_speeds',
-            10
-        )
-
-        # Robot parameters
+        # Robot geometry
         self.r = 0.04   # wheel radius (m)
-        self.L = 0.15   # robot radius (m)
-        # Wheel orientation angles (rad)
-        self.theta = [0, 2*math.pi/3, 4*math.pi/3]
+        self.L = 0.15   # distance from center to wheel (m)
+        # Wheel angles measured CCW from +X: front=0°, right=120°, left=240°
+        self.theta_front = 0.0
+        self.theta_right = 2 * math.pi / 3
+        self.theta_left = 4 * math.pi / 3
 
-        self.get_logger().info('Inverse Kinematic node started, waiting for /cmd_vel messages...')
+        self.get_logger().info('Inverse Kinematics ready.')
 
-    def cmd_vel_callback(self, msg: Twist):
-        vx = msg.linear.x
-        vy = msg.linear.y
-        wz = msg.angular.z
+    def cmd_vel_callback(self, twist: Twist):
+        # Extract chassis velocities
+        vx = twist.linear.x    # forward/back
+        vy = twist.linear.y    # left/right
+        wz = twist.angular.z   # rotation
 
-        self.get_logger().debug(
-            f'Received cmd_vel: vx={vx:.2f}, vy={vy:.2f}, wz={wz:.2f}'
-        )
-
-        # Compute wheel angular velocities (rad/s)
-        omegas = [
-            (-math.sin(th) * vx + math.cos(th) * vy + self.L * wz) / self.r
-            for th in self.theta
-        ]
+        # Zero front wheel for testing
+        omega_front = 0.0
+        # Compute right and left wheel omegas
+        omega_right = (-math.sin(self.theta_right) * vx + math.cos(self.theta_right) * vy + self.L * wz) / self.r
+        omega_left  = (-math.sin(self.theta_left)  * vx + math.cos(self.theta_left)  * vy + self.L * wz) / self.r
 
         # Convert to RPM
-        rpms = [omega * 60.0 / (2 * math.pi) for omega in omegas]
+        rpm_front = omega_front * 60.0 / (2 * math.pi)
+        rpm_right = omega_right * 60.0 / (2 * math.pi)
+        rpm_left  = omega_left  * 60.0 / (2 * math.pi)
 
-        # Publish wheel speeds
-        msg_out = Float32MultiArray()
-        msg_out.data = rpms
-        self.pub.publish(msg_out)
-
-        # Log RPM values
         self.get_logger().info(
-            f"RPMs -> w1: {rpms[0]:.2f}, w2: {rpms[1]:.2f}, w3: {rpms[2]:.2f}"
+            f"Debug RPMs -> Front: {rpm_front:.2f}, Right: {rpm_right:.2f}, Left: {rpm_left:.2f}"
+        )
+
+        # Publish only front zero, others
+        msg = Float32MultiArray()
+        msg.data = [rpm_left, rpm_right, rpm_front]
+        self.pub.publish(msg)
+
+        # Final log
+        self.get_logger().info(
+            f"Published wheel_speeds: [{rpm_left:.1f}, {rpm_right:.1f}, {rpm_front:.1f}]"
         )
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = InverseKinematicNode()
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        rclpy.shutdown()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

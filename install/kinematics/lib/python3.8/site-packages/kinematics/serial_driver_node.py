@@ -50,13 +50,17 @@ class SerialDriverNode(Node):
         return None
 
     def wheel_speeds_callback(self, msg: Float32MultiArray):
-        # msg.data contains [rpm1, rpm2, rpm3]
+        # msg.data contains [rpm0, rpm120, rpm240]
         if not getattr(self, 'ser', None) or not self.ser.is_open:
             self.get_logger().warn("Serial port not open, cannot send data.")
             return
 
         rpms = msg.data
-        line = f"{int(rpms[0])} {int(rpms[1])} {int(rpms[2])}\n"
+        # Reorder to send: rpm at 240°, rpm at 120°, rpm at 0°
+        ordered = [rpms[2], rpms[1], rpms[0]]
+
+        # Format: "240rpm 120rpm 0rpm\n"
+        line = f"{int(ordered[0])} {int(ordered[1])} {int(ordered[2])}\n"
         with self.lock:
             try:
                 self.ser.write(line.encode('utf-8'))

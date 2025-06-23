@@ -20,7 +20,7 @@ KEY_BINDINGS = {
 }
 
 LIN_SCALE    = 0.5    # m/s
-ANG_SCALE    = 1.0    # rad/s
+ANG_SCALE    = 3.0    # rad/s
 LOOP_DT      = 0.01   # 100 Hz
 TIMEOUT      = 0.2    # 1 s để bao phủ initial repeat delay
 
