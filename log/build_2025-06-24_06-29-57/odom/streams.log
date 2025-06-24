@@ -1,0 +1,39 @@
+[6.135s] Invoking command in '/home/jetson/SLAM_WS/src/odom': PYTHONPATH=/home/jetson/SLAM_WS/build/odom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odom build --build-base /home/jetson/SLAM_WS/build/odom/build install --record /home/jetson/SLAM_WS/build/odom/install.log --single-version-externally-managed install_data
+[7.613s] running egg_info
+[7.616s] creating ../../build/odom/odom.egg-info
+[7.618s] writing ../../build/odom/odom.egg-info/PKG-INFO
+[7.621s] writing dependency_links to ../../build/odom/odom.egg-info/dependency_links.txt
+[7.622s] writing entry points to ../../build/odom/odom.egg-info/entry_points.txt
+[7.624s] writing requirements to ../../build/odom/odom.egg-info/requires.txt
+[7.625s] writing top-level names to ../../build/odom/odom.egg-info/top_level.txt
+[7.634s] writing manifest file '../../build/odom/odom.egg-info/SOURCES.txt'
+[7.641s] reading manifest file '../../build/odom/odom.egg-info/SOURCES.txt'
+[7.645s] writing manifest file '../../build/odom/odom.egg-info/SOURCES.txt'
+[7.647s] running build
+[7.647s] running build_py
+[7.649s] creating /home/jetson/SLAM_WS/build/odom/build
+[7.650s] creating /home/jetson/SLAM_WS/build/odom/build/lib
+[7.651s] creating /home/jetson/SLAM_WS/build/odom/build/lib/odom
+[7.652s] copying odom/odom_node.py -> /home/jetson/SLAM_WS/build/odom/build/lib/odom
+[7.654s] copying odom/__init__.py -> /home/jetson/SLAM_WS/build/odom/build/lib/odom
+[7.656s] running install
+[7.660s] running install_lib
+[7.665s] creating /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom
+[7.666s] copying /home/jetson/SLAM_WS/build/odom/build/lib/odom/odom_node.py -> /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom
+[7.667s] copying /home/jetson/SLAM_WS/build/odom/build/lib/odom/__init__.py -> /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom
+[7.670s] byte-compiling /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom/odom_node.py to odom_node.cpython-38.pyc
+[7.675s] byte-compiling /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom/__init__.py to __init__.cpython-38.pyc
+[7.677s] running install_data
+[7.678s] creating /home/jetson/SLAM_WS/install/odom/share/ament_index
+[7.679s] creating /home/jetson/SLAM_WS/install/odom/share/ament_index/resource_index
+[7.680s] creating /home/jetson/SLAM_WS/install/odom/share/ament_index/resource_index/packages
+[7.681s] copying resource/odom -> /home/jetson/SLAM_WS/install/odom/share/ament_index/resource_index/packages
+[7.682s] copying package.xml -> /home/jetson/SLAM_WS/install/odom/share/odom
+[7.683s] creating /home/jetson/SLAM_WS/install/odom/share/odom/launch
+[7.684s] copying launch/odom.launch.py -> /home/jetson/SLAM_WS/install/odom/share/odom/launch
+[7.686s] running install_egg_info
+[7.698s] Copying ../../build/odom/odom.egg-info to /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom-0.0.0-py3.8.egg-info
+[7.704s] running install_scripts
+[7.798s] Installing odom_node script to /home/jetson/SLAM_WS/install/odom/lib/odom
+[7.800s] writing list of installed files to '/home/jetson/SLAM_WS/build/odom/install.log'
+[7.957s] Invoked command in '/home/jetson/SLAM_WS/src/odom' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/odom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odom build --build-base /home/jetson/SLAM_WS/build/odom/build install --record /home/jetson/SLAM_WS/build/odom/install.log --single-version-externally-managed install_data
