@@ -24,7 +24,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'inverse_kinematic = kinematics.inverse_kinematic_node:main',
+            'inverse_kinematic = kinematics.inverse_kinematic:main',
             'serial_driver       = kinematics.serial_driver_node:main',
         ],
     },

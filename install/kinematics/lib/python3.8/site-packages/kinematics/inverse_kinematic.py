@@ -25,19 +25,19 @@ class InverseKinematicNode(Node):
     def cmd_vel_callback(self, twist: Twist):
         # Extract chassis velocities
         vx = twist.linear.x    # forward/back
-        vy = twist.linear.y    # left/right
-        wz = twist.angular.z   # rotation
+        vy = -twist.linear.y    # left/right
+        wz = -twist.angular.z   # rotation
 
         # Zero front wheel for testing
-        omega_front = 0.0
+        omega_front = (-math.sin(self.theta_front) * vx + math.cos(self.theta_front) * vy + self.L * wz) / self.r
         # Compute right and left wheel omegas
         omega_right = (-math.sin(self.theta_right) * vx + math.cos(self.theta_right) * vy + self.L * wz) / self.r
         omega_left  = (-math.sin(self.theta_left)  * vx + math.cos(self.theta_left)  * vy + self.L * wz) / self.r
 
         # Convert to RPM
-        rpm_front = omega_front * 60.0 / (2 * math.pi)
-        rpm_right = omega_right * 60.0 / (2 * math.pi)
-        rpm_left  = omega_left  * 60.0 / (2 * math.pi)
+        rpm_front = omega_front  * 60.0 / (2 * math.pi)
+        rpm_right = omega_right  * 60.0 / (2 * math.pi)
+        rpm_left  = omega_left   * 60.0 / (2 * math.pi)
 
         self.get_logger().info(
             f"Debug RPMs -> Front: {rpm_front:.2f}, Right: {rpm_right:.2f}, Left: {rpm_left:.2f}"

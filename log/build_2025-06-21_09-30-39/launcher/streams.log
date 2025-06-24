@@ -1,8 +1,0 @@
-[3.050s] Invoking command in '/home/jetson/SLAM_WS/src/launcher': PYTHONPATH=/home/jetson/SLAM_WS/build/launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/launcher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launcher build --build-base /home/jetson/SLAM_WS/build/launcher/build install --record /home/jetson/SLAM_WS/build/launcher/install.log --single-version-externally-managed install_data
-[4.241s] running egg_info
-[4.243s] writing ../../build/launcher/launcher.egg-info/PKG-INFO
-[4.244s] writing dependency_links to ../../build/launcher/launcher.egg-info/dependency_links.txt
-[4.244s] writing requirements to ../../build/launcher/launcher.egg-info/requires.txt
-[4.245s] writing top-level names to ../../build/launcher/launcher.egg-info/top_level.txt
-[4.256s] error: package directory 'launcher' does not exist
-[4.336s] Invoked command in '/home/jetson/SLAM_WS/src/launcher' returned '1': PYTHONPATH=/home/jetson/SLAM_WS/build/launcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/launcher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launcher build --build-base /home/jetson/SLAM_WS/build/launcher/build install --record /home/jetson/SLAM_WS/build/launcher/install.log --single-version-externally-managed install_data
