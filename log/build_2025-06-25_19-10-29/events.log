@@ -1,0 +1,393 @@
+[0.000000] (-) TimerEvent: {}
+[0.000511] (kinematics) JobQueued: {'identifier': 'kinematics', 'dependencies': OrderedDict()}
+[0.000695] (odom) JobQueued: {'identifier': 'odom', 'dependencies': OrderedDict()}
+[0.000814] (omni_bot) JobQueued: {'identifier': 'omni_bot', 'dependencies': OrderedDict()}
+[0.000918] (omnibot_description) JobQueued: {'identifier': 'omnibot_description', 'dependencies': OrderedDict()}
+[0.001018] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.001117] (teleop_omni) JobQueued: {'identifier': 'teleop_omni', 'dependencies': OrderedDict()}
+[0.001216] (slam_launch) JobQueued: {'identifier': 'slam_launch', 'dependencies': OrderedDict([('kinematics', '/home/jetson/SLAM_WS/install/kinematics'), ('odom', '/home/jetson/SLAM_WS/install/odom'), ('rplidar_ros', '/home/jetson/SLAM_WS/install/rplidar_ros')])}
+[0.001347] (kinematics) JobStarted: {'identifier': 'kinematics'}
+[0.030687] (odom) JobStarted: {'identifier': 'odom'}
+[0.059650] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.081123] (-) TimerEvent: {}
+[0.090597] (omni_bot) JobStarted: {'identifier': 'omni_bot'}
+[0.181246] (-) TimerEvent: {}
+[0.282316] (-) TimerEvent: {}
+[0.383308] (-) TimerEvent: {}
+[0.484396] (-) TimerEvent: {}
+[0.585145] (-) TimerEvent: {}
+[0.686171] (-) TimerEvent: {}
+[0.792186] (-) TimerEvent: {}
+[0.892899] (-) TimerEvent: {}
+[0.993625] (-) TimerEvent: {}
+[1.094421] (-) TimerEvent: {}
+[1.195431] (-) TimerEvent: {}
+[1.296570] (-) TimerEvent: {}
+[1.397693] (-) TimerEvent: {}
+[1.498485] (-) TimerEvent: {}
+[1.599882] (-) TimerEvent: {}
+[1.700656] (-) TimerEvent: {}
+[1.810709] (-) TimerEvent: {}
+[1.911687] (-) TimerEvent: {}
+[2.012436] (-) TimerEvent: {}
+[2.113215] (-) TimerEvent: {}
+[2.213911] (-) TimerEvent: {}
+[2.314627] (-) TimerEvent: {}
+[2.415913] (-) TimerEvent: {}
+[2.516660] (-) TimerEvent: {}
+[2.617936] (-) TimerEvent: {}
+[2.719334] (-) TimerEvent: {}
+[2.820109] (-) TimerEvent: {}
+[2.921268] (-) TimerEvent: {}
+[3.022545] (-) TimerEvent: {}
+[3.123796] (-) TimerEvent: {}
+[3.225254] (-) TimerEvent: {}
+[3.285612] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[3.289918] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[3.306419] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/SLAM_WS/build/rplidar_ros', '--', '-j4', '-l4'], 'cwd': '/home/jetson/SLAM_WS/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.5 52408 22'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/SLAM_WS/src'), ('SSH_TTY', '/dev/pts/15'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Nano Developer Kit'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/jetson/SLAM_WS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Nano (4 GB ram)'), ('JETSON_SERIAL_NUMBER', '1420923022801'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Porg'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('AMENT_PREFIX_PATH', '/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/SLAM_WS/build/rplidar_ros'), ('SSH_CONNECTION', '192.168.1.5 52408 192.168.1.8 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3448-0000')]), 'shell': False}
+[3.327206] (-) TimerEvent: {}
+[3.428810] (-) TimerEvent: {}
+[3.529810] (-) TimerEvent: {}
+[3.631216] (-) TimerEvent: {}
+[3.668149] (rplidar_ros) StdoutLine: {'line': b'[ 47%] Built target rplidar_composition\n'}
+[3.728895] (rplidar_ros) StdoutLine: {'line': b'[ 94%] Built target rplidar_node\n'}
+[3.731395] (-) TimerEvent: {}
+[3.735627] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_client\n'}
+[3.831578] (-) TimerEvent: {}
+[3.932558] (-) TimerEvent: {}
+[4.033321] (-) TimerEvent: {}
+[4.134075] (-) TimerEvent: {}
+[4.234827] (-) TimerEvent: {}
+[4.335587] (-) TimerEvent: {}
+[4.436405] (-) TimerEvent: {}
+[4.537133] (-) TimerEvent: {}
+[4.637910] (-) TimerEvent: {}
+[4.739736] (-) TimerEvent: {}
+[4.840647] (-) TimerEvent: {}
+[4.941553] (-) TimerEvent: {}
+[5.042425] (-) TimerEvent: {}
+[5.144140] (-) TimerEvent: {}
+[5.242182] (rplidar_ros) CommandEnded: {'returncode': 0}
+[5.244344] (-) TimerEvent: {}
+[5.250122] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'install'}
+[5.301085] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/SLAM_WS/build/rplidar_ros'], 'cwd': '/home/jetson/SLAM_WS/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jetson'), ('SSH_CLIENT', '192.168.1.5 52408 22'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/SLAM_WS/src'), ('SSH_TTY', '/dev/pts/15'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Nano Developer Kit'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/jetson/SLAM_WS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Nano (4 GB ram)'), ('JETSON_SERIAL_NUMBER', '1420923022801'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Porg'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('AMENT_PREFIX_PATH', '/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/SLAM_WS/build/rplidar_ros'), ('SSH_CONNECTION', '192.168.1.5 52408 192.168.1.8 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy'), ('JETSON_P_NUMBER', 'p3448-0000')]), 'shell': False}
+[5.344672] (-) TimerEvent: {}
+[5.382951] (rplidar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.385158] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch\n'}
+[5.387167] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py\n'}
+[5.388913] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py\n'}
+[5.390677] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py\n'}
+[5.392729] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py\n'}
+[5.394490] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py\n'}
+[5.396235] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py\n'}
+[5.397944] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py\n'}
+[5.399705] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py\n'}
+[5.401388] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py\n'}
+[5.403576] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py\n'}
+[5.405336] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py\n'}
+[5.407173] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py\n'}
+[5.408965] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py\n'}
+[5.410721] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py\n'}
+[5.412465] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py\n'}
+[5.414839] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py\n'}
+[5.416543] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py\n'}
+[5.418670] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py\n'}
+[5.419223] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py\n'}
+[5.423576] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py\n'}
+[5.424184] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py\n'}
+[5.424650] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py\n'}
+[5.425171] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py\n'}
+[5.425641] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py\n'}
+[5.426086] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/rviz\n'}
+[5.426628] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz\n'}
+[5.431764] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/lib/rplidar_ros/rplidar_node\n'}
+[5.432448] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[5.434887] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/lib/rplidar_ros/rplidar_client\n'}
+[5.436108] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros\n'}
+[5.437364] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros\n'}
+[5.438983] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh\n'}
+[5.439538] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv\n'}
+[5.441549] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/environment/path.sh\n'}
+[5.442096] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/environment/path.dsv\n'}
+[5.442597] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/local_setup.bash\n'}
+[5.446261] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/local_setup.sh\n'}
+[5.446946] (-) TimerEvent: {}
+[5.448787] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/local_setup.zsh\n'}
+[5.449462] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/local_setup.dsv\n'}
+[5.449916] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.dsv\n'}
+[5.450461] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros\n'}
+[5.450910] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.489716] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.490435] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake\n'}
+[5.490885] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake\n'}
+[5.493405] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.xml\n'}
+[5.522093] (rplidar_ros) CommandEnded: {'returncode': 0}
+[5.547108] (-) TimerEvent: {}
+[5.616046] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 0}
+[5.619450] (omnibot_description) JobStarted: {'identifier': 'omnibot_description'}
+[5.667650] (-) TimerEvent: {}
+[5.768476] (-) TimerEvent: {}
+[5.869624] (-) TimerEvent: {}
+[5.971228] (-) TimerEvent: {}
+[6.072233] (-) TimerEvent: {}
+[6.173294] (-) TimerEvent: {}
+[6.276896] (-) TimerEvent: {}
+[6.386689] (-) TimerEvent: {}
+[6.487767] (-) TimerEvent: {}
+[6.598858] (-) TimerEvent: {}
+[6.700178] (-) TimerEvent: {}
+[6.801182] (-) TimerEvent: {}
+[6.902172] (-) TimerEvent: {}
+[7.003503] (-) TimerEvent: {}
+[7.105117] (-) TimerEvent: {}
+[7.214411] (-) TimerEvent: {}
+[7.322835] (-) TimerEvent: {}
+[7.424121] (-) TimerEvent: {}
+[7.525193] (-) TimerEvent: {}
+[7.626407] (-) TimerEvent: {}
+[7.727914] (-) TimerEvent: {}
+[7.829173] (-) TimerEvent: {}
+[7.930302] (-) TimerEvent: {}
+[8.031661] (-) TimerEvent: {}
+[8.132717] (-) TimerEvent: {}
+[8.233742] (-) TimerEvent: {}
+[8.334744] (omni_bot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/omni_bot', 'build', '--build-base', '/home/jetson/SLAM_WS/build/omni_bot/build', 'install', '--record', '/home/jetson/SLAM_WS/build/omni_bot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/omni_bot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.1.5 52408 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS/src', 'SSH_TTY': '/dev/pts/15', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022801', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/build/omni_bot', 'SSH_CONNECTION': '192.168.1.5 52408 192.168.1.8 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/build/omni_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[8.337821] (-) TimerEvent: {}
+[8.439404] (-) TimerEvent: {}
+[8.524432] (kinematics) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/kinematics', 'build', '--build-base', '/home/jetson/SLAM_WS/build/kinematics/build', 'install', '--record', '/home/jetson/SLAM_WS/build/kinematics/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/kinematics', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.1.5 52408 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS/src', 'SSH_TTY': '/dev/pts/15', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022801', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/build/kinematics', 'SSH_CONNECTION': '192.168.1.5 52408 192.168.1.8 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/build/kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[8.540065] (-) TimerEvent: {}
+[8.557799] (odom) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/odom', 'build', '--build-base', '/home/jetson/SLAM_WS/build/odom/build', 'install', '--record', '/home/jetson/SLAM_WS/build/odom/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/odom', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.1.5 52408 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS/src', 'SSH_TTY': '/dev/pts/15', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022801', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/build/odom', 'SSH_CONNECTION': '192.168.1.5 52408 192.168.1.8 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/build/odom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[8.640099] (-) TimerEvent: {}
+[8.741368] (-) TimerEvent: {}
+[8.850412] (-) TimerEvent: {}
+[8.951664] (-) TimerEvent: {}
+[9.052948] (-) TimerEvent: {}
+[9.154247] (-) TimerEvent: {}
+[9.255538] (-) TimerEvent: {}
+[9.356934] (-) TimerEvent: {}
+[9.458169] (-) TimerEvent: {}
+[9.559542] (-) TimerEvent: {}
+[9.660913] (-) TimerEvent: {}
+[9.762543] (-) TimerEvent: {}
+[9.863760] (-) TimerEvent: {}
+[9.964996] (-) TimerEvent: {}
+[10.066332] (-) TimerEvent: {}
+[10.167547] (-) TimerEvent: {}
+[10.268790] (-) TimerEvent: {}
+[10.370107] (-) TimerEvent: {}
+[10.471736] (-) TimerEvent: {}
+[10.554020] (odom) StdoutLine: {'line': b'running egg_info\n'}
+[10.556660] (odom) StdoutLine: {'line': b'writing ../../build/odom/odom.egg-info/PKG-INFO\n'}
+[10.560011] (odom) StdoutLine: {'line': b'writing dependency_links to ../../build/odom/odom.egg-info/dependency_links.txt\n'}
+[10.560526] (odom) StdoutLine: {'line': b'writing entry points to ../../build/odom/odom.egg-info/entry_points.txt\n'}
+[10.562416] (odom) StdoutLine: {'line': b'writing requirements to ../../build/odom/odom.egg-info/requires.txt\n'}
+[10.562933] (odom) StdoutLine: {'line': b'writing top-level names to ../../build/odom/odom.egg-info/top_level.txt\n'}
+[10.571907] (-) TimerEvent: {}
+[10.611892] (omni_bot) StdoutLine: {'line': b'running egg_info\n'}
+[10.616173] (omni_bot) StdoutLine: {'line': b'writing ../../build/omni_bot/omni_bot.egg-info/PKG-INFO\n'}
+[10.618565] (omni_bot) StdoutLine: {'line': b'writing dependency_links to ../../build/omni_bot/omni_bot.egg-info/dependency_links.txt\n'}
+[10.620768] (omni_bot) StdoutLine: {'line': b'writing entry points to ../../build/omni_bot/omni_bot.egg-info/entry_points.txt\n'}
+[10.622849] (omni_bot) StdoutLine: {'line': b'writing requirements to ../../build/omni_bot/omni_bot.egg-info/requires.txt\n'}
+[10.624664] (omni_bot) StdoutLine: {'line': b'writing top-level names to ../../build/omni_bot/omni_bot.egg-info/top_level.txt\n'}
+[10.639508] (odom) StdoutLine: {'line': b"reading manifest file '../../build/odom/odom.egg-info/SOURCES.txt'\n"}
+[10.645019] (kinematics) StdoutLine: {'line': b'running egg_info\n'}
+[10.647972] (kinematics) StdoutLine: {'line': b'writing ../../build/kinematics/kinematics.egg-info/PKG-INFO\n'}
+[10.648726] (kinematics) StdoutLine: {'line': b'writing dependency_links to ../../build/kinematics/kinematics.egg-info/dependency_links.txt\n'}
+[10.650384] (kinematics) StdoutLine: {'line': b'writing entry points to ../../build/kinematics/kinematics.egg-info/entry_points.txt\n'}
+[10.650925] (kinematics) StdoutLine: {'line': b'writing requirements to ../../build/kinematics/kinematics.egg-info/requires.txt\n'}
+[10.651343] (kinematics) StdoutLine: {'line': b'writing top-level names to ../../build/kinematics/kinematics.egg-info/top_level.txt\n'}
+[10.664194] (kinematics) StdoutLine: {'line': b"reading manifest file '../../build/kinematics/kinematics.egg-info/SOURCES.txt'\n"}
+[10.665676] (odom) StdoutLine: {'line': b"writing manifest file '../../build/odom/odom.egg-info/SOURCES.txt'\n"}
+[10.666436] (odom) StdoutLine: {'line': b'running build\n'}
+[10.666869] (odom) StdoutLine: {'line': b'running build_py\n'}
+[10.669434] (odom) StdoutLine: {'line': b'running install\n'}
+[10.670010] (kinematics) StdoutLine: {'line': b"writing manifest file '../../build/kinematics/kinematics.egg-info/SOURCES.txt'\n"}
+[10.671590] (kinematics) StdoutLine: {'line': b'running build\n'}
+[10.672036] (-) TimerEvent: {}
+[10.673685] (kinematics) StdoutLine: {'line': b'running build_py\n'}
+[10.674245] (kinematics) StdoutLine: {'line': b'running install\n'}
+[10.674688] (kinematics) StdoutLine: {'line': b'running install_lib\n'}
+[10.675291] (omni_bot) StdoutLine: {'line': b"reading manifest file '../../build/omni_bot/omni_bot.egg-info/SOURCES.txt'\n"}
+[10.679082] (omni_bot) StdoutLine: {'line': b"writing manifest file '../../build/omni_bot/omni_bot.egg-info/SOURCES.txt'\n"}
+[10.682568] (odom) StdoutLine: {'line': b'running install_lib\n'}
+[10.683871] (kinematics) StdoutLine: {'line': b'running install_data\n'}
+[10.684673] (kinematics) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.690009] (odom) StdoutLine: {'line': b'running install_data\n'}
+[10.691677] (odom) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.693026] (omni_bot) StdoutLine: {'line': b'running build\n'}
+[10.693597] (omni_bot) StdoutLine: {'line': b'running build_py\n'}
+[10.694829] (omni_bot) StdoutLine: {'line': b'running install\n'}
+[10.696518] (kinematics) StdoutLine: {'line': b"removing '/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages/kinematics-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[10.697078] (kinematics) StdoutLine: {'line': b'Copying ../../build/kinematics/kinematics.egg-info to /home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages/kinematics-0.0.0-py3.8.egg-info\n'}
+[10.699413] (omni_bot) StdoutLine: {'line': b'running install_lib\n'}
+[10.701219] (kinematics) StdoutLine: {'line': b'running install_scripts\n'}
+[10.703023] (odom) StdoutLine: {'line': b"removing '/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[10.704541] (odom) StdoutLine: {'line': b'Copying ../../build/odom/odom.egg-info to /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom-0.0.0-py3.8.egg-info\n'}
+[10.731930] (odom) StdoutLine: {'line': b'running install_scripts\n'}
+[10.733284] (omni_bot) StdoutLine: {'line': b'running install_data\n'}
+[10.734758] (omni_bot) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.744733] (omni_bot) StdoutLine: {'line': b"removing '/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages/omni_bot-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[10.750953] (omni_bot) StdoutLine: {'line': b'Copying ../../build/omni_bot/omni_bot.egg-info to /home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages/omni_bot-0.0.0-py3.8.egg-info\n'}
+[10.755849] (omni_bot) StdoutLine: {'line': b'running install_scripts\n'}
+[10.772219] (-) TimerEvent: {}
+[10.831989] (odom) StdoutLine: {'line': b'Installing odom_node script to /home/jetson/SLAM_WS/install/odom/lib/odom\n'}
+[10.834679] (odom) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/build/odom/install.log'\n"}
+[10.850405] (omni_bot) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/build/omni_bot/install.log'\n"}
+[10.872429] (-) TimerEvent: {}
+[10.901234] (kinematics) StdoutLine: {'line': b'Installing inverse_kinematic script to /home/jetson/SLAM_WS/install/kinematics/lib/kinematics\n'}
+[10.903708] (kinematics) StdoutLine: {'line': b'Installing serial_driver script to /home/jetson/SLAM_WS/install/kinematics/lib/kinematics\n'}
+[10.907109] (kinematics) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/build/kinematics/install.log'\n"}
+[10.972724] (-) TimerEvent: {}
+[11.006817] (odom) CommandEnded: {'returncode': 0}
+[11.047182] (odom) JobEnded: {'identifier': 'odom', 'rc': 0}
+[11.051431] (teleop_omni) JobStarted: {'identifier': 'teleop_omni'}
+[11.072926] (-) TimerEvent: {}
+[11.100461] (kinematics) CommandEnded: {'returncode': 0}
+[11.137303] (kinematics) JobEnded: {'identifier': 'kinematics', 'rc': 0}
+[11.139451] (omni_bot) CommandEnded: {'returncode': 0}
+[11.173446] (-) TimerEvent: {}
+[11.186016] (omni_bot) JobEnded: {'identifier': 'omni_bot', 'rc': 0}
+[11.208055] (slam_launch) JobStarted: {'identifier': 'slam_launch'}
+[11.273749] (-) TimerEvent: {}
+[11.375016] (-) TimerEvent: {}
+[11.475939] (-) TimerEvent: {}
+[11.578795] (-) TimerEvent: {}
+[11.679579] (-) TimerEvent: {}
+[11.780394] (-) TimerEvent: {}
+[11.881092] (-) TimerEvent: {}
+[11.982674] (-) TimerEvent: {}
+[12.083348] (-) TimerEvent: {}
+[12.184569] (-) TimerEvent: {}
+[12.285307] (-) TimerEvent: {}
+[12.386086] (-) TimerEvent: {}
+[12.486863] (-) TimerEvent: {}
+[12.587592] (-) TimerEvent: {}
+[12.688579] (-) TimerEvent: {}
+[12.789710] (-) TimerEvent: {}
+[12.890779] (-) TimerEvent: {}
+[12.992119] (-) TimerEvent: {}
+[13.092846] (-) TimerEvent: {}
+[13.194152] (-) TimerEvent: {}
+[13.294900] (-) TimerEvent: {}
+[13.398831] (-) TimerEvent: {}
+[13.510412] (-) TimerEvent: {}
+[13.611453] (-) TimerEvent: {}
+[13.712180] (-) TimerEvent: {}
+[13.814405] (-) TimerEvent: {}
+[13.919005] (-) TimerEvent: {}
+[14.019723] (-) TimerEvent: {}
+[14.120685] (-) TimerEvent: {}
+[14.221418] (-) TimerEvent: {}
+[14.322788] (-) TimerEvent: {}
+[14.378666] (omnibot_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/omnibot_description', 'build', '--build-base', '/home/jetson/SLAM_WS/build/omnibot_description/build', 'install', '--record', '/home/jetson/SLAM_WS/build/omnibot_description/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/omnibot_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.1.5 52408 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS/src', 'SSH_TTY': '/dev/pts/15', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022801', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/build/omnibot_description', 'SSH_CONNECTION': '192.168.1.5 52408 192.168.1.8 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/build/omnibot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[14.433031] (-) TimerEvent: {}
+[14.534012] (-) TimerEvent: {}
+[14.634949] (-) TimerEvent: {}
+[14.736185] (-) TimerEvent: {}
+[14.837375] (-) TimerEvent: {}
+[14.938686] (-) TimerEvent: {}
+[15.039976] (-) TimerEvent: {}
+[15.141209] (-) TimerEvent: {}
+[15.242493] (-) TimerEvent: {}
+[15.343901] (-) TimerEvent: {}
+[15.445175] (-) TimerEvent: {}
+[15.546448] (-) TimerEvent: {}
+[15.647679] (-) TimerEvent: {}
+[15.748927] (-) TimerEvent: {}
+[15.850236] (-) TimerEvent: {}
+[15.951554] (-) TimerEvent: {}
+[16.052823] (-) TimerEvent: {}
+[16.154113] (-) TimerEvent: {}
+[16.178920] (omnibot_description) StdoutLine: {'line': b'running egg_info\n'}
+[16.181734] (omnibot_description) StdoutLine: {'line': b'writing ../../build/omnibot_description/omnibot_description.egg-info/PKG-INFO\n'}
+[16.184943] (omnibot_description) StdoutLine: {'line': b'writing dependency_links to ../../build/omnibot_description/omnibot_description.egg-info/dependency_links.txt\n'}
+[16.185508] (omnibot_description) StdoutLine: {'line': b'writing entry points to ../../build/omnibot_description/omnibot_description.egg-info/entry_points.txt\n'}
+[16.185898] (omnibot_description) StdoutLine: {'line': b'writing requirements to ../../build/omnibot_description/omnibot_description.egg-info/requires.txt\n'}
+[16.186302] (omnibot_description) StdoutLine: {'line': b'writing top-level names to ../../build/omnibot_description/omnibot_description.egg-info/top_level.txt\n'}
+[16.198066] (omnibot_description) StdoutLine: {'line': b"reading manifest file '../../build/omnibot_description/omnibot_description.egg-info/SOURCES.txt'\n"}
+[16.202646] (omnibot_description) StdoutLine: {'line': b"writing manifest file '../../build/omnibot_description/omnibot_description.egg-info/SOURCES.txt'\n"}
+[16.203887] (omnibot_description) StdoutLine: {'line': b'running build\n'}
+[16.204705] (omnibot_description) StdoutLine: {'line': b'running build_py\n'}
+[16.206494] (omnibot_description) StdoutLine: {'line': b'running install\n'}
+[16.210784] (omnibot_description) StdoutLine: {'line': b'running install_lib\n'}
+[16.217777] (omnibot_description) StdoutLine: {'line': b'running install_data\n'}
+[16.219615] (omnibot_description) StdoutLine: {'line': b'copying launch/omnibot_description.launch.py -> /home/jetson/SLAM_WS/install/omnibot_description/share/omnibot_description/launch\n'}
+[16.221301] (omnibot_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[16.231409] (omnibot_description) StdoutLine: {'line': b"removing '/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages/omnibot_description-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[16.233658] (omnibot_description) StdoutLine: {'line': b'Copying ../../build/omnibot_description/omnibot_description.egg-info to /home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages/omnibot_description-0.0.0-py3.8.egg-info\n'}
+[16.238472] (omnibot_description) StdoutLine: {'line': b'running install_scripts\n'}
+[16.254335] (-) TimerEvent: {}
+[16.322930] (omnibot_description) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/build/omnibot_description/install.log'\n"}
+[16.354459] (-) TimerEvent: {}
+[16.442213] (omnibot_description) CommandEnded: {'returncode': 0}
+[16.464838] (-) TimerEvent: {}
+[16.506040] (omnibot_description) JobEnded: {'identifier': 'omnibot_description', 'rc': 0}
+[16.572431] (-) TimerEvent: {}
+[16.675125] (-) TimerEvent: {}
+[16.776915] (-) TimerEvent: {}
+[16.877678] (-) TimerEvent: {}
+[16.978647] (-) TimerEvent: {}
+[16.986350] (teleop_omni) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/teleop_omni', 'build', '--build-base', '/home/jetson/SLAM_WS/build/teleop_omni/build', 'install', '--record', '/home/jetson/SLAM_WS/build/teleop_omni/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/teleop_omni', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.1.5 52408 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS/src', 'SSH_TTY': '/dev/pts/15', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022801', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/build/teleop_omni', 'SSH_CONNECTION': '192.168.1.5 52408 192.168.1.8 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/build/teleop_omni/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[17.078868] (-) TimerEvent: {}
+[17.179774] (-) TimerEvent: {}
+[17.193408] (slam_launch) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/slam_launch', 'build', '--build-base', '/home/jetson/SLAM_WS/build/slam_launch/build', 'install', '--record', '/home/jetson/SLAM_WS/build/slam_launch/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/slam_launch', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.1.5 52408 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS/src', 'SSH_TTY': '/dev/pts/15', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022801', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/build/slam_launch', 'SSH_CONNECTION': '192.168.1.5 52408 192.168.1.8 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/build/slam_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[17.280084] (-) TimerEvent: {}
+[17.381040] (-) TimerEvent: {}
+[17.482326] (-) TimerEvent: {}
+[17.583588] (-) TimerEvent: {}
+[17.684865] (-) TimerEvent: {}
+[17.786145] (-) TimerEvent: {}
+[17.887377] (-) TimerEvent: {}
+[17.988579] (-) TimerEvent: {}
+[18.089788] (-) TimerEvent: {}
+[18.191020] (-) TimerEvent: {}
+[18.294452] (-) TimerEvent: {}
+[18.395658] (-) TimerEvent: {}
+[18.496914] (-) TimerEvent: {}
+[18.598412] (-) TimerEvent: {}
+[18.626537] (teleop_omni) StdoutLine: {'line': b'running egg_info\n'}
+[18.630760] (teleop_omni) StdoutLine: {'line': b'writing ../../build/teleop_omni/teleop_omni.egg-info/PKG-INFO\n'}
+[18.632728] (teleop_omni) StdoutLine: {'line': b'writing dependency_links to ../../build/teleop_omni/teleop_omni.egg-info/dependency_links.txt\n'}
+[18.634467] (teleop_omni) StdoutLine: {'line': b'writing entry points to ../../build/teleop_omni/teleop_omni.egg-info/entry_points.txt\n'}
+[18.636566] (teleop_omni) StdoutLine: {'line': b'writing requirements to ../../build/teleop_omni/teleop_omni.egg-info/requires.txt\n'}
+[18.637933] (teleop_omni) StdoutLine: {'line': b'writing top-level names to ../../build/teleop_omni/teleop_omni.egg-info/top_level.txt\n'}
+[18.653757] (teleop_omni) StdoutLine: {'line': b"reading manifest file '../../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'\n"}
+[18.659831] (teleop_omni) StdoutLine: {'line': b"writing manifest file '../../build/teleop_omni/teleop_omni.egg-info/SOURCES.txt'\n"}
+[18.661306] (teleop_omni) StdoutLine: {'line': b'running build\n'}
+[18.662157] (teleop_omni) StdoutLine: {'line': b'running build_py\n'}
+[18.664295] (teleop_omni) StdoutLine: {'line': b'running install\n'}
+[18.668536] (teleop_omni) StdoutLine: {'line': b'running install_lib\n'}
+[18.676574] (teleop_omni) StdoutLine: {'line': b'running install_data\n'}
+[18.678673] (teleop_omni) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.692046] (teleop_omni) StdoutLine: {'line': b"removing '/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[18.692705] (teleop_omni) StdoutLine: {'line': b'Copying ../../build/teleop_omni/teleop_omni.egg-info to /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop_omni-0.0.0-py3.8.egg-info\n'}
+[18.702752] (teleop_omni) StdoutLine: {'line': b'running install_scripts\n'}
+[18.703642] (-) TimerEvent: {}
+[18.777233] (teleop_omni) StdoutLine: {'line': b'Installing teleop_keyboard script to /home/jetson/SLAM_WS/install/teleop_omni/lib/teleop_omni\n'}
+[18.779196] (teleop_omni) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/build/teleop_omni/install.log'\n"}
+[18.790420] (slam_launch) StdoutLine: {'line': b'running egg_info\n'}
+[18.793591] (slam_launch) StdoutLine: {'line': b'writing ../../build/slam_launch/slam_launch.egg-info/PKG-INFO\n'}
+[18.795813] (slam_launch) StdoutLine: {'line': b'writing dependency_links to ../../build/slam_launch/slam_launch.egg-info/dependency_links.txt\n'}
+[18.797084] (slam_launch) StdoutLine: {'line': b'writing requirements to ../../build/slam_launch/slam_launch.egg-info/requires.txt\n'}
+[18.797669] (slam_launch) StdoutLine: {'line': b'writing top-level names to ../../build/slam_launch/slam_launch.egg-info/top_level.txt\n'}
+[18.803831] (-) TimerEvent: {}
+[18.840052] (slam_launch) StdoutLine: {'line': b"reading manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'\n"}
+[18.840750] (slam_launch) StdoutLine: {'line': b"writing manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'\n"}
+[18.841373] (slam_launch) StdoutLine: {'line': b'running build\n'}
+[18.841888] (slam_launch) StdoutLine: {'line': b'running build_py\n'}
+[18.842422] (slam_launch) StdoutLine: {'line': b'running install\n'}
+[18.853646] (slam_launch) StdoutLine: {'line': b'running install_lib\n'}
+[18.860157] (slam_launch) StdoutLine: {'line': b'running install_data\n'}
+[18.864704] (slam_launch) StdoutLine: {'line': b'copying launch/slam.launch.py -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch\n'}
+[18.868728] (slam_launch) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.870849] (slam_launch) StdoutLine: {'line': b"removing '/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[18.872723] (slam_launch) StdoutLine: {'line': b'Copying ../../build/slam_launch/slam_launch.egg-info to /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info\n'}
+[18.875210] (slam_launch) StdoutLine: {'line': b'running install_scripts\n'}
+[18.904715] (teleop_omni) CommandEnded: {'returncode': 0}
+[18.930710] (-) TimerEvent: {}
+[18.933987] (slam_launch) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/build/slam_launch/install.log'\n"}
+[18.977674] (teleop_omni) JobEnded: {'identifier': 'teleop_omni', 'rc': 0}
+[19.036903] (-) TimerEvent: {}
+[19.050237] (slam_launch) CommandEnded: {'returncode': 0}
+[19.086267] (slam_launch) JobEnded: {'identifier': 'slam_launch', 'rc': 0}
+[19.097793] (-) EventReactorShutdown: {}

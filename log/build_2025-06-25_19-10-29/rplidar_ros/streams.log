@@ -1,0 +1,55 @@
+[3.246s] Invoking command in '/home/jetson/SLAM_WS/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy /usr/bin/cmake --build /home/jetson/SLAM_WS/build/rplidar_ros -- -j4 -l4
+[3.607s] [ 47%] Built target rplidar_composition
+[3.667s] [ 94%] Built target rplidar_node
+[3.674s] [100%] Built target rplidar_client
+[5.181s] Invoked command in '/home/jetson/SLAM_WS/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy /usr/bin/cmake --build /home/jetson/SLAM_WS/build/rplidar_ros -- -j4 -l4
+[5.240s] Invoking command in '/home/jetson/SLAM_WS/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy /usr/bin/cmake --install /home/jetson/SLAM_WS/build/rplidar_ros
+[5.321s] -- Install configuration: ""
+[5.324s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch
+[5.326s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py
+[5.327s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py
+[5.329s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py
+[5.331s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py
+[5.333s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py
+[5.335s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py
+[5.336s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py
+[5.338s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py
+[5.340s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py
+[5.342s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py
+[5.344s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py
+[5.346s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py
+[5.347s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py
+[5.349s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py
+[5.351s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py
+[5.353s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py
+[5.355s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py
+[5.357s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py
+[5.357s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py
+[5.362s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py
+[5.362s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py
+[5.363s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py
+[5.363s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py
+[5.364s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py
+[5.364s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/rviz
+[5.365s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz
+[5.370s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/lib/rplidar_ros/rplidar_node
+[5.371s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[5.373s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/lib/rplidar_ros/rplidar_client
+[5.374s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[5.376s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[5.377s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[5.378s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[5.380s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[5.380s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[5.381s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[5.385s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[5.387s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[5.388s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[5.388s] -- Installing: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.dsv
+[5.389s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[5.389s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.428s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.429s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[5.431s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[5.460s] -- Up-to-date: /home/jetson/SLAM_WS/install/rplidar_ros/share/rplidar_ros/package.xml
+[5.462s] Invoked command in '/home/jetson/SLAM_WS/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/opt/ros/foxy /usr/bin/cmake --install /home/jetson/SLAM_WS/build/rplidar_ros

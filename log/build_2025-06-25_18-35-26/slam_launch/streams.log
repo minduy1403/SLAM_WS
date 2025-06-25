@@ -1,0 +1,20 @@
+[4.037s] Invoking command in '/home/jetson/SLAM_WS/src/slam_launch': AMENT_PREFIX_PATH=/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy PYTHONPATH=/home/jetson/SLAM_WS/build/slam_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/slam_launch build --build-base /home/jetson/SLAM_WS/build/slam_launch/build install --record /home/jetson/SLAM_WS/build/slam_launch/install.log --single-version-externally-managed install_data
+[5.599s] running egg_info
+[5.604s] writing ../../build/slam_launch/slam_launch.egg-info/PKG-INFO
+[5.606s] writing dependency_links to ../../build/slam_launch/slam_launch.egg-info/dependency_links.txt
+[5.608s] writing requirements to ../../build/slam_launch/slam_launch.egg-info/requires.txt
+[5.609s] writing top-level names to ../../build/slam_launch/slam_launch.egg-info/top_level.txt
+[5.621s] reading manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'
+[5.625s] writing manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'
+[5.626s] running build
+[5.627s] running build_py
+[5.627s] running install
+[5.629s] running install_lib
+[5.636s] running install_data
+[5.636s] copying launch/slam.launch.py -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch
+[5.637s] running install_egg_info
+[5.647s] removing '/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info' (and everything under it)
+[5.648s] Copying ../../build/slam_launch/slam_launch.egg-info to /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info
+[5.651s] running install_scripts
+[5.735s] writing list of installed files to '/home/jetson/SLAM_WS/build/slam_launch/install.log'
+[5.847s] Invoked command in '/home/jetson/SLAM_WS/src/slam_launch' returned '0': AMENT_PREFIX_PATH=/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy PYTHONPATH=/home/jetson/SLAM_WS/build/slam_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/slam_launch build --build-base /home/jetson/SLAM_WS/build/slam_launch/build install --record /home/jetson/SLAM_WS/build/slam_launch/install.log --single-version-externally-managed install_data

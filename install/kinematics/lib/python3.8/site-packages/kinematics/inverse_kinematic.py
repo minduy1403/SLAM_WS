@@ -39,9 +39,9 @@ class InverseKinematicNode(Node):
         rpm_right = omega_right  * 60.0 / (2 * math.pi)
         rpm_left  = omega_left   * 60.0 / (2 * math.pi)
 
-        self.get_logger().info(
-            f"Debug RPMs -> Front: {rpm_front:.2f}, Right: {rpm_right:.2f}, Left: {rpm_left:.2f}"
-        )
+        # self.get_logger().info(
+        #     f"Debug RPMs -> Front: {rpm_front:.2f}, Right: {rpm_right:.2f}, Left: {rpm_left:.2f}"
+        # )
 
         # Publish only front zero, others
         msg = Float32MultiArray()
@@ -49,9 +49,9 @@ class InverseKinematicNode(Node):
         self.pub.publish(msg)
 
         # Final log
-        self.get_logger().info(
-            f"Published wheel_speeds: [{rpm_left:.1f}, {rpm_right:.1f}, {rpm_front:.1f}]"
-        )
+        # self.get_logger().info(
+        #     f"Published wheel_speeds: [{rpm_left:.1f}, {rpm_right:.1f}, {rpm_front:.1f}]"
+        # )
 
 
 def main(args=None):

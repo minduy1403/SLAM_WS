@@ -1,52 +1,26 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="omnibot">
-  <!-- Tham số bán kính bánh và offset LiDAR -->
-  <xacro:property name="wheel_radius" value="0.04"/>
-  <xacro:property name="lidar_x"        value="0.1"/>
-  <xacro:property name="lidar_y"        value="0.0"/>
-  <xacro:property name="lidar_z"        value="0.2"/>
 
-  <link name="world"/>
-  
-  <!-- 1) Link dummy chứa inertia -->
-  <link name="base_inertial">
-    <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="1.0"/>
-      <inertia
-        ixx="0.1" ixy="0.0" ixz="0.0"
-        iyy="0.1" iyz="0.0"
-        izz="0.1"/>
-    </inertial>
-  </link>
-  <joint name="world_to_inertial" type="fixed">
-    <parent link="world"/>      <!-- world frame, ROS mặc định -->
-    <child  link="base_inertial"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-  </joint>
+  <!-- Vị trí LIDAR -->
+  <xacro:property name="lidar_x" value="0.1"/>
+  <xacro:property name="lidar_y" value="0.0"/>
+  <xacro:property name="lidar_z" value="0.2"/>
 
-  <!-- 2) Link base_link là visual/collision, không có inertia -->
+  <!-- 1) base_link: nếu không cần sim inertia thì có thể bỏ <inertial> -->
   <link name="base_link">
     <visual>
-      <geometry>
-        <box size="0.3 0.2 0.05"/>
-      </geometry>
+      <geometry><box size="0.3 0.2 0.05"/></geometry>
       <material name="grey"/>
     </visual>
     <collision>
-      <geometry>
-        <box size="0.3 0.2 0.05"/>
-      </geometry>
+      <geometry><box size="0.3 0.2 0.05"/></geometry>
     </collision>
   </link>
-  <joint name="inertial_to_base" type="fixed">
-    <parent link="base_inertial"/>
-    <child  link="base_link"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-  </joint>
 
-  <!-- 3) LiDAR link & joint -->
+  <!-- 2) link laser -->
   <link name="laser"/>
+
+  <!-- 3) joint cố định base_link → laser -->
   <joint name="base_to_laser" type="fixed">
     <parent link="base_link"/>
     <child  link="laser"/>
