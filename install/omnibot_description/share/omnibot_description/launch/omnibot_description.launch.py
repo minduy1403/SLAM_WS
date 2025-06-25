@@ -1,22 +1,24 @@
+#!/usr/bin/env python3
+import os
+
 from launch import LaunchDescription
-from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
+from launch.substitutions import Command, PathJoinSubstitution, TextSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
-
 def generate_launch_description():
-    # Path to the Xacro file
+    # Tìm file Xacro đã được cài vào share/omnibot_description/urdf
     xacro_file = PathJoinSubstitution([
         FindPackageShare('omnibot_description'),
         'urdf',
         'omnibot.urdf.xacro'
     ])
 
-    # Generate robot_description parameter by processing Xacro
+    # Tạo command: "xacro <space> <xacro_file>"
     robot_description = Command([
-        FindExecutable(name='xacro'),
-        ' ',
-        xacro_file
+        TextSubstitution(text='xacro'),
+        TextSubstitution(text=' '),
+        xacro_file,
     ])
 
     return LaunchDescription([
@@ -25,6 +27,8 @@ def generate_launch_description():
             executable='robot_state_publisher',
             name='robot_state_publisher',
             output='screen',
-            parameters=[{'robot_description': robot_description}]
-        )
+            parameters=[{
+                'robot_description': robot_description
+            }],
+        ),
     ])

@@ -21,7 +21,7 @@ class OdomNode(Node):
         super().__init__('odom_node')
         # Tham số
         self.declare_parameter('baud_rate', 9600)
-        self.declare_parameter('wheel_radius', 0.04)     # bán kính 65 mm/2
+        self.declare_parameter('wheel_radius', 0.0325)  # bán kính 65 mm/2
         self.declare_parameter('odom_frame', 'odom')
         self.declare_parameter('base_frame', 'base_link')
         self.baud_rate   = self.get_parameter('baud_rate').value
@@ -88,7 +88,6 @@ class OdomNode(Node):
 
         vx    = vL * cos30 - vR * cos30
         vy    = vR * sin30 + vL * sin30 - vM
-        # dùng bán kính base = 0.15 m
         omega = -(wL + wR + wM) * (self.r / (3.0 * 0.15))
 
         # 5) Tích phân pose
@@ -104,13 +103,11 @@ class OdomNode(Node):
         self.y  += dy
         self.th += dth
 
-        # --- DEBUG: in pwm, vx, vy, ω, x, y ---
-        print(
+        # --- DEBUG: sử dụng ROS logger để in pwm, vx, vy, ω, x, y ---
+        self.get_logger().info(
             f"pwmL={rpmL:.1f}, pwmR={rpmR:.1f}, pwmM={rpmM:.1f} | "
             f"vx={vx:.3f}, vy={vy:.3f}, ω={omega:.3f} | "
-            f"x={self.x:.3f}, y={self.y:.3f}",
-            end='\r',
-            flush=True
+            f"x={self.x:.3f}, y={self.y:.3f}"
         )
 
         # 6) Publish Odometry

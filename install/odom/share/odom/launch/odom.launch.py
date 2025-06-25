@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import launch
 from launch import LaunchDescription
 from launch_ros.actions import Node
@@ -23,7 +24,6 @@ def generate_launch_description():
             emulate_tty=True,
             arguments=['--ros-args', '--log-level', 'warn'],
         ),
-
         # Odom Node: hiển thị INFO và cao hơn
         Node(
             package='odom',
@@ -36,5 +36,5 @@ def generate_launch_description():
                 'odom_frame': 'odom',
                 'base_frame': 'base_link',
             }],
-        )
+        ),
     ])
