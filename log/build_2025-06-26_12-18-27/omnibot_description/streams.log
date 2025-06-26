@@ -1,0 +1,20 @@
+[12.316s] Invoking command in '/home/jetson/SLAM_WS/src/omnibot_description': PYTHONPATH=/home/jetson/SLAM_WS/build/omnibot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/omnibot_description build --build-base /home/jetson/SLAM_WS/build/omnibot_description/build install --record /home/jetson/SLAM_WS/build/omnibot_description/install.log --single-version-externally-managed install_data
+[14.622s] running egg_info
+[14.639s] writing ../../build/omnibot_description/omnibot_description.egg-info/PKG-INFO
+[14.639s] writing dependency_links to ../../build/omnibot_description/omnibot_description.egg-info/dependency_links.txt
+[14.646s] writing entry points to ../../build/omnibot_description/omnibot_description.egg-info/entry_points.txt
+[14.648s] writing requirements to ../../build/omnibot_description/omnibot_description.egg-info/requires.txt
+[14.650s] writing top-level names to ../../build/omnibot_description/omnibot_description.egg-info/top_level.txt
+[14.669s] reading manifest file '../../build/omnibot_description/omnibot_description.egg-info/SOURCES.txt'
+[14.677s] writing manifest file '../../build/omnibot_description/omnibot_description.egg-info/SOURCES.txt'
+[14.678s] running build
+[14.678s] running build_py
+[14.679s] running install
+[14.684s] running install_lib
+[14.687s] running install_data
+[14.699s] running install_egg_info
+[14.721s] removing '/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages/omnibot_description-0.0.0-py3.8.egg-info' (and everything under it)
+[14.722s] Copying ../../build/omnibot_description/omnibot_description.egg-info to /home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages/omnibot_description-0.0.0-py3.8.egg-info
+[14.735s] running install_scripts
+[14.847s] writing list of installed files to '/home/jetson/SLAM_WS/build/omnibot_description/install.log'
+[15.027s] Invoked command in '/home/jetson/SLAM_WS/src/omnibot_description' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/omnibot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/omnibot_description build --build-base /home/jetson/SLAM_WS/build/omnibot_description/build install --record /home/jetson/SLAM_WS/build/omnibot_description/install.log --single-version-externally-managed install_data
