@@ -1,0 +1,9 @@
+[0.000000] (-) TimerEvent: {}
+[0.003581] (-) JobUnselected: {'identifier': 'kinematics'}
+[0.003737] (-) JobUnselected: {'identifier': 'odom'}
+[0.003917] (-) JobUnselected: {'identifier': 'omni_bot'}
+[0.004043] (-) JobUnselected: {'identifier': 'omnibot_description'}
+[0.004205] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.004300] (-) JobUnselected: {'identifier': 'slam_launch'}
+[0.004390] (-) JobUnselected: {'identifier': 'teleop_omni'}
+[0.004487] (-) EventReactorShutdown: {}

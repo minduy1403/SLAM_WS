@@ -1,0 +1,30 @@
+[0.000000] (-) TimerEvent: {}
+[0.001008] (-) JobUnselected: {'identifier': 'kinematics'}
+[0.001166] (-) JobUnselected: {'identifier': 'odom'}
+[0.001286] (-) JobUnselected: {'identifier': 'omni_bot'}
+[0.001926] (-) JobUnselected: {'identifier': 'omnibot_description'}
+[0.002502] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.002692] (-) JobUnselected: {'identifier': 'slam_launch'}
+[0.002952] (teleop_omni) JobQueued: {'identifier': 'teleop_omni', 'dependencies': OrderedDict()}
+[0.003252] (teleop_omni) JobStarted: {'identifier': 'teleop_omni'}
+[0.098658] (-) TimerEvent: {}
+[0.199472] (-) TimerEvent: {}
+[0.300418] (-) TimerEvent: {}
+[0.401406] (-) TimerEvent: {}
+[0.502332] (-) TimerEvent: {}
+[0.602954] (-) TimerEvent: {}
+[0.703868] (-) TimerEvent: {}
+[0.804500] (-) TimerEvent: {}
+[0.905183] (-) TimerEvent: {}
+[1.005868] (-) TimerEvent: {}
+[1.106584] (-) TimerEvent: {}
+[1.207259] (-) TimerEvent: {}
+[1.308556] (-) TimerEvent: {}
+[1.409306] (-) TimerEvent: {}
+[1.510040] (-) TimerEvent: {}
+[1.610719] (-) TimerEvent: {}
+[1.711373] (-) TimerEvent: {}
+[1.812018] (-) TimerEvent: {}
+[1.898923] (teleop_omni) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute\n    loop.run_until_complete(future)\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete\n    self.run_forever()\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever\n    self._run_once()\n  File "/usr/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once\n    event_list = self._selector.select(timeout)\n  File "/usr/lib/python3.8/selectors.py", line 468, in select\n    fd_event_list = self._selector.poll(timeout, max_ev)\nKeyboardInterrupt\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 102, in build\n    return await extension.build(additional_hooks=additional_hooks)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 96, in build\n    available_commands = await self._get_available_commands(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 194, in _get_available_commands\n    output = await check_output(\n  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output\n    assert not rc, f\'Expected {args} to pass: {stderr_data}\'\nAssertionError: Expected [\'/usr/bin/python3\', \'-W\', \'ignore:setup.py install is deprecated\', \'-W\', \'ignore:easy_install command is deprecated\', \'setup.py\', \'--help-commands\'] to pass: Traceback (most recent call last):\n  File "setup.py", line 1, in <module>\n    from setuptools import setup\n  File "/usr/local/lib/python3.8/dist-packages/setuptools/__init__.py", line 16, in <module>\n    import setuptools.version\n  File "/usr/local/lib/python3.8/dist-packages/setuptools/version.py", line 1, in <module>\n    import pkg_resources\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 3243, in <module>\n    def _initialize_master_working_set():\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 3226, in _call_aside\n    f(*args, **kwargs)\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 3255, in _initialize_master_working_set\n    working_set = WorkingSet._build_master()\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 559, in _build_master\n    ws = cls()\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 552, in __init__\n    self.add_entry(entry)\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 608, in add_entry\n    for dist in find_distributions(entry, True):\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2059, in find_on_path\n    path_item_entries = _by_version_descending(filtered)\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2029, in _by_version_descending\n    return sorted(names, key=_by_version, reverse=True)\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2027, in _by_version\n    return [packaging.version.parse(part) for part in parts]\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py", line 2027, in <listcomp>\n    return [packaging.version.parse(part) for part in parts]\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/_vendor/packaging/version.py", line 56, in parse\n    return Version(version)\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/_vendor/packaging/version.py", line 284, in __init__\n    post=_parse_letter_version(\n  File "/usr/local/lib/python3.8/dist-packages/pkg_resources/_vendor/packaging/version.py", line 420, in _parse_letter_version\n    def _parse_letter_version(\nKeyboardInterrupt\n\n'}
+[1.900737] (teleop_omni) JobEnded: {'identifier': 'teleop_omni', 'rc': 'SIGINT'}
+[1.910128] (-) EventReactorShutdown: {}

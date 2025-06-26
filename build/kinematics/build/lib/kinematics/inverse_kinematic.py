@@ -31,8 +31,8 @@ class InverseKinematicNode(Node):
         # Zero front wheel for testing
         omega_front = (-math.sin(self.theta_front) * vx + math.cos(self.theta_front) * vy + self.L * wz) / self.r
         # Compute right and left wheel omegas
-        omega_right = (-math.sin(self.theta_right) * vx + math.cos(self.theta_right) * vy + self.L * wz) / self.r
-        omega_left  = (-math.sin(self.theta_left)  * vx + math.cos(self.theta_left)  * vy + self.L * wz) / self.r
+        omega_right = (-math.sin(self.theta_right) * vx + math.cos(self.theta_right) * vy * 1.15 + self.L * wz) / self.r
+        omega_left  = (-math.sin(self.theta_left)  * vx + math.cos(self.theta_left)  * vy * 1.15 + self.L * wz) / self.r
 
         # Convert to RPM
         rpm_front = omega_front  * 60.0 / (2 * math.pi)

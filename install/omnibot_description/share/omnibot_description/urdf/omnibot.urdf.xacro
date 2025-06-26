@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="omnibot">
 
   <!-- Vị trí LIDAR -->
-  <xacro:property name="lidar_x" value="0.1"/>
+  <xacro:property name="lidar_x" value="0.05"/>
   <xacro:property name="lidar_y" value="0.0"/>
   <xacro:property name="lidar_z" value="0.2"/>
 

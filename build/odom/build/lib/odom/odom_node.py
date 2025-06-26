@@ -8,43 +8,51 @@ from serial.tools import list_ports
 import serial
 import math
 
-
 def find_ftdi_port(vid=0x0403, pid=0x6001):
     for port in list_ports.comports():
         if port.vid == vid and port.pid == pid:
             return port.device
     return None
 
-
 class OdomNode(Node):
     def __init__(self):
         super().__init__('odom_node')
         # Tham số
         self.declare_parameter('baud_rate', 9600)
-        self.declare_parameter('wheel_radius', 0.0325)  # bán kính 65 mm/2
+        self.declare_parameter('wheel_radius', 0.04)  # bán kính bánh (m)
+        self.declare_parameter('scale_factor', 1.0)     # hệ số hiệu chỉnh chung
+        self.declare_parameter('scale_x', 0.6)         # hệ số hiệu chỉnh cho x
+        self.declare_parameter('scale_y', 0.7)         # hệ số hiệu chỉnh cho y
+        self.declare_parameter('scale_theta', 1.0)     # hệ số hiệu chỉnh cho theta
         self.declare_parameter('odom_frame', 'odom')
         self.declare_parameter('base_frame', 'base_link')
-        self.baud_rate   = self.get_parameter('baud_rate').value
-        self.r           = self.get_parameter('wheel_radius').value
+
+        self.baud_rate    = self.get_parameter('baud_rate').value
+        base_r           = self.get_parameter('wheel_radius').value
+        common_scale     = self.get_parameter('scale_factor').value
+        self.scale_x     = self.get_parameter('scale_x').value * common_scale
+        self.scale_y     = self.get_parameter('scale_y').value * common_scale
+        self.scale_theta = self.get_parameter('scale_theta').value * common_scale
+        self.r           = base_r * common_scale
         self.odom_frame  = self.get_parameter('odom_frame').value
         self.base_frame  = self.get_parameter('base_frame').value
 
         # Mở serial
         port = find_ftdi_port()
         if not port:
-            self.get_logger().error('Không tìm thấy FTDI device 0403:6001!')
+            print('ERROR: Không tìm thấy FTDI device 0403:6001!', flush=True)
             rclpy.shutdown()
             return
         try:
             self.ser = serial.Serial(port, self.baud_rate, timeout=1)
         except serial.SerialException as e:
-            self.get_logger().error(f'Không mở được serial {port}: {e}')
+            print(f'ERROR: Không mở được serial {port}: {e}', flush=True)
             rclpy.shutdown()
             return
-        self.get_logger().info(f'Kết nối serial: {port}')
+        print(f'Kết nối serial: {port}', flush=True)
 
         # Publisher + TF
-        self.odom_pub      = self.create_publisher(Odometry, 'odom', 10)
+        self.odom_pub       = self.create_publisher(Odometry, 'odom', 10)
         self.tf_broadcaster = TransformBroadcaster(self)
 
         # Trạng thái odom
@@ -99,15 +107,23 @@ class OdomNode(Node):
         dy = (vx * math.sin(self.th) + vy * math.cos(self.th)) * dt
         dth = omega * dt
 
+        # Áp dụng scale cho từng thành phần
+        dx *= self.scale_x
+        dy *= self.scale_y
+        dth *= self.scale_theta
+
         self.x  += dx
         self.y  += dy
         self.th += dth
 
-        # --- DEBUG: sử dụng ROS logger để in pwm, vx, vy, ω, x, y ---
-        self.get_logger().info(
-            f"pwmL={rpmL:.1f}, pwmR={rpmR:.1f}, pwmM={rpmM:.1f} | "
-            f"vx={vx:.3f}, vy={vy:.3f}, ω={omega:.3f} | "
-            f"x={self.x:.3f}, y={self.y:.3f}"
+        # Chuyển theta sang độ
+        theta_deg = self.th * 180.0 / math.pi
+        # In các giá trị lên một dòng, dùng flush và carriage return
+        print(
+            f"rpmL={rpmL:.1f}, rpmR={rpmR:.1f}, rpmM={rpmM:.1f} | "
+            f"vx={vx:.3f}, vy={vy:.3f}, omega={omega:.3f} | "
+            f"x={self.x:.3f}, y={self.y:.3f}, theta={theta_deg:.1f}°",
+            end='\r', flush=True
         )
 
         # 6) Publish Odometry
@@ -145,7 +161,6 @@ def main(args=None):
         node.ser.close()
     node.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()

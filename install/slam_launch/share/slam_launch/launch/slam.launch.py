@@ -69,7 +69,7 @@ def generate_launch_description():
         launch_arguments={'serial_port': '/dev/rplidar'}.items()
     )
 
-    # 7) Static TF base_link -> laser lên /tf để SLAM không drop
+    # 7) Static TF base_link -> laser
     static_laser_tf = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -87,8 +87,7 @@ def generate_launch_description():
         ],
     )
 
-    # 8) SLAM Toolbox (mapping) với base_frame = base_link
-    # Delay 2s để TF có thời gian ổn định
+    # 8) SLAM Toolbox (mapping) - tune parameters
     slam_toolbox = TimerAction(
         period=2.0,
         actions=[Node(
@@ -103,6 +102,16 @@ def generate_launch_description():
                 'map_frame': 'map',
                 'odom_frame': 'odom',
                 'base_frame': 'base_link',
+                # map resolution (m)
+                'resolution': 0.10,
+                # laser matching range
+                'max_laser_range': 7.0,
+                'min_laser_range': 0.15,
+                # update thresholds
+                'map_update_distance': 0.2,
+                'map_update_angle': 0.1,
+                # optional tuning
+                'scan_rate': 10,
             }],
         )]
     )
