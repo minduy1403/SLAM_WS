@@ -1,0 +1,21 @@
+[4.894s] Invoking command in '/home/jetson/SLAM_WS/src/slam_launch': AMENT_PREFIX_PATH=/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy PYTHONPATH=/home/jetson/SLAM_WS/build/slam_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/slam_launch build --build-base /home/jetson/SLAM_WS/build/slam_launch/build install --record /home/jetson/SLAM_WS/build/slam_launch/install.log --single-version-externally-managed install_data
+[6.881s] running egg_info
+[6.887s] writing ../../build/slam_launch/slam_launch.egg-info/PKG-INFO
+[6.890s] writing dependency_links to ../../build/slam_launch/slam_launch.egg-info/dependency_links.txt
+[6.893s] writing requirements to ../../build/slam_launch/slam_launch.egg-info/requires.txt
+[6.896s] writing top-level names to ../../build/slam_launch/slam_launch.egg-info/top_level.txt
+[6.915s] reading manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'
+[6.920s] writing manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'
+[6.923s] running build
+[6.925s] running build_py
+[6.927s] running install
+[6.934s] running install_lib
+[6.943s] running install_data
+[6.945s] copying launch/localization.launch.py -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch
+[6.947s] copying params/nav2_params.yaml -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/params
+[6.948s] running install_egg_info
+[6.958s] removing '/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info' (and everything under it)
+[6.960s] Copying ../../build/slam_launch/slam_launch.egg-info to /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info
+[6.964s] running install_scripts
+[7.071s] writing list of installed files to '/home/jetson/SLAM_WS/build/slam_launch/install.log'
+[7.241s] Invoked command in '/home/jetson/SLAM_WS/src/slam_launch' returned '0': AMENT_PREFIX_PATH=/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy PYTHONPATH=/home/jetson/SLAM_WS/build/slam_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/slam_launch build --build-base /home/jetson/SLAM_WS/build/slam_launch/build install --record /home/jetson/SLAM_WS/build/slam_launch/install.log --single-version-externally-managed install_data

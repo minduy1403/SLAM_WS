@@ -1,0 +1,113 @@
+[0.000000] (-) TimerEvent: {}
+[0.000769] (-) JobUnselected: {'identifier': 'kinematics'}
+[0.001170] (-) JobUnselected: {'identifier': 'odom'}
+[0.001505] (-) JobUnselected: {'identifier': 'omni_bot'}
+[0.001831] (-) JobUnselected: {'identifier': 'omnibot_description'}
+[0.002158] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.002569] (-) JobUnselected: {'identifier': 'teleop_omni'}
+[0.002920] (slam_launch) JobQueued: {'identifier': 'slam_launch', 'dependencies': OrderedDict([('kinematics', '/home/jetson/SLAM_WS/install/kinematics'), ('odom', '/home/jetson/SLAM_WS/install/odom'), ('rplidar_ros', '/home/jetson/SLAM_WS/install/rplidar_ros')])}
+[0.014438] (slam_launch) JobStarted: {'identifier': 'slam_launch'}
+[0.098594] (-) TimerEvent: {}
+[0.199680] (-) TimerEvent: {}
+[0.302549] (-) TimerEvent: {}
+[0.403537] (-) TimerEvent: {}
+[0.514712] (-) TimerEvent: {}
+[0.615394] (-) TimerEvent: {}
+[0.716616] (-) TimerEvent: {}
+[0.817545] (-) TimerEvent: {}
+[0.918612] (-) TimerEvent: {}
+[1.019584] (-) TimerEvent: {}
+[1.120708] (-) TimerEvent: {}
+[1.221927] (-) TimerEvent: {}
+[1.323190] (-) TimerEvent: {}
+[1.423937] (-) TimerEvent: {}
+[1.524622] (-) TimerEvent: {}
+[1.625271] (-) TimerEvent: {}
+[1.726419] (-) TimerEvent: {}
+[1.827670] (-) TimerEvent: {}
+[1.928885] (-) TimerEvent: {}
+[2.030233] (-) TimerEvent: {}
+[2.131741] (-) TimerEvent: {}
+[2.233220] (-) TimerEvent: {}
+[2.334371] (-) TimerEvent: {}
+[2.439051] (-) TimerEvent: {}
+[2.539747] (-) TimerEvent: {}
+[2.640428] (-) TimerEvent: {}
+[2.741629] (-) TimerEvent: {}
+[2.842949] (-) TimerEvent: {}
+[2.944082] (-) TimerEvent: {}
+[3.050473] (-) TimerEvent: {}
+[3.151427] (-) TimerEvent: {}
+[3.252896] (-) TimerEvent: {}
+[3.354095] (-) TimerEvent: {}
+[3.455484] (-) TimerEvent: {}
+[3.556722] (-) TimerEvent: {}
+[3.657424] (-) TimerEvent: {}
+[3.758130] (-) TimerEvent: {}
+[3.858811] (-) TimerEvent: {}
+[3.960176] (-) TimerEvent: {}
+[4.061422] (-) TimerEvent: {}
+[4.169192] (-) TimerEvent: {}
+[4.270545] (-) TimerEvent: {}
+[4.371931] (-) TimerEvent: {}
+[4.474448] (-) TimerEvent: {}
+[4.575705] (-) TimerEvent: {}
+[4.677021] (-) TimerEvent: {}
+[4.778453] (-) TimerEvent: {}
+[4.879600] (-) TimerEvent: {}
+[4.981124] (-) TimerEvent: {}
+[5.082589] (-) TimerEvent: {}
+[5.183290] (-) TimerEvent: {}
+[5.284049] (-) TimerEvent: {}
+[5.386011] (-) TimerEvent: {}
+[5.486791] (-) TimerEvent: {}
+[5.587552] (-) TimerEvent: {}
+[5.688200] (-) TimerEvent: {}
+[5.789409] (-) TimerEvent: {}
+[5.848321] (slam_launch) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/slam_launch', 'build', '--build-base', '/home/jetson/SLAM_WS/build/slam_launch/build', 'install', '--record', '/home/jetson/SLAM_WS/build/slam_launch/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/slam_launch', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.1.7 52245 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/SLAM_WS', 'SSH_TTY': '/dev/pts/1', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022801', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/build/slam_launch', 'SSH_CONNECTION': '192.168.1.7 52245 192.168.1.10 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/build/slam_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[5.889660] (-) TimerEvent: {}
+[5.991265] (-) TimerEvent: {}
+[6.092392] (-) TimerEvent: {}
+[6.193580] (-) TimerEvent: {}
+[6.294788] (-) TimerEvent: {}
+[6.396019] (-) TimerEvent: {}
+[6.497177] (-) TimerEvent: {}
+[6.598375] (-) TimerEvent: {}
+[6.699032] (-) TimerEvent: {}
+[6.799725] (-) TimerEvent: {}
+[6.901028] (-) TimerEvent: {}
+[7.002246] (-) TimerEvent: {}
+[7.110423] (-) TimerEvent: {}
+[7.211695] (-) TimerEvent: {}
+[7.312873] (-) TimerEvent: {}
+[7.414124] (-) TimerEvent: {}
+[7.515348] (-) TimerEvent: {}
+[7.616548] (-) TimerEvent: {}
+[7.717939] (-) TimerEvent: {}
+[7.819271] (-) TimerEvent: {}
+[7.850992] (slam_launch) StdoutLine: {'line': b'running egg_info\n'}
+[7.867110] (slam_launch) StdoutLine: {'line': b'writing ../../build/slam_launch/slam_launch.egg-info/PKG-INFO\n'}
+[7.869586] (slam_launch) StdoutLine: {'line': b'writing dependency_links to ../../build/slam_launch/slam_launch.egg-info/dependency_links.txt\n'}
+[7.870217] (slam_launch) StdoutLine: {'line': b'writing requirements to ../../build/slam_launch/slam_launch.egg-info/requires.txt\n'}
+[7.870678] (slam_launch) StdoutLine: {'line': b'writing top-level names to ../../build/slam_launch/slam_launch.egg-info/top_level.txt\n'}
+[7.883334] (slam_launch) StdoutLine: {'line': b"reading manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'\n"}
+[7.889097] (slam_launch) StdoutLine: {'line': b"writing manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'\n"}
+[7.891885] (slam_launch) StdoutLine: {'line': b'running build\n'}
+[7.893673] (slam_launch) StdoutLine: {'line': b'running build_py\n'}
+[7.896576] (slam_launch) StdoutLine: {'line': b'running install\n'}
+[7.902034] (slam_launch) StdoutLine: {'line': b'running install_lib\n'}
+[7.910217] (slam_launch) StdoutLine: {'line': b'running install_data\n'}
+[7.913297] (slam_launch) StdoutLine: {'line': b'copying params/nav2_params.yaml -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/params\n'}
+[7.915373] (slam_launch) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.919420] (-) TimerEvent: {}
+[7.926113] (slam_launch) StdoutLine: {'line': b"removing '/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.928490] (slam_launch) StdoutLine: {'line': b'Copying ../../build/slam_launch/slam_launch.egg-info to /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info\n'}
+[7.934208] (slam_launch) StdoutLine: {'line': b'running install_scripts\n'}
+[8.019605] (-) TimerEvent: {}
+[8.035212] (slam_launch) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/build/slam_launch/install.log'\n"}
+[8.119800] (-) TimerEvent: {}
+[8.197348] (slam_launch) CommandEnded: {'returncode': 0}
+[8.219985] (-) TimerEvent: {}
+[8.327386] (-) TimerEvent: {}
+[8.352209] (slam_launch) JobEnded: {'identifier': 'slam_launch', 'rc': 0}
+[8.356439] (-) EventReactorShutdown: {}

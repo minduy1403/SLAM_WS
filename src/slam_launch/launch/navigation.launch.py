@@ -27,7 +27,6 @@ def generate_launch_description():
     autostart_arg = DeclareLaunchArgument(
         'autostart', default_value='true', description='Autostart Nav2 lifecycle'
     )
-
     params_arg = DeclareLaunchArgument(
         'params_file',
         default_value=PathJoinSubstitution([
@@ -37,7 +36,7 @@ def generate_launch_description():
         description='Path to custom Nav2 parameters file'
     )
 
-    # LaunchConfiguration substitutions
+    # Substitutions
     map_yaml = LaunchConfiguration('map')
     use_sim_time = LaunchConfiguration('use_sim_time')
     autostart = LaunchConfiguration('autostart')
@@ -73,6 +72,14 @@ def generate_launch_description():
         launch_arguments={'serial_port': '/dev/rplidar'}.items()
     )
 
+    # Static identity transform odom → base_link (giúp Nav2 không timeout TF)
+    static_odom_tf = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_odom_tf',
+        arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_link']
+    )
+
     # Include Nav2 bringup (map_server, amcl, planner, controller)
     nav2_bringup = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -88,7 +95,6 @@ def generate_launch_description():
         }.items()
     )
 
-
     return LaunchDescription([
         # launch args
         map_yaml_arg,
@@ -101,6 +107,8 @@ def generate_launch_description():
         inv_kin_node,
         serial_drv_node,
         lidar_launch,
+        # static TF giữa odom và base_link
+        static_odom_tf,
         # navigation stack
         nav2_bringup,
     ])
