@@ -8,6 +8,7 @@ setup.py
 ../../build/slam_launch/slam_launch.egg-info/top_level.txt
 ../../build/slam_launch/slam_launch.egg-info/zip-safe
 launch/localization.launch.py
+launch/navigation.launch.py
 launch/slam.launch.py
 resource/slam_launch
 slam_launch/__init__.py

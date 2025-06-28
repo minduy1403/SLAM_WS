@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing omni_bot.egg-info/PKG-INFO
+writing dependency_links to omni_bot.egg-info/dependency_links.txt
+writing entry points to omni_bot.egg-info/entry_points.txt
+writing requirements to omni_bot.egg-info/requires.txt
+writing top-level names to omni_bot.egg-info/top_level.txt
+reading manifest file 'omni_bot.egg-info/SOURCES.txt'
+writing manifest file 'omni_bot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages/omni-bot.egg-link (link to .)
+
+Installed /home/jetson/SLAM_WS/build/omni_bot
+running symlink_data
+symbolically linking /home/jetson/SLAM_WS/build/omni_bot/resource/omni_bot -> /home/jetson/SLAM_WS/install/omni_bot/share/ament_index/resource_index/packages
+symbolically linking /home/jetson/SLAM_WS/build/omni_bot/package.xml -> /home/jetson/SLAM_WS/install/omni_bot/share/omni_bot

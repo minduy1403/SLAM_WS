@@ -1,0 +1,21 @@
+[6.275s] Invoking command in '/home/jetson/SLAM_WS/src/odom': PYTHONPATH=/home/jetson/SLAM_WS/build/odom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odom build --build-base /home/jetson/SLAM_WS/build/odom/build install --record /home/jetson/SLAM_WS/build/odom/install.log --single-version-externally-managed install_data
+[7.742s] running egg_info
+[7.746s] writing ../../build/odom/odom.egg-info/PKG-INFO
+[7.747s] writing dependency_links to ../../build/odom/odom.egg-info/dependency_links.txt
+[7.749s] writing entry points to ../../build/odom/odom.egg-info/entry_points.txt
+[7.750s] writing requirements to ../../build/odom/odom.egg-info/requires.txt
+[7.750s] writing top-level names to ../../build/odom/odom.egg-info/top_level.txt
+[7.765s] reading manifest file '../../build/odom/odom.egg-info/SOURCES.txt'
+[7.770s] writing manifest file '../../build/odom/odom.egg-info/SOURCES.txt'
+[7.771s] running build
+[7.772s] running build_py
+[7.775s] running install
+[7.779s] running install_lib
+[7.787s] running install_data
+[7.788s] running install_egg_info
+[7.798s] removing '/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom-0.0.0-py3.8.egg-info' (and everything under it)
+[7.800s] Copying ../../build/odom/odom.egg-info to /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom-0.0.0-py3.8.egg-info
+[7.806s] running install_scripts
+[7.903s] Installing odom_node script to /home/jetson/SLAM_WS/install/odom/lib/odom
+[7.905s] writing list of installed files to '/home/jetson/SLAM_WS/build/odom/install.log'
+[9.339s] Invoked command in '/home/jetson/SLAM_WS/src/odom' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/odom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odom build --build-base /home/jetson/SLAM_WS/build/odom/build install --record /home/jetson/SLAM_WS/build/odom/install.log --single-version-externally-managed install_data

@@ -1,0 +1,19 @@
+[5.956s] Invoking command in '/home/jetson/SLAM_WS/build/teleop_omni': PYTHONPATH=/home/jetson/SLAM_WS/build/teleop_omni/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jetson/SLAM_WS/build/teleop_omni/build --no-deps symlink_data --force
+[7.939s] running develop
+[9.164s] running egg_info
+[9.166s] writing teleop_omni.egg-info/PKG-INFO
+[9.168s] writing dependency_links to teleop_omni.egg-info/dependency_links.txt
+[9.169s] writing entry points to teleop_omni.egg-info/entry_points.txt
+[9.171s] writing requirements to teleop_omni.egg-info/requires.txt
+[9.172s] writing top-level names to teleop_omni.egg-info/top_level.txt
+[9.186s] reading manifest file 'teleop_omni.egg-info/SOURCES.txt'
+[9.190s] writing manifest file 'teleop_omni.egg-info/SOURCES.txt'
+[9.388s] running build_ext
+[9.389s] Creating /home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages/teleop-omni.egg-link (link to .)
+[9.392s] Installing teleop_keyboard script to /home/jetson/SLAM_WS/install/teleop_omni/lib/teleop_omni
+[9.393s] 
+[9.393s] Installed /home/jetson/SLAM_WS/build/teleop_omni
+[9.394s] running symlink_data
+[9.394s] symbolically linking /home/jetson/SLAM_WS/build/teleop_omni/resource/teleop_omni -> /home/jetson/SLAM_WS/install/teleop_omni/share/ament_index/resource_index/packages
+[9.395s] symbolically linking /home/jetson/SLAM_WS/build/teleop_omni/package.xml -> /home/jetson/SLAM_WS/install/teleop_omni/share/teleop_omni
+[9.703s] Invoked command in '/home/jetson/SLAM_WS/build/teleop_omni' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/teleop_omni/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jetson/SLAM_WS/build/teleop_omni/build --no-deps symlink_data --force

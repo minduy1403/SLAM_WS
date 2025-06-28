@@ -1,0 +1,18 @@
+[7.780s] Invoking command in '/home/jetson/SLAM_WS/build/omni_bot': PYTHONPATH=/home/jetson/SLAM_WS/build/omni_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jetson/SLAM_WS/build/omni_bot/build --no-deps symlink_data --force
+[10.060s] running develop
+[11.231s] running egg_info
+[11.234s] writing omni_bot.egg-info/PKG-INFO
+[11.235s] writing dependency_links to omni_bot.egg-info/dependency_links.txt
+[11.236s] writing entry points to omni_bot.egg-info/entry_points.txt
+[11.236s] writing requirements to omni_bot.egg-info/requires.txt
+[11.237s] writing top-level names to omni_bot.egg-info/top_level.txt
+[11.247s] reading manifest file 'omni_bot.egg-info/SOURCES.txt'
+[11.250s] writing manifest file 'omni_bot.egg-info/SOURCES.txt'
+[11.570s] running build_ext
+[11.574s] Creating /home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages/omni-bot.egg-link (link to .)
+[11.578s] 
+[11.596s] Installed /home/jetson/SLAM_WS/build/omni_bot
+[11.598s] running symlink_data
+[11.600s] symbolically linking /home/jetson/SLAM_WS/build/omni_bot/resource/omni_bot -> /home/jetson/SLAM_WS/install/omni_bot/share/ament_index/resource_index/packages
+[11.603s] symbolically linking /home/jetson/SLAM_WS/build/omni_bot/package.xml -> /home/jetson/SLAM_WS/install/omni_bot/share/omni_bot
+[11.838s] Invoked command in '/home/jetson/SLAM_WS/build/omni_bot' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/omni_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jetson/SLAM_WS/build/omni_bot/build --no-deps symlink_data --force

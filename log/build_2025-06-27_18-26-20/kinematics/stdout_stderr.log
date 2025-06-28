@@ -1,0 +1,19 @@
+running develop
+running egg_info
+writing kinematics.egg-info/PKG-INFO
+writing dependency_links to kinematics.egg-info/dependency_links.txt
+writing entry points to kinematics.egg-info/entry_points.txt
+writing requirements to kinematics.egg-info/requires.txt
+writing top-level names to kinematics.egg-info/top_level.txt
+reading manifest file 'kinematics.egg-info/SOURCES.txt'
+writing manifest file 'kinematics.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages/kinematics.egg-link (link to .)
+Installing inverse_kinematic script to /home/jetson/SLAM_WS/install/kinematics/lib/kinematics
+Installing serial_driver script to /home/jetson/SLAM_WS/install/kinematics/lib/kinematics
+
+Installed /home/jetson/SLAM_WS/build/kinematics
+running symlink_data
+symbolically linking /home/jetson/SLAM_WS/build/kinematics/resource/kinematics -> /home/jetson/SLAM_WS/install/kinematics/share/ament_index/resource_index/packages
+symbolically linking /home/jetson/SLAM_WS/build/kinematics/package.xml -> /home/jetson/SLAM_WS/install/kinematics/share/kinematics
+symbolically linking /home/jetson/SLAM_WS/build/kinematics/launch/manual.launch.py -> /home/jetson/SLAM_WS/install/kinematics/share/kinematics/launch

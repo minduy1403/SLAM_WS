@@ -11,8 +11,12 @@ setup.py
 kinematics/__init__.py
 kinematics/inverse_kinematic.py
 kinematics/serial_driver_node.py
+kinematics.egg-info/PKG-INFO
+kinematics.egg-info/SOURCES.txt
+kinematics.egg-info/dependency_links.txt
+kinematics.egg-info/entry_points.txt
+kinematics.egg-info/requires.txt
+kinematics.egg-info/top_level.txt
+kinematics.egg-info/zip-safe
 launch/manual.launch.py
 resource/kinematics
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

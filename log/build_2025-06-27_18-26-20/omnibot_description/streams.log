@@ -1,0 +1,20 @@
+[6.052s] Invoking command in '/home/jetson/SLAM_WS/build/omnibot_description': PYTHONPATH=/home/jetson/SLAM_WS/build/omnibot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jetson/SLAM_WS/build/omnibot_description/build --no-deps symlink_data --force
+[8.234s] running develop
+[9.453s] running egg_info
+[9.455s] writing omnibot_description.egg-info/PKG-INFO
+[9.457s] writing dependency_links to omnibot_description.egg-info/dependency_links.txt
+[9.458s] writing entry points to omnibot_description.egg-info/entry_points.txt
+[9.458s] writing requirements to omnibot_description.egg-info/requires.txt
+[9.459s] writing top-level names to omnibot_description.egg-info/top_level.txt
+[9.482s] reading manifest file 'omnibot_description.egg-info/SOURCES.txt'
+[9.483s] writing manifest file 'omnibot_description.egg-info/SOURCES.txt'
+[9.784s] running build_ext
+[9.786s] Creating /home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages/omnibot-description.egg-link (link to .)
+[9.789s] 
+[9.789s] Installed /home/jetson/SLAM_WS/build/omnibot_description
+[9.790s] running symlink_data
+[9.801s] symbolically linking /home/jetson/SLAM_WS/build/omnibot_description/resource/omnibot_description -> /home/jetson/SLAM_WS/install/omnibot_description/share/ament_index/resource_index/packages
+[9.803s] symbolically linking /home/jetson/SLAM_WS/build/omnibot_description/package.xml -> /home/jetson/SLAM_WS/install/omnibot_description/share/omnibot_description
+[9.803s] symbolically linking /home/jetson/SLAM_WS/build/omnibot_description/launch/omnibot_description.launch.py -> /home/jetson/SLAM_WS/install/omnibot_description/share/omnibot_description/launch
+[9.804s] symbolically linking /home/jetson/SLAM_WS/build/omnibot_description/urdf/omnibot.urdf.xacro -> /home/jetson/SLAM_WS/install/omnibot_description/share/omnibot_description/urdf
+[10.018s] Invoked command in '/home/jetson/SLAM_WS/build/omnibot_description' returned '0': PYTHONPATH=/home/jetson/SLAM_WS/build/omnibot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jetson/SLAM_WS/build/omnibot_description/build --no-deps symlink_data --force

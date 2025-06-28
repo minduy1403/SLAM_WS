@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing odom.egg-info/PKG-INFO
+writing dependency_links to odom.egg-info/dependency_links.txt
+writing entry points to odom.egg-info/entry_points.txt
+writing requirements to odom.egg-info/requires.txt
+writing top-level names to odom.egg-info/top_level.txt
+reading manifest file 'odom.egg-info/SOURCES.txt'
+writing manifest file 'odom.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages/odom.egg-link (link to .)
+Installing odom_node script to /home/jetson/SLAM_WS/install/odom/lib/odom
+
+Installed /home/jetson/SLAM_WS/build/odom
+running symlink_data
+symbolically linking /home/jetson/SLAM_WS/build/odom/resource/odom -> /home/jetson/SLAM_WS/install/odom/share/ament_index/resource_index/packages
+symbolically linking /home/jetson/SLAM_WS/build/odom/package.xml -> /home/jetson/SLAM_WS/install/odom/share/odom
+symbolically linking /home/jetson/SLAM_WS/build/odom/launch/odom.launch.py -> /home/jetson/SLAM_WS/install/odom/share/odom/launch

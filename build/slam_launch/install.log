@@ -4,6 +4,7 @@
 /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/package.xml
 /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch/localization.launch.py
 /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch/slam.launch.py
+/home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch/navigation.launch.py
 /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info/top_level.txt
 /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info/dependency_links.txt
 /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info/SOURCES.txt

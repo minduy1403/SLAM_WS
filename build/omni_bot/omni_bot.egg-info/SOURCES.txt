@@ -9,7 +9,11 @@ setup.py
 ../../build/omni_bot/omni_bot.egg-info/top_level.txt
 ../../build/omni_bot/omni_bot.egg-info/zip-safe
 omni_bot/__init__.py
+omni_bot.egg-info/PKG-INFO
+omni_bot.egg-info/SOURCES.txt
+omni_bot.egg-info/dependency_links.txt
+omni_bot.egg-info/entry_points.txt
+omni_bot.egg-info/requires.txt
+omni_bot.egg-info/top_level.txt
+omni_bot.egg-info/zip-safe
 resource/omni_bot
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

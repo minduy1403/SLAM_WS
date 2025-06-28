@@ -1,0 +1,1 @@
+/home/jetson/SLAM_WS/src/kinematics/launch/manual.launch.py

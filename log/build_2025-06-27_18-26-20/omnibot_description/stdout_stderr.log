@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing omnibot_description.egg-info/PKG-INFO
+writing dependency_links to omnibot_description.egg-info/dependency_links.txt
+writing entry points to omnibot_description.egg-info/entry_points.txt
+writing requirements to omnibot_description.egg-info/requires.txt
+writing top-level names to omnibot_description.egg-info/top_level.txt
+reading manifest file 'omnibot_description.egg-info/SOURCES.txt'
+writing manifest file 'omnibot_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages/omnibot-description.egg-link (link to .)
+
+Installed /home/jetson/SLAM_WS/build/omnibot_description
+running symlink_data
+symbolically linking /home/jetson/SLAM_WS/build/omnibot_description/resource/omnibot_description -> /home/jetson/SLAM_WS/install/omnibot_description/share/ament_index/resource_index/packages
+symbolically linking /home/jetson/SLAM_WS/build/omnibot_description/package.xml -> /home/jetson/SLAM_WS/install/omnibot_description/share/omnibot_description
+symbolically linking /home/jetson/SLAM_WS/build/omnibot_description/launch/omnibot_description.launch.py -> /home/jetson/SLAM_WS/install/omnibot_description/share/omnibot_description/launch
+symbolically linking /home/jetson/SLAM_WS/build/omnibot_description/urdf/omnibot.urdf.xacro -> /home/jetson/SLAM_WS/install/omnibot_description/share/omnibot_description/urdf

@@ -10,8 +10,12 @@ setup.py
 ../../build/omnibot_description/omnibot_description.egg-info/zip-safe
 launch/omnibot_description.launch.py
 omnibot_description/__init__.py
+omnibot_description.egg-info/PKG-INFO
+omnibot_description.egg-info/SOURCES.txt
+omnibot_description.egg-info/dependency_links.txt
+omnibot_description.egg-info/entry_points.txt
+omnibot_description.egg-info/requires.txt
+omnibot_description.egg-info/top_level.txt
+omnibot_description.egg-info/zip-safe
 resource/omnibot_description
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
 urdf/omnibot.urdf.xacro

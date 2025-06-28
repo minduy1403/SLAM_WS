@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing slam_launch.egg-info/PKG-INFO
+writing dependency_links to slam_launch.egg-info/dependency_links.txt
+writing requirements to slam_launch.egg-info/requires.txt
+writing top-level names to slam_launch.egg-info/top_level.txt
+reading manifest file 'slam_launch.egg-info/SOURCES.txt'
+writing manifest file 'slam_launch.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam-launch.egg-link (link to .)
+
+Installed /home/jetson/SLAM_WS/build/slam_launch
+running symlink_data
+symbolically linking /home/jetson/SLAM_WS/build/slam_launch/resource/slam_launch -> /home/jetson/SLAM_WS/install/slam_launch/share/ament_index/resource_index/packages
+symbolically linking /home/jetson/SLAM_WS/build/slam_launch/package.xml -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch
+symbolically linking /home/jetson/SLAM_WS/build/slam_launch/launch/localization.launch.py -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch
+symbolically linking /home/jetson/SLAM_WS/build/slam_launch/launch/slam.launch.py -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch
+symbolically linking /home/jetson/SLAM_WS/build/slam_launch/launch/navigation.launch.py -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch
