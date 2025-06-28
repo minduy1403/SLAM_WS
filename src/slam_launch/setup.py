@@ -17,6 +17,7 @@ setup(
         # cài launch file vào share/slam_launch/launch
         (os.path.join('share', package_name, 'launch'),
             glob('launch/*.py')),
+        ('share/slam_launch/params', ['params/nav2_params.yaml']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

@@ -1,1 +1,0 @@
-/home/jetson/SLAM_WS/src/kinematics/setup.py

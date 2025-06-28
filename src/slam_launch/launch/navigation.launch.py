@@ -28,6 +28,15 @@ def generate_launch_description():
         'autostart', default_value='true', description='Autostart Nav2 lifecycle'
     )
 
+    params_arg = DeclareLaunchArgument(
+        'params_file',
+        default_value=PathJoinSubstitution([
+            FindPackageShare('slam_launch'),
+            'params', 'nav2_params.yaml'
+        ]),
+        description='Path to custom Nav2 parameters file'
+    )
+
     # LaunchConfiguration substitutions
     map_yaml = LaunchConfiguration('map')
     use_sim_time = LaunchConfiguration('use_sim_time')
@@ -74,15 +83,18 @@ def generate_launch_description():
         launch_arguments={
             'map': map_yaml,
             'use_sim_time': use_sim_time,
-            'autostart': autostart
+            'autostart': autostart,
+            'params_file': LaunchConfiguration('params_file'),
         }.items()
     )
+
 
     return LaunchDescription([
         # launch args
         map_yaml_arg,
         use_sim_time_arg,
         autostart_arg,
+        params_arg,
         # robot bringup
         rsp,
         odom_node,

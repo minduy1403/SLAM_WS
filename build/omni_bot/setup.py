@@ -1,1 +1,0 @@
-/home/jetson/SLAM_WS/src/omni_bot/setup.py
