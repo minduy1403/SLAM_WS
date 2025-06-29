@@ -3,15 +3,15 @@
 ###############################################################################
 map_server:
   ros__parameters:
-    use_sim_time: True
-    yaml_filename: ""      # sẽ bị RewrittenYaml thay bằng map_arg
+    use_sim_time: False
+    yaml_filename: "/home/jetson/my_map.yaml"      # sẽ bị RewrittenYaml thay bằng map_arg
 
 ###############################################################################
 # 1. AMCL (localization)
 ###############################################################################
 amcl:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
     use_global_localization: true
 
     # Motion model (đổi sang omni)
@@ -70,18 +70,18 @@ amcl:
 ###############################################################################
 amcl_map_client:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
 
 amcl_rclcpp_node:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
 
 ###############################################################################
 # 3. Behavior Tree Navigator
 ###############################################################################
 bt_navigator:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
     global_frame: map
     robot_base_frame: base_link
     odom_topic: /odom
@@ -115,14 +115,14 @@ bt_navigator:
 
 bt_navigator_rclcpp_node:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
 
 ###############################################################################
 # 4. Controller Server (DWB Local Planner) – cho omni drive mở vel_y
 ###############################################################################
 controller_server:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
     controller_frequency: 20.0
     controller_plugins: ["FollowPath"]
 
@@ -147,10 +147,10 @@ controller_server:
 
       # giới hạn gia tốc
       acc_lim_x: 2.5
-      acc_lim_y: 0.0
+      acc_lim_y: 2.5
       acc_lim_theta: 3.2
       decel_lim_x: -2.5
-      decel_lim_y: 0.0
+      decel_lim_y: -2.5
       decel_lim_theta: -3.2
 
       sim_time: 1.7
@@ -188,7 +188,7 @@ controller_server:
 local_costmap:
   local_costmap:
     ros__parameters:
-      use_sim_time: True
+      use_sim_time: False
       global_frame: odom
       robot_base_frame: base_link
       rolling_window: true
@@ -223,11 +223,11 @@ local_costmap:
 
   local_costmap_client:
     ros__parameters:
-      use_sim_time: True
+      use_sim_time: False
 
   local_costmap_rclcpp_node:
     ros__parameters:
-      use_sim_time: True
+      use_sim_time: False
 
 ###############################################################################
 # 6. Global Costmap
@@ -235,7 +235,7 @@ local_costmap:
 global_costmap:
   global_costmap:
     ros__parameters:
-      use_sim_time: True
+      use_sim_time: False
       global_frame: map
       robot_base_frame: base_link
       update_frequency: 1.0
@@ -266,18 +266,18 @@ global_costmap:
 
   global_costmap_client:
     ros__parameters:
-      use_sim_time: True
+      use_sim_time: False
 
   global_costmap_rclcpp_node:
     ros__parameters:
-      use_sim_time: True
+      use_sim_time: False
 
 ###############################################################################
 # 7. Planner Server
 ###############################################################################
 planner_server:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
     expected_planner_frequency: 20.0
     planner_plugins: ["GridBased"]
     GridBased:
@@ -288,14 +288,14 @@ planner_server:
 
 planner_server_rclcpp_node:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
 
 ###############################################################################
 # 8. Recovery Behaviors
 ###############################################################################
 recoveries_server:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
     cycle_frequency: 10.0
     recovery_plugins: ["spin","back_up","wait"]
     spin:
@@ -317,7 +317,7 @@ recoveries_server:
 ###############################################################################
 map_saver:
   ros__parameters:
-    use_sim_time: True
+    use_sim_time: False
     save_map_timeout: 5000
     free_thresh_default: 0.25
     occupied_thresh_default: 0.65

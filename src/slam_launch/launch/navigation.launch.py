@@ -3,8 +3,8 @@ import os
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable
-from launch.substitutions import LaunchConfiguration, Command, PathJoinSubstitution, TextSubstitution
+from launch.actions import SetEnvironmentVariable
+from launch.substitutions import TextSubstitution, Command, PathJoinSubstitution
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.actions import IncludeLaunchDescription
 from launch_ros.actions import Node
@@ -12,34 +12,25 @@ from nav2_common.launch import RewrittenYaml
 from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
-    # Directories
+    # Package directories
     bringup_dir = get_package_share_directory('slam_launch')
     desc_pkg_dir = get_package_share_directory('omnibot_description')
+    bt_dir       = get_package_share_directory('nav2_bt_navigator')
 
-    # Launch configuration
-    namespace = LaunchConfiguration('namespace')
-    map_yaml = LaunchConfiguration('map')
-    use_sim_time = LaunchConfiguration('use_sim_time')
-    autostart = LaunchConfiguration('autostart')
-    params_file = LaunchConfiguration('params_file')
-    default_bt_xml = LaunchConfiguration('default_bt_xml_filename')
-    map_subscribe_transient_local = LaunchConfiguration('map_subscribe_transient_local')
+    # Hard-coded defaults
+    namespace                     = TextSubstitution(text='')
+    map_yaml                      = TextSubstitution(text='/home/jetson/my_map.yaml')
+    use_sim_time                  = TextSubstitution(text='false')
+    autostart                     = TextSubstitution(text='true')
+    default_bt_xml                = PathJoinSubstitution([
+                                        bt_dir,
+                                        'behavior_trees',
+                                        'navigate_w_replanning_and_recovery.xml'
+                                      ])
+    map_subscribe_transient_local = TextSubstitution(text='false')
+    nav2_params_path              = '/home/jetson/SLAM_WS/src/slam_launch/params/nav2_params.yaml'
 
-    # Lifecycle nodes to autostart
-    lifecycle_nodes = [
-        'controller_server',
-        'planner_server',
-        'recoveries_server',
-        'bt_navigator'
-    ]
-
-    # Remappings for TF
-    remappings = [
-        ('/tf', 'tf'),
-        ('/tf_static', 'tf_static')
-    ]
-
-    # Rewritten YAML for parameter substitutions
+    # Prepare rewritten params for Nav2
     param_substitutions = {
         'use_sim_time': use_sim_time,
         'default_bt_xml_filename': default_bt_xml,
@@ -47,78 +38,50 @@ def generate_launch_description():
         'map_subscribe_transient_local': map_subscribe_transient_local
     }
     configured_params = RewrittenYaml(
-        source_file=params_file,
+        source_file=nav2_params_path,
         root_key=namespace,
         param_rewrites=param_substitutions,
         convert_types=True
     )
 
-    # ===== Declare launch arguments =====
-    declare_args = [
-        DeclareLaunchArgument(
-            'namespace', default_value='',
-            description='Top-level namespace for all nodes'
-        ),
-        DeclareLaunchArgument(
-            'map', default_value=os.path.expanduser('~/my_map.yaml'),
-            description='Full path to map YAML file'
-        ),
-        DeclareLaunchArgument(
-            'use_sim_time', default_value='false',
-            description='Use simulation (Gazebo) clock'
-        ),
-        DeclareLaunchArgument(
-            'autostart', default_value='true',
-            description='Automatically startup Nav2 lifecycle nodes'
-        ),
-        DeclareLaunchArgument(
-            'params_file',
-            default_value=PathJoinSubstitution([bringup_dir, 'params', 'nav2_params.yaml']),
-            description='Path to Nav2 parameters file'
-        ),
-        DeclareLaunchArgument(
-            'default_bt_xml_filename',
-            default_value=PathJoinSubstitution([
-                get_package_share_directory('nav2_bt_navigator'),
-                'behavior_trees',
-                'navigate_w_replanning_and_recovery.xml'
-            ]),
-            description='Full path to behavior tree XML file'
-        ),
-        DeclareLaunchArgument(
-            'map_subscribe_transient_local', default_value='false',
-            description='Whether to subscribe to map with transient local QoS'
-        )
-    ]
-
-    # ===== Robot state publisher (URDF) =====
+    # Robot state publisher (URDF via xacro)
     xacro_file = os.path.join(desc_pkg_dir, 'urdf', 'omnibot.urdf.xacro')
+    # Note: include the space after 'xacro' so the command becomes "xacro /path/to/omnibot.urdf.xacro"
     robot_description = ParameterValue(
         Command(['xacro ', xacro_file]),
         value_type=str
     )
     rsp_node = Node(
-        package='robot_state_publisher', executable='robot_state_publisher',
-        name='robot_state_publisher', output='screen',
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        name='robot_state_publisher',
+        output='screen',
         parameters=[{'robot_description': robot_description}]
     )
 
-    # ===== Odometry & Kinematics =====
+    # Odometry & kinematics
     odom_node = Node(
-        package='odom', executable='odom_node', name='odom_node', output='screen',
+        package='odom',
+        executable='odom_node',
+        name='odom_node',
+        output='screen',
         parameters=[{'use_sim_time': use_sim_time}]
     )
     inv_kin_node = Node(
-        package='kinematics', executable='inverse_kinematic',
-        name='inverse_kinematic', output='screen',
+        package='kinematics',
+        executable='inverse_kinematic',
+        name='inverse_kinematic',
+        output='screen',
         parameters=[{'use_sim_time': use_sim_time}]
     )
     serial_drv_node = Node(
-        package='kinematics', executable='serial_driver',
-        name='serial_driver', output='screen'
+        package='kinematics',
+        executable='serial_driver',
+        name='serial_driver',
+        output='screen'
     )
 
-    # ===== RPLIDAR Driver =====
+    # RPLIDAR driver
     lidar_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([
@@ -133,7 +96,7 @@ def generate_launch_description():
         }.items()
     )
 
-    # ===== Nav2 Bringup =====
+    # Nav2 bringup (all-in-one localization + navigation)
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([
@@ -143,28 +106,29 @@ def generate_launch_description():
             ])
         ),
         launch_arguments={
-            'namespace': namespace,
-            'map': map_yaml,
-            'use_sim_time': use_sim_time,
-            'autostart': autostart,
-            'params_file': params_file,
-            'default_bt_xml_filename': default_bt_xml,
+            'namespace':                     namespace,
+            'map':                           map_yaml,
+            'use_sim_time':                  use_sim_time,
+            'autostart':                     autostart,
+            'params_file':                   nav2_params_path,
+            'default_bt_xml_filename':       default_bt_xml,
             'map_subscribe_transient_local': map_subscribe_transient_local
         }.items()
     )
 
-    # ===== Assemble =====
     return LaunchDescription([
-        # Immediate log flush
+        # immediate logging
         SetEnvironmentVariable('RCUTILS_LOGGING_BUFFERED_STREAM', '1'),
-        # Launch arguments
-        *declare_args,
-        # Core nodes
+
+        # core nodes
         rsp_node,
         odom_node,
         inv_kin_node,
         serial_drv_node,
+
+        # lidar
         lidar_launch,
-        # Nav2 stack
-        nav2_launch
+
+        # nav2 stack
+        nav2_launch,
     ])
