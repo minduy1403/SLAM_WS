@@ -16,30 +16,31 @@ def generate_launch_description():
     SetEnvironmentVariable('RCUTILS_LOGGING_BUFFERED_STREAM', '1')
 
     # Launch arguments
-    map_yaml_arg = DeclareLaunchArgument(
-        'map',
-        default_value=os.path.expanduser('~/my_map.yaml'),
+    map_arg = DeclareLaunchArgument(
+        'map', default_value=os.path.expanduser('~/my_map.yaml'),
         description='Full path to map YAML file'
     )
     use_sim_time_arg = DeclareLaunchArgument(
-        'use_sim_time', default_value='false', description='Use simulation time'
+        'use_sim_time', default_value='false',
+        description='Use simulation time'
     )
     autostart_arg = DeclareLaunchArgument(
-        'autostart', default_value='true', description='Autostart Nav2 lifecycle'
+        'autostart', default_value='true',
+        description='Autostart Nav2 stack'
     )
     params_arg = DeclareLaunchArgument(
         'params_file',
         default_value=PathJoinSubstitution([
-            FindPackageShare('slam_launch'),
-            'params', 'nav2_params.yaml'
+            FindPackageShare('slam_launch'), 'params', 'nav2_params.yaml'
         ]),
         description='Path to custom Nav2 parameters file'
     )
 
     # Substitutions
-    map_yaml = LaunchConfiguration('map')
+    map_yaml     = LaunchConfiguration('map')
     use_sim_time = LaunchConfiguration('use_sim_time')
-    autostart = LaunchConfiguration('autostart')
+    autostart     = LaunchConfiguration('autostart')
+    params_file   = LaunchConfiguration('params_file')
 
     # Robot description (URDF xacro)
     pkg_desc = FindPackageShare('omnibot_description')
@@ -51,36 +52,33 @@ def generate_launch_description():
         output='screen', parameters=[{'robot_description': robot_description}]
     )
 
-    # Odometry and motor driver nodes
+    # Odometry + kinematics nodes
     odom_node = Node(
-        package='odom', executable='odom_node', name='odom_node', output='screen'
+        package='odom', executable='odom_node', name='odom_node', output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
     )
     inv_kin_node = Node(
-        package='kinematics', executable='inverse_kinematic', name='inverse_kinematic', output='screen'
+        package='kinematics', executable='inverse_kinematic', name='inverse_kinematic', output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
     )
     serial_drv_node = Node(
         package='kinematics', executable='serial_driver', name='serial_driver', output='screen'
     )
 
-    # RPLIDAR driver launch include
+    # RPLIDAR driver
     lidar_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([
                 FindPackageShare('rplidar_ros'), 'launch', 'rplidar_c1_launch.py'
             ])
         ),
-        launch_arguments={'serial_port': '/dev/rplidar'}.items()
+        launch_arguments={
+            'serial_port': '/dev/rplidar',
+            'frame_id': 'laser'
+        }.items()
     )
 
-    # Static identity transform odom → base_link (giúp Nav2 không timeout TF)
-    static_odom_tf = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='static_odom_tf',
-        arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_link']
-    )
-
-    # Include Nav2 bringup (map_server, amcl, planner, controller)
+    # Nav2 bringup
     nav2_bringup = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([
@@ -91,24 +89,19 @@ def generate_launch_description():
             'map': map_yaml,
             'use_sim_time': use_sim_time,
             'autostart': autostart,
-            'params_file': LaunchConfiguration('params_file'),
+            'params_file': params_file
         }.items()
     )
 
     return LaunchDescription([
-        # launch args
-        map_yaml_arg,
+        map_arg,
         use_sim_time_arg,
         autostart_arg,
         params_arg,
-        # robot bringup
         rsp,
         odom_node,
         inv_kin_node,
         serial_drv_node,
         lidar_launch,
-        # static TF giữa odom và base_link
-        static_odom_tf,
-        # navigation stack
         nav2_bringup,
     ])

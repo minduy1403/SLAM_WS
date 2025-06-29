@@ -1,0 +1,262 @@
+[0.000000] (-) TimerEvent: {}
+[0.000778] (-) JobUnselected: {'identifier': 'kinematics'}
+[0.001197] (-) JobUnselected: {'identifier': 'odom'}
+[0.001517] (-) JobUnselected: {'identifier': 'omni_bot'}
+[0.001841] (-) JobUnselected: {'identifier': 'omnibot_description'}
+[0.002172] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.002492] (-) JobUnselected: {'identifier': 'teleop_omni'}
+[0.002818] (slam_launch) JobQueued: {'identifier': 'slam_launch', 'dependencies': OrderedDict([('kinematics', '/home/jetson/SLAM_WS/install/kinematics'), ('odom', '/home/jetson/SLAM_WS/install/odom'), ('rplidar_ros', '/home/jetson/SLAM_WS/install/rplidar_ros')])}
+[0.003214] (slam_launch) JobStarted: {'identifier': 'slam_launch'}
+[0.089629] (-) TimerEvent: {}
+[0.190435] (-) TimerEvent: {}
+[0.291374] (-) TimerEvent: {}
+[0.396033] (-) TimerEvent: {}
+[0.496866] (-) TimerEvent: {}
+[0.597550] (-) TimerEvent: {}
+[0.698555] (-) TimerEvent: {}
+[0.799962] (-) TimerEvent: {}
+[0.900635] (-) TimerEvent: {}
+[1.001292] (-) TimerEvent: {}
+[1.102274] (-) TimerEvent: {}
+[1.202993] (-) TimerEvent: {}
+[1.304737] (-) TimerEvent: {}
+[1.405971] (-) TimerEvent: {}
+[1.507154] (-) TimerEvent: {}
+[1.608450] (-) TimerEvent: {}
+[1.709500] (-) TimerEvent: {}
+[1.811968] (-) TimerEvent: {}
+[1.918818] (-) TimerEvent: {}
+[2.020110] (-) TimerEvent: {}
+[2.121259] (-) TimerEvent: {}
+[2.221964] (-) TimerEvent: {}
+[2.325760] (-) TimerEvent: {}
+[2.444209] (-) TimerEvent: {}
+[2.545452] (-) TimerEvent: {}
+[2.646584] (-) TimerEvent: {}
+[2.747735] (-) TimerEvent: {}
+[2.848922] (-) TimerEvent: {}
+[2.950120] (-) TimerEvent: {}
+[3.051275] (-) TimerEvent: {}
+[3.153680] (-) TimerEvent: {}
+[3.254852] (-) TimerEvent: {}
+[3.355944] (-) TimerEvent: {}
+[3.457176] (-) TimerEvent: {}
+[3.558360] (-) TimerEvent: {}
+[3.659555] (-) TimerEvent: {}
+[3.760783] (-) TimerEvent: {}
+[3.861993] (-) TimerEvent: {}
+[3.962648] (-) TimerEvent: {}
+[4.064216] (-) TimerEvent: {}
+[4.165460] (-) TimerEvent: {}
+[4.266625] (-) TimerEvent: {}
+[4.368010] (-) TimerEvent: {}
+[4.469267] (-) TimerEvent: {}
+[4.570614] (-) TimerEvent: {}
+[4.684383] (-) TimerEvent: {}
+[4.785694] (-) TimerEvent: {}
+[4.891947] (-) TimerEvent: {}
+[4.992906] (-) TimerEvent: {}
+[5.093564] (-) TimerEvent: {}
+[5.194205] (-) TimerEvent: {}
+[5.294865] (-) TimerEvent: {}
+[5.396382] (-) TimerEvent: {}
+[5.497562] (-) TimerEvent: {}
+[5.598885] (-) TimerEvent: {}
+[5.711937] (-) TimerEvent: {}
+[5.813815] (-) TimerEvent: {}
+[5.929538] (-) TimerEvent: {}
+[6.030776] (-) TimerEvent: {}
+[6.131973] (-) TimerEvent: {}
+[6.233579] (-) TimerEvent: {}
+[6.344394] (-) TimerEvent: {}
+[6.446443] (-) TimerEvent: {}
+[6.547725] (-) TimerEvent: {}
+[6.649329] (-) TimerEvent: {}
+[6.752093] (-) TimerEvent: {}
+[6.856668] (-) TimerEvent: {}
+[6.957818] (-) TimerEvent: {}
+[7.060021] (-) TimerEvent: {}
+[7.161173] (-) TimerEvent: {}
+[7.262614] (-) TimerEvent: {}
+[7.363950] (-) TimerEvent: {}
+[7.465313] (-) TimerEvent: {}
+[7.567962] (-) TimerEvent: {}
+[7.671943] (-) TimerEvent: {}
+[7.773134] (-) TimerEvent: {}
+[7.874364] (-) TimerEvent: {}
+[7.975509] (-) TimerEvent: {}
+[8.076666] (-) TimerEvent: {}
+[8.177905] (-) TimerEvent: {}
+[8.279123] (-) TimerEvent: {}
+[8.380410] (-) TimerEvent: {}
+[8.481610] (-) TimerEvent: {}
+[8.582737] (-) TimerEvent: {}
+[8.684165] (-) TimerEvent: {}
+[8.785391] (-) TimerEvent: {}
+[8.886851] (-) TimerEvent: {}
+[8.988380] (-) TimerEvent: {}
+[9.089708] (-) TimerEvent: {}
+[9.190874] (-) TimerEvent: {}
+[9.292239] (-) TimerEvent: {}
+[9.393498] (-) TimerEvent: {}
+[9.494714] (-) TimerEvent: {}
+[9.595988] (-) TimerEvent: {}
+[9.697517] (-) TimerEvent: {}
+[9.798806] (-) TimerEvent: {}
+[9.900263] (-) TimerEvent: {}
+[10.001625] (-) TimerEvent: {}
+[10.102844] (-) TimerEvent: {}
+[10.204082] (-) TimerEvent: {}
+[10.305288] (-) TimerEvent: {}
+[10.406720] (-) TimerEvent: {}
+[10.508045] (-) TimerEvent: {}
+[10.609758] (-) TimerEvent: {}
+[10.711140] (-) TimerEvent: {}
+[10.812927] (-) TimerEvent: {}
+[10.914254] (-) TimerEvent: {}
+[11.015698] (-) TimerEvent: {}
+[11.116938] (-) TimerEvent: {}
+[11.218242] (-) TimerEvent: {}
+[11.320013] (-) TimerEvent: {}
+[11.421331] (-) TimerEvent: {}
+[11.522547] (-) TimerEvent: {}
+[11.623899] (-) TimerEvent: {}
+[11.725109] (-) TimerEvent: {}
+[11.826363] (-) TimerEvent: {}
+[11.927833] (-) TimerEvent: {}
+[12.029156] (-) TimerEvent: {}
+[12.130385] (-) TimerEvent: {}
+[12.231930] (-) TimerEvent: {}
+[12.333138] (-) TimerEvent: {}
+[12.434583] (-) TimerEvent: {}
+[12.536133] (-) TimerEvent: {}
+[12.637566] (-) TimerEvent: {}
+[12.738968] (-) TimerEvent: {}
+[12.858547] (-) TimerEvent: {}
+[12.959833] (-) TimerEvent: {}
+[13.060503] (-) TimerEvent: {}
+[13.161190] (-) TimerEvent: {}
+[13.261850] (-) TimerEvent: {}
+[13.363270] (-) TimerEvent: {}
+[13.465985] (-) TimerEvent: {}
+[13.567541] (-) TimerEvent: {}
+[13.668823] (-) TimerEvent: {}
+[13.770152] (-) TimerEvent: {}
+[13.871304] (-) TimerEvent: {}
+[13.971933] (-) TimerEvent: {}
+[14.072562] (-) TimerEvent: {}
+[14.173841] (-) TimerEvent: {}
+[14.275494] (-) TimerEvent: {}
+[14.376709] (-) TimerEvent: {}
+[14.478320] (-) TimerEvent: {}
+[14.579931] (-) TimerEvent: {}
+[14.680841] (-) TimerEvent: {}
+[14.781776] (-) TimerEvent: {}
+[14.883048] (-) TimerEvent: {}
+[14.984349] (-) TimerEvent: {}
+[15.085371] (-) TimerEvent: {}
+[15.186778] (-) TimerEvent: {}
+[15.288148] (-) TimerEvent: {}
+[15.391945] (-) TimerEvent: {}
+[15.493214] (-) TimerEvent: {}
+[15.594468] (-) TimerEvent: {}
+[15.695935] (-) TimerEvent: {}
+[15.765851] (slam_launch) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/slam_launch', 'build', '--build-base', '/home/jetson/SLAM_WS/build/slam_launch/build', 'install', '--record', '/home/jetson/SLAM_WS/build/slam_launch/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/SLAM_WS/src/slam_launch', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jetson', 'SSH_CLIENT': '192.168.1.7 52779 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'SSH_TTY': '/dev/pts/4', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Nano Developer Kit', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/jetson/SLAM_WS/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Nano (4 GB ram)', 'JETSON_SERIAL_NUMBER': '1420923022801', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Porg', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '11', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/foxy/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'AMENT_PREFIX_PATH': '/home/jetson/SLAM_WS/install/odom:/home/jetson/SLAM_WS/install/kinematics:/home/jetson/SLAM_WS/install/teleop_omni:/home/jetson/SLAM_WS/install/slam_launch:/home/jetson/SLAM_WS/install/rplidar_ros:/home/jetson/SLAM_WS/install/omnibot_description:/home/jetson/SLAM_WS/install/omni_bot:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': 'p3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/SLAM_WS/build/slam_launch', 'SSH_CONNECTION': '192.168.1.7 52779 192.168.1.10 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/SLAM_WS/build/slam_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/odom/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/kinematics/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/teleop_omni/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omnibot_description/lib/python3.8/site-packages:/home/jetson/SLAM_WS/install/omni_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '4.6', 'CMAKE_PREFIX_PATH': '/home/jetson/SLAM_WS/install/rplidar_ros', 'JETSON_P_NUMBER': 'p3448-0000'}, 'shell': False}
+[15.796540] (-) TimerEvent: {}
+[15.899127] (-) TimerEvent: {}
+[15.999820] (-) TimerEvent: {}
+[16.100982] (-) TimerEvent: {}
+[16.202233] (-) TimerEvent: {}
+[16.303437] (-) TimerEvent: {}
+[16.404836] (-) TimerEvent: {}
+[16.506100] (-) TimerEvent: {}
+[16.607286] (-) TimerEvent: {}
+[16.708552] (-) TimerEvent: {}
+[16.810222] (-) TimerEvent: {}
+[16.911465] (-) TimerEvent: {}
+[17.012676] (-) TimerEvent: {}
+[17.113856] (-) TimerEvent: {}
+[17.215201] (-) TimerEvent: {}
+[17.316563] (-) TimerEvent: {}
+[17.418321] (-) TimerEvent: {}
+[17.519659] (-) TimerEvent: {}
+[17.621002] (-) TimerEvent: {}
+[17.722327] (-) TimerEvent: {}
+[17.823675] (-) TimerEvent: {}
+[17.924807] (-) TimerEvent: {}
+[18.025444] (-) TimerEvent: {}
+[18.126087] (-) TimerEvent: {}
+[18.226758] (-) TimerEvent: {}
+[18.328052] (-) TimerEvent: {}
+[18.429368] (-) TimerEvent: {}
+[18.530819] (-) TimerEvent: {}
+[18.632164] (-) TimerEvent: {}
+[18.734113] (-) TimerEvent: {}
+[18.835336] (-) TimerEvent: {}
+[18.936129] (-) TimerEvent: {}
+[19.036787] (-) TimerEvent: {}
+[19.137445] (-) TimerEvent: {}
+[19.238097] (-) TimerEvent: {}
+[19.339296] (-) TimerEvent: {}
+[19.441581] (-) TimerEvent: {}
+[19.542919] (-) TimerEvent: {}
+[19.644139] (-) TimerEvent: {}
+[19.745265] (-) TimerEvent: {}
+[19.846427] (-) TimerEvent: {}
+[19.947621] (-) TimerEvent: {}
+[20.049199] (-) TimerEvent: {}
+[20.150408] (-) TimerEvent: {}
+[20.251599] (-) TimerEvent: {}
+[20.352863] (-) TimerEvent: {}
+[20.454157] (-) TimerEvent: {}
+[20.555518] (-) TimerEvent: {}
+[20.656872] (-) TimerEvent: {}
+[20.758399] (-) TimerEvent: {}
+[20.859948] (-) TimerEvent: {}
+[20.960594] (-) TimerEvent: {}
+[21.061256] (-) TimerEvent: {}
+[21.163233] (-) TimerEvent: {}
+[21.264425] (-) TimerEvent: {}
+[21.365747] (-) TimerEvent: {}
+[21.467063] (-) TimerEvent: {}
+[21.568298] (-) TimerEvent: {}
+[21.669595] (-) TimerEvent: {}
+[21.770943] (-) TimerEvent: {}
+[21.872326] (-) TimerEvent: {}
+[21.973509] (-) TimerEvent: {}
+[22.074794] (-) TimerEvent: {}
+[22.172535] (slam_launch) StdoutLine: {'line': b'running egg_info\n'}
+[22.174947] (-) TimerEvent: {}
+[22.186836] (slam_launch) StdoutLine: {'line': b'writing ../../build/slam_launch/slam_launch.egg-info/PKG-INFO\n'}
+[22.189268] (slam_launch) StdoutLine: {'line': b'writing dependency_links to ../../build/slam_launch/slam_launch.egg-info/dependency_links.txt\n'}
+[22.196044] (slam_launch) StdoutLine: {'line': b'writing requirements to ../../build/slam_launch/slam_launch.egg-info/requires.txt\n'}
+[22.200672] (slam_launch) StdoutLine: {'line': b'writing top-level names to ../../build/slam_launch/slam_launch.egg-info/top_level.txt\n'}
+[22.256201] (slam_launch) StdoutLine: {'line': b"reading manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'\n"}
+[22.264443] (slam_launch) StdoutLine: {'line': b"writing manifest file '../../build/slam_launch/slam_launch.egg-info/SOURCES.txt'\n"}
+[22.266338] (slam_launch) StdoutLine: {'line': b'running build\n'}
+[22.266838] (slam_launch) StdoutLine: {'line': b'running build_py\n'}
+[22.267323] (slam_launch) StdoutLine: {'line': b'running install\n'}
+[22.282175] (-) TimerEvent: {}
+[22.316917] (slam_launch) StdoutLine: {'line': b'running install_lib\n'}
+[22.365531] (slam_launch) StdoutLine: {'line': b'running install_data\n'}
+[22.368203] (slam_launch) StdoutLine: {'line': b'copying launch/navigation.launch.py -> /home/jetson/SLAM_WS/install/slam_launch/share/slam_launch/launch\n'}
+[22.370684] (slam_launch) StdoutLine: {'line': b'running install_egg_info\n'}
+[22.382356] (-) TimerEvent: {}
+[22.430223] (slam_launch) StdoutLine: {'line': b"removing '/home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[22.435989] (slam_launch) StdoutLine: {'line': b'Copying ../../build/slam_launch/slam_launch.egg-info to /home/jetson/SLAM_WS/install/slam_launch/lib/python3.8/site-packages/slam_launch-0.0.0-py3.8.egg-info\n'}
+[22.482550] (-) TimerEvent: {}
+[22.508673] (slam_launch) StdoutLine: {'line': b'running install_scripts\n'}
+[22.582718] (-) TimerEvent: {}
+[22.683657] (-) TimerEvent: {}
+[22.784611] (-) TimerEvent: {}
+[22.829703] (slam_launch) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/SLAM_WS/build/slam_launch/install.log'\n"}
+[22.884784] (-) TimerEvent: {}
+[22.985826] (-) TimerEvent: {}
+[23.087116] (-) TimerEvent: {}
+[23.188088] (-) TimerEvent: {}
+[23.243450] (slam_launch) CommandEnded: {'returncode': 0}
+[23.288280] (-) TimerEvent: {}
+[23.407783] (-) TimerEvent: {}
+[23.513594] (-) TimerEvent: {}
+[23.529325] (slam_launch) JobEnded: {'identifier': 'slam_launch', 'rc': 0}
+[23.543183] (-) EventReactorShutdown: {}

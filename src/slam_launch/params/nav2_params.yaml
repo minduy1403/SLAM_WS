@@ -126,7 +126,9 @@ controller_server:
     controller_frequency: 20.0
     controller_plugins: ["FollowPath"]
 
-    # DWB-local planner config
+    # đảm bảo controller biết publish cmd_vel lên đúng topic
+    cmd_vel_topic: "/cmd_vel"
+
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
       debug_trajectory_details: True
@@ -138,12 +140,12 @@ controller_server:
       max_vel_y: 0.5
       max_vel_theta: 1.5
 
-      # samples để kiểm thử
+      # samples
       vx_samples: 20
       vy_samples: 20
       vtheta_samples: 20
 
-      # giới hạn gia tốc, hãm
+      # giới hạn gia tốc
       acc_lim_x: 2.5
       acc_lim_y: 0.0
       acc_lim_theta: 3.2
@@ -168,6 +170,7 @@ controller_server:
         - PathAlign
         - PathDist
         - GoalDist
+
       BaseObstacle.scale: 0.02
       PathAlign.scale: 32.0
       PathAlign.forward_point_distance: 0.1
@@ -178,10 +181,6 @@ controller_server:
       RotateToGoal.scale: 32.0
       RotateToGoal.slowing_factor: 5.0
       RotateToGoal.lookahead_time: -1.0
-
-controller_server_rclcpp_node:
-  ros__parameters:
-    use_sim_time: True
 
 ###############################################################################
 # 5. Local Costmap
